@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}
+    {% trans 'ТУРЫ В УЗБЕКИСТАН' %}
+{% endblock %}
+
+
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+    <main class="tours__main">
+        <section class="tours__main-content">
+            <img src="{% static 'images/samarkand-mosque-3-scaled.webp' %}" alt="">
+            <h1 class="tours__main-title">{% trans 'ТУРЫ В УЗБЕКИСТАН' %}</h1>
+        </section>
+        <section class="tours__main-items container">
+            {% for tour in tours %}
+                <a href="{% url 'tour_with_price_detail' tour.pk %}"
+                   class="popular__destinations-cards-item tours__item">
+                    <img src="{{ tour.preview.url }}" alt="card-item">
+                    <div class="popular__destinations-cards-item-content tours__item-content">
+                        <h4 class="popular__destinations-cards-item-title">{{ tour.title }}</h4>
+                        {% if not tour.price and not tour.data and not tour.nights %}
+                            <p class="popular__destinations-cards-item-descr">{{ tour.short_description }}</p>
+                        {% else %}
+                            <span>{{ tour.price }}</span>
+                            <p class="popular__destinations-cards-item-descr">{{ tour.days }} {% trans 'дней' %}
+                                / {{ tour.nights }} {% trans 'ночей' %}</p>
+                        {% endif %}
+                    </div>
+                </a>
+            {% endfor %}
+
+        </section>
+        {% include 'components/_pagination.html' %}
+    </main>
+{% endblock %}

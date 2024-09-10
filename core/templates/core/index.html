@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}
+
+{% endblock %}
+
+
+{% block content %}
+<main class="main">
+    <section class="popular__destinations">
+        <div class="container popular__destinations-content">
+            <h2 class="popular__destinations-title">{% trans 'Популярные направления' %}</h2>
+            <div class="popular__destinations-cards">
+                {% for destination in destinations %}
+                <a href="{% url 'destinations' destination.slug %}" class="popular__destinations-cards-item">
+                    <img src="{{ destination.preview.url }}" alt="card-item">
+                    <div class="popular__destinations-cards-item-content">
+                        <h4 class="popular__destinations-cards-item-title">{{ destination.title }}</h4>
+                        <p class="popular__destinations-cards-item-descr">{{ destination.short_description }}</p>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="popular__destinations">
+        <div class="container popular__destinations-content">
+            <h2 class="popular__destinations-title">{% trans 'Популярные туры' %}</h2>
+            <div class="popular__destinations-cards tours">
+                {% for tour in popular_tours %}
+                <a href="{% url 'tour_with_price_detail' tour.pk %}"
+                    class="popular__destinations-cards-item tours__item">
+                    <img src="{{ tour.preview.url }}" alt="{{ tour.title }}">
+                    <div class="popular__destinations-cards-item-content tours__item-content">
+                        <h4 class="popular__destinations-cards-item-title">{{ tour.title }}
+                        </h4><span>{{ tour.price }}</span>
+                        <p class="popular__destinations-cards-item-descr">
+                            {{ tour.days }} {% trans 'дней' %} / {{ tour.nights }} {% trans 'ночей' %}
+                        </p>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="special">
+        <img src="{% static 'images/samarkand-registan.jpg' %}" alt="registan">
+        <div class="special__content">
+            <h4 class="special__title">{% trans 'Специальное предложение' %}</h4>
+            <h5 class="special__subtitle">{% trans 'Путешествуйте дешевле!' %}</h5><a href=""
+                class="special__btn"><span>{% trans 'УЗНАТЬ БОЛЬШЕ' %}</span></a>
+        </div>
+    </section>
+    <section class="popular__destinations">
+        <div class="container popular__destinations-content">
+            <h2 class="popular__destinations-title">{% trans 'Мы рекомендуем' %}</h2>
+            <div class="popular__destinations-cards tours">
+                {% for tour in recommended_tours %}
+                <a href="{% url 'tour_with_price_detail' tour.pk %}"
+                    class="popular__destinations-cards-item tours__item">
+                    <img src="{{ tour.preview.url }}" alt="{{ tour.title }}">
+                    <div class="popular__destinations-cards-item-content tours__item-content">
+                        <h4 class="popular__destinations-cards-item-title">{{ tour.title }}
+                        </h4><span>{{ tour.price }}</span>
+                        <p class="popular__destinations-cards-item-descr">
+                            {{ tour.days }} {% trans 'дней' %} / {{ tour.nights }} {% trans 'ночей' %}
+                        </p>
+                    </div>
+                </a>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+    <section class="more__info" style="background-image: url('{% static "images/khiva-panorama.jpg" %}')">
+        <h2 class="more__info-title">{% trans 'Узнайте о Востоке больше' %}</h2>
+    </section>
+    <section class="traveler__reviews">
+        <div class="traveler__reviews-content">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    {% for review in reviews %}
+                    <div class="swiper-slide"><span>“</span>
+                        <p class="swiper-slide-descr">{{ review.text }}</p>
+                        <div class="swiper-slide-data">
+                            <h4 class="swiper-slide-data-title">{{ review.author|upper }}</h4>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <section class="travel__info" style="background-image: url('{% static "images/img_canaan.jpg" %}')">
+        <h2 class="travel__info-title">{% trans 'Узнайте о Востоке больше вместе с нами' %}</h2>
+        <p class="travel__info-descr">
+            {% blocktrans %} canaan-travel — туристическая компания полного цикла, ставящая перед собой
+            цель открыть красоту всего мира для каждого человека сегодня. Мы стремимся ближе познакомить Восток
+            и
+            Запад, предлагая путешествия по Центральной Азии туристам из СНГ, Европы и Америки и поездки по
+            всему
+            миру жителям Центральной Азии.{% endblocktrans %}
+        </p>
+        <p class="travel__info-descr">
+            {% blocktrans %}Мы работаем как с отдельными туристами, так и с компаниями. Наличие
+            собственных авиакассы, автотранспорта и сотрудничество с лучшими гидами и отелями помогают нам
+            формировать уникальные предложения в индивидуальном порядке.{% endblocktrans %}
+        </p>
+    </section>
+    <section class="adventage">
+        <h2 class="adventage__title">{% trans 'Преимущество нашего обслуживания' %}</h2>
+        <div class="swiper mySwiper adventage-swiper">
+            <div class="swiper-wrapper">
+                {% for advantage in advantages %}
+                <div class="swiper-slide adventage-swiper-slide">
+                    <img src="{{ advantage.icon.url }}" alt="">
+                    <h5 class="adventage-swiper-slide-title">
+                        {{ advantage.title }}
+                    </h5>
+
+                    <p class="adventage-swiper-slide-descr">{{ advantage.body }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="newsletter__content">
+            <h2 class="newsletter__title">{% trans 'Подпишитесь на рассылку интересных предложений' %}</h2>
+            <form action="{% url 'send_mail' %}" class="newsletter__form" method="post">
+                {% csrf_token %}
+                <input type="text" placeholder="{% trans 'Ваш адрес E-mail' %}" name="email">
+                <button>{% trans 'Подписаться' %}</button>
+            </form>
+        </div>
+    </section>
+    <section class="blog">
+        <h2 class="blog__title blog__title--custom">{% trans 'Блог' %}</h2>
+        <div class="swiper mySwiper blog-swiper">
+            <div class="swiper-wrapper">
+                {% for article in articles %}
+                <div class="swiper-slide blog-swiper-slide">
+                    <img src="{{ article.preview.url }}" alt="{{ article.title }}">
+                    <h5 class="adventage-swiper-slide-title">{{ article.title }}</h5>
+                    <p class="adventage-swiper-slide-descr">{{ article.excerpt }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="reservation">
+        <div class="container reservation__content">
+            <h2 class="reservation__title">{% trans 'Хотите забронировать тур?' %}</h2>
+            <span>{% trans 'Заполните небольшую форму, и мы подберем тур именно для вас' %}</span>
+            <form action="{% url 'send_username_and_phone' %}" class="reservation__form" method="post">
+                {% csrf_token %}
+                <input type="text" placeholder="{% trans 'Ваше имя' %}" name="username">
+                <input type="text" placeholder="{% trans 'Ваш номер телефона' %}" name="phone">
+                <button>{% trans 'Отправить' %}</button>
+            </form>
+        </div>
+    </section>
+    <section class="partners">
+        <h2 class="partners__title">{% trans 'Наши партнеры' %}</h2>
+        <div class="swiper mySwiper partners-swiper">
+            <div class="swiper-wrapper">
+                {% for client in clients %}
+                <div class="swiper-slide partners-swiper-slide">
+                    <img src="{{ client.img.url }}" alt="{{ client.company_name }}">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

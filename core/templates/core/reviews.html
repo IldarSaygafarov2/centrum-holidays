@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load i18n static  %}
+
+{% block title %}
+canaan-travel
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+<main class="booking__main review__main">
+    <section class="booking__main-intro" style="background-image: url('{% static "images/zaglushka.jpg" %}')">
+        <h1 class="booking__main-title">{% trans 'Отзывы'|upper %}</h1>
+    </section>
+    <section class="container review__main-content">
+        {% for review in reviews %}
+        <div class="swiper-slide"><span>“</span>
+            <p class="swiper-slide-descr">{{ review.text }}</p>
+            <div class="swiper-slide-data">
+                <h4 class="swiper-slide-data-title">{{ review.author|upper }}</h4>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+</main>
+{% endblock %}

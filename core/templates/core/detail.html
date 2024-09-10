@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ tour.title }}
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+
+{% block content %}
+    <main class="tour__detail-main">
+        <section class="tour__detail-main-header"><img
+                src="{% static 'images/zaglushka.jpg' %}" alt="">
+            <h2>{{ tour.title|upper }}</h2>
+        </section>
+        <section class="tour__detail-main-content container">
+            {{ tour.full_description|safe }}
+
+            {% if tour.map_link %}
+            <iframe src="{{ tour.map_link }}"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            {% endif %}
+            {{ tour.full_description2|safe }}
+        </section>
+    </main>
+{% endblock %}

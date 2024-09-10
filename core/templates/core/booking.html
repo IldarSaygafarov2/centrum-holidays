@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}
+canaan-travel
+{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block content %}
+<main class="booking__main">
+    <section class="booking__main-intro" style="background-image: url('{% static "images/zaglushka.jpg" %}')">
+        <h1 class="booking__main-title">{% trans 'Бронирование'|upper %}</h1>
+    </section>
+    <section class="booking__main-application">
+        <form class="container booking__main-application-form" method="post" action="{% url 'book_tour' %}">
+            {% csrf_token %}
+            <h2 class="booking__main-application-form-title">{% trans 'Заполните поля для резерва тура' %}</h2>
+            <input name="username" type="text" placeholder="{% trans 'Ваше имя' %}*" required>
+            <input name="date" type="date" placeholder="{% trans 'Ваше имя' %}*" required>
+            <input name="email" type="email" placeholder="{% trans 'Ваш E-mail' %}*" required>
+            <input name="phone" type="tel" placeholder="{% trans 'Ваш номер телефона' %}*" required>
+            <textarea name="body" type="text" rows="5" placeholder="{% trans 'Комментарий и пожелание' %}"></textarea>
+            <button>{% trans 'Отправить' %}</button>
+        </form>
+    </section>
+</main>
+{% endblock %}

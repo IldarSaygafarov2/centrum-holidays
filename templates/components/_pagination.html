@@ -1,0 +1,51 @@
+{% if tours.has_other_pages %}
+            <ul class="pagination">
+
+                {% if tours.has_previous %}
+                    <li style="transform: rotate(-180deg)">
+                        <a href="?page={{ tours.previous_page_number }}">
+                            <svg width="58" height="28" viewBox="0 0 58 28"
+                                 class="d-flex"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M44 28C44 20.268 50.268 14 58 14" stroke="#846666" stroke-width="2"></path>
+                                <path d="M58 14C50.268 14 44 7.73199 44 0" stroke="#846666" stroke-width="2"></path>
+                                <path d="M57.3809 14L0.000237942 14" stroke="#846666" stroke-width="2"></path>
+                            </svg>
+                        </a>
+                    </li>
+                {% endif %}
+
+                {% for i in tours.paginator.page_range %}
+                    {% if tours.number == i %}
+                        <li><span aria-current="page" class="page-numbers current">{{ i }}</span></li>
+                    {% elif i >= tours.number|add:-2 and i <= tours.number|add:2 %}
+                        <li><a class="page-numbers" href="?page={{ i }}">{{ i }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if tours.number|add:3 < tours.paginator.num_pages %}
+                    <li><span class="page-numbers dots">…</span></li>
+                    <li><a class="page-numbers"
+                           href="?page={{ tours.paginator.num_pages }}">{{ tours.paginator.num_pages }}</a>
+                    </li>
+                {% elif tours.number|add:2 < tours.paginator.num_pages %}
+                    <li><a class="page-numbers"
+                           href="?page={{ tours.paginator.num_pages }}">{{ tours.paginator.num_pages }}</a>
+                    </li>
+                {% endif %}
+
+                {% if tours.has_next %}
+                    <li>
+                        <a href="?page={{ tours.next_page_number }}">
+                            <svg width="58" height="28" viewBox="0 0 58 28"
+                                 class="d-flex"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M44 28C44 20.268 50.268 14 58 14" stroke="#846666" stroke-width="2"></path>
+                                <path d="M58 14C50.268 14 44 7.73199 44 0" stroke="#846666" stroke-width="2"></path>
+                                <path d="M57.3809 14L0.000237942 14" stroke="#846666" stroke-width="2"></path>
+                            </svg>
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        {% endif %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+    <main class="destination__main">
+        <section class="destination__main-content">
+            <img src="{% static  'images/Tashkent_tower-2-scaled.webp' %}" alt="{{ title }}">
+            <h1 class="destination__main-title">{{ title }}</h1></section>
+        <section class="destination__main-items container">
+            {% for tour in tours %}
+                <a href="{% url 'detail' tour.slug %}" class="popular__destinations-cards-item">
+                    <img src="{{ tour.preview.url }}" alt="{{ tour.title }}">
+                    <div class="popular__destinations-cards-item-content">
+                        <h4 class="popular__destinations-cards-item-title">{{ tour.title }}</h4>
+                        <p class="popular__destinations-cards-item-descr">{{ tour.short_description }}</p>
+                    </div>
+                </a>
+            {% endfor %}
+        </section>
+    {% include 'components/_pagination.html' %}
+    </main>
+{% endblock %}

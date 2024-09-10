@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+{% load static  i18n %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    {% block extra_css %}
+
+    {% endblock extra_css %}
+</head>
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as languages %}
+
+
+<body>
+<nav class="nav" id="nav">
+    <div class="container nav__content">
+        <a href="{% url 'home' %}" class="nav__logo">
+            <img src="{% static 'images/Canaan-logo-1.png' %}" alt="" width="120" height="120" style="object-fit: contain">
+        </a>
+        <ul class="nav__list">
+            <li class="nav__list-item"><a href="{% url 'about' %}" class="nav__list-link">{% trans 'О нас' %}</a></li>
+            <li class="nav__list-item"><a href="{% url 'tours' %}" class="nav__list-link">{% trans 'Туры' %}</a></li>
+            <li class="nav__list-item"><a href="{% url 'hotels' %}" class="nav__list-link">{% trans 'Отели Узбекистана' %}</a></li>
+            <li class="nav__list-item"><a href="{% url 'reviews' %}" class="nav__list-link">{% trans 'Отзывы' %}</a>
+            </li>
+            <li class="nav__list-item"><a href="{% url 'booking' %}"
+                                          class="nav__list-link">{% trans 'Бронирование' %}</a></li>
+            <li class="nav__list-item">
+                <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to }}">
+                    <select name="language" class="languages" onchange="this.form.submit()">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        {% for language in languages %}
+                            <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}
+                                    selected{% endif %}>
+                                {{ language.code|upper }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                    <input type="submit" value="Go" hidden>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% block header %}
+    <header class="header">
+        <div class="header__content" style="background: url('{% static "images/hero.jpg" %}')">
+            <h1 class="header__title">{% trans 'Туры в Узбекистан с canaan-travel' %}</h1>
+            <h2 class="header__subtitle">{% trans 'Откройте для себя сказочный Восток!' %}</h2>
+            <form action="{% url 'search' %}" class="header__form">
+                <input type="text" name="q" placeholder="{% trans 'Куда держим курс?' %}">
+                <button>{% trans 'Поиск' %}</button>
+            </form>
+            <div class="header__info">
+                <div class="header__info-item"><span>17</span>
+                    <p>{% trans 'лет на рынке' %}</p>
+                </div>
+                <div class="header__info-item"><span>500+</span>
+                    <p>{% trans 'отелей' %}</p>
+                </div>
+                <div class="header__info-item"><span>300+</span>
+                    <p>{% trans 'гидов' %}</p>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+<footer class="footer">
+    <div class="container footer__content">
+        <div class="footer__content-item">
+            <h4 class="footer__content-item-title">{% trans 'Контакты' %}</h4>
+            <ul class="footer__content-item-list">
+                <li><a href="tel:998781480740" class="footer__content-item-list-link">
+                    <svg fill="#7329B0"
+                         xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                                d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/>
+                    </svg>
+                    <span>+99878 148 0740</span></a></li>
+                <li><a href="tel:998900640740" class="footer__content-item-list-link">
+                    <svg fill="#7329B0"
+                         xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                                d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/>
+                    </svg>
+                    <span>+99890 064 0740</span></a></li>
+                <li><a href="mailto:info@canaan.travel" class="footer__content-item-list-link">
+                    <svg fill="#7329B0"
+                         xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>
+                    </svg>
+                    <span>info@canaan.travel</span></a></li>
+            </ul>
+            <a href="{% url 'home' %}"><img src="{% static 'images/Canaan-logo-1.png' %}" alt=""
+            width="160" height="160" style="object-fit: contain"></a>
+        </div>
+        <div class="footer__content-item">
+            <ul class="footer__content-item-list">
+                <li><a href="{% url 'about' %}"
+                       class="footer__content-item-list-link"><span>{% trans 'О компании' %}</span></a></li>
+                <li><a href="{% url 'mission' %}"
+                       class="footer__content-item-list-link"><span>{% trans 'Наша миссия' %}</span></a></li>
+                <li><a href="" class="footer__content-item-list-link"><span>{% trans 'Карта сайта' %}</span></a></li>
+            </ul>
+        </div>
+        <div class="footer__content-item">
+            <ul class="footer__content-item-list">
+                <li><a href="{% url 'blog' %}" class="footer__content-item-list-link"><span>{% trans 'Блог' %}</span></a></li>
+                <li><a href="{% url 'tourists-info' %}" class="footer__content-item-list-link"><span>{% trans 'Информация туристам' %}</span></a>
+                </li>
+                <li><a href="{% url 'tours' %}" class="footer__content-item-list-link"><span>{% trans 'Туры в Узбекистан' %}</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__content-item">
+            <p class="footer__content-item-descr">{% trans 'Информация туристам Туры в Узбекистан Достопримечательности Наша компания имеет все необходимые лицензии и сертификаты качества.' %}</p>
+            <p class="footer__content-item-descr">{% trans 'Независимые отзывы о нас читайте на' %} TripAdvisor</p><a
+                href="https://www.tripadvisor.ru/Attraction_Review-g293968-d15672817-Reviews-Canaan_Travel-Tashkent_Tashkent_Province.html"
+                target="blank"><img width="120px"
+                                    src="{% static 'images/tripadvisor-footer.png' %}"
+                                    alt=""></a>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            controls: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 40
+            },
+        }
+    });
+    var swiper = new Swiper(".adventage-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            controls: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        infinity: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 40
+            },
+        }
+    });</script>
+<script src="{% static 'js/lazy.js' %}"></script>
+<script src="{% static 'js/main.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+{% block extra_script %}
+{% endblock extra_script %}
+</body>
+
+</html>

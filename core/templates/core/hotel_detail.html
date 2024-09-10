@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}
+{{ hotel.title }}
+{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock extra_css %}
+
+
+{% block content %}
+<main class="hotel__detail-main">
+    <section class="hotel__detail-main-header"><img
+            src="{% static 'images/zaglushka.jpg' %}" alt="">
+        <div class="hotel__detail-main-header-content">
+            <h1>{{ hotel.name }}</h1>
+        </div>
+    </section>
+    <section class="hotel__detail-main-info container">
+        <h2>{{ hotel.name }}</h2>
+        <h3>{{ hotel.price }}/ night</h3>
+        <div class="hotel__detail-main-info-detail">
+            {% for bun in hotel.bun_set.all %}
+            <div class="hotel__detail-main-info-detail-item"><span>{{ bun.title }}</span></div>
+            {% endfor %}
+        </div><!--  -->
+        <div class="hotel__detail-main-info-slider">
+            <div class="wrapper">
+                <div id="slider" class="fotorama">
+                    {% for i in hotel.hotelgallery_set.all %}
+                    <img src="{{ i.image.url }}"
+                         data-projectcap="One Residence" data-pricecap="RM 588,000,00"
+                         data-location="Puchong, Selangor">
+                    {% endfor %}
+                </div>
+            </div>
+        </div><!--  -->
+        {{ hotel.description|safe }}
+        <form action="{% url 'book_hotel' %}" class="toursDetailPage__main-content-form" style="width: 100%; max-width: 100%;" method="post">
+            {% csrf_token %}
+            <h3>{% trans 'ЗАБРОНИРОВАТЬ' %}</h3>
+            <p style="text-align: center;">{% trans 'Цена от' %}
+                <span>${{ hotel.price }}</span>
+            </p>
+            <input type="text" name="username"  placeholder="{% trans 'Ваше Имя' %}*" required>
+            <input type="text" name="email"  placeholder="{% trans 'Ваш email' %}*" required>
+            <textarea name="text"  cols="30" rows="5" placeholder="{% trans 'Ваше сообщение' %}"></textarea>
+            <button>{% trans 'Отправить' %}</button>
+        </form>
+
+    <div class="modal" style="max-width: 100%;">
+            <form class="form" >
+                <div class="paymentother">
+                    <button name="apple-pay" type="button">
+                        Uzcard
+                    </button>
+                    <button name="google-pay" type="button">
+                        Humo
+                    </button>
+                </div>
+                <div class="separator">
+                    <hr class="line">
+                    <p>{% trans 'Или' %}</p>
+                    <hr class="line">
+                </div>
+                <div class="card-info">
+                    <div class="input_container">
+                        <label class="input_label">{% trans 'Имя владельца карты' %}</label>
+                        <input class="input_field" type="text" placeholder="{% trans 'Введите свое полное имя' %}">
+                    </div>
+                    <div class="input_container">
+                        <label class="input_label">{% trans 'Номер карты' %}</label>
+                        <input class="input_field" type="number" placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="input_container">
+                        <label class="input_label">{% trans 'Дата истечения срока' %} / CVV</label>
+                        <div class="split">
+                            <input class="input_field" style="width: 250px;" type="text" placeholder="01/23">
+                            <input class="input_field" style="width: 110px;" type="number" placeholder="CVV">
+                        </div>
+                    </div>
+                </div>
+                <button class="checkout" style="cursor: pointer;">
+                    <span>{% trans 'Оформить' %}</span>
+                </button>
+            </form>
+        </div>
+        <h2>{% trans 'Рекомендации' %}</h2>
+    </section>
+
+
+    <section class="hotels__main-items container details">
+        {% for item in hotels %}
+        <div class="hotels__main-item">
+            <img src="{{ item.preview.url }}" alt="">
+            <div class="hotels__main-item-content">
+                <h3 class="hotels__main-item-content-title">{{ item.name }}</h3>
+                <span>${{ item.price }} / {% trans 'ночь' %}</span>
+                <a href="hotel_detail.html">{% trans 'Забронировать' %}</a>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+
+
+</main>
+{% endblock %}
+
+{% block extra_script %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<script>var thumb_index = "<div class='img_index'></div>";
+        var caption_panel = $(".captions_container");
+
+        // 1. Initialize fotorama manually.
+        var $fotoramaDiv = $('#slider').fotorama();
+        // 2. Get the API object.
+        var fotorama = $fotoramaDiv.data('fotorama');
+        //console.log(fotorama);
+        $fotoramaDiv.on('fotorama:ready', function (e, fotorama) {
+            $(".fotorama__stage").append(caption_panel);
+            var img_index = fotorama.activeIndex + 1;
+            var ttl_img = fotorama.size;
+            var projectCap = fotorama.activeFrame.projectcap;
+            var priceCap = fotorama.activeFrame.pricecap;
+            var location = fotorama.activeFrame.location;
+
+
+            for (i = 1; i <= ttl_img; i++) {
+                $(thumb_index).appendTo(".fotorama__nav__frame--thumb .fotorama__thumb:eq(" + (i - 1) + ")");
+                $('<span></span>').appendTo(".fotorama__nav__frame--thumb .fotorama__thumb:eq(" + (i - 1) + ") .img_index").text(i);
+
+            }
+            $('.cap_one').text(projectCap);
+            $('.cap_two').text(location);
+            $('.cap_three').text(priceCap);
+
+        });
+
+        $fotoramaDiv.on('fotorama:showend', function (e, fotorama) {
+            var img_index = fotorama.activeIndex + 1;
+            var projectCap = fotorama.activeFrame.projectcap;
+            var priceCap = fotorama.activeFrame.pricecap;
+            var location = fotorama.activeFrame.location;
+
+            $('.cap_one').text(projectCap);
+            $('.cap_two').text(location);
+            $('.cap_three').text(priceCap);
+
+            // console.log(fotorama);
+        });
+
+
+        renderfotorama(fotorama);
+        $(window).resize(function () {
+            renderfotorama(fotorama);
+        });
+
+        function renderfotorama(fotorama) {
+            winWidth = $(window).width();
+            options = {};
+            if (!fotorama) {
+                console.log("no fotorama");
+            }
+            if (winWidth <= 379) {
+                options = {
+                    nav: false,
+                    maxheight: '100%',
+                };
+                $(".wrapper").append(caption_panel);
+            }
+            else {
+                options = {
+                    width: '100%',
+                    maxheight: '100%',
+                    ratio: 4 / 3,
+                    nav: 'thumbs',
+                    fit: 'cover',
+                    arrows: 'always',
+                    thumbheight: 80,
+                    thumbwidth: 80,
+                    thumbborderwidth: 0,
+                    loop: 'true',
+                    thumbmargin: 20,
+                    click: false,
+                };
+                $(".fotorama__stage").append(caption_panel);
+            }
+            fotorama.setOptions(options);
+        }
+
+
+
+</script>
+{% endblock extra_script %}

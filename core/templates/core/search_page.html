@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+
+{% block title %}
+{% trans "Найденные туры" %}
+{% endblock title %}
+
+{% block header %}{% endblock header %}
+
+{% block content %}
+<main class="search__page-main">
+  <section class="search__page-main-header" style="background: url('{% static "images/hero.jpg" %}')">
+    <div class="header__content">
+      <h1 class="header__title">{% trans 'Туры в Узбекистан с  canaan-travel' %}</h1>
+      <h2 class="header__subtitle">{% trans 'Откройте для себя сказочный Восток!' %}</h2>
+      <form action="{% url 'search' %}" class="header__form">
+        <input type="text" name="q" placeholder="{% trans 'Куда держим курс?' %}">
+        <button>{% trans 'Поиск' %}</button>
+      </form>
+    </div>
+  </section>
+  <section class="tours__main-items container">
+    {% for tour in tours %}
+    <a href="{% url 'detail' tour.slug %}" class="popular__destinations-cards-item">
+      <img src="{{ tour.preview.url }}" alt="{{ tour.title }}">
+      <div class="popular__destinations-cards-item-content">
+        <h4 class="popular__destinations-cards-item-title">{{ tour.title }}</h4>
+        <p class="popular__destinations-cards-item-descr">{{ tour.short_description }}</p>
+      </div>
+    </a>
+    {%endfor%}
+    {% comment %} <div class="popular__destinations-cards-item tours__item"><img
+        src="https://saftravel.uz/wp-content/uploads/2022/12/новый-год-1-700x500.jpg" alt="card-item">
+      <div class="popular__destinations-cards-item-content tours__item-content">
+        <h4 class="popular__destinations-cards-item-title">Новый год в Узбекистане — 2024</h4><span>$774</span>
+        <p class="popular__destinations-cards-item-descr">8 дней / 7 ночей</p>
+      </div>
+    </div> {% endcomment %}
+
+  </section>
+  <section class="tours__main-items container">
+    {% for tour in tours_with_price %}
+    <a href="{% url 'tour_with_price_detail' tour.pk %}" class="popular__destinations-cards-item tours__item">
+      <img src="{{ tour.preview.url }}" alt="{{ tour.title }}">
+      <div class="popular__destinations-cards-item-content tours__item-content">
+        <h4 class="popular__destinations-cards-item-title">{{ tour.title }}
+        </h4><span>{{ tour.price }}</span>
+        <p class="popular__destinations-cards-item-descr">
+          {{ tour.days }} {% trans 'дней' %} / {{ tour.nights }} {% trans 'ночей' %}
+        </p>
+      </div>
+    </a>
+    {% endfor %}
+
+
+  </section>
+</main>
+{% endblock content %}

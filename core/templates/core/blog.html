@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}
+    {% trans 'БЛОГ' %}
+{% endblock %}
+
+
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+    <main>
+        <section class="blog">
+            <section class="blog__content">
+                <img src="{% static 'images/zaglushka.jpg' %}" alt="zaglushka">
+                <h1 class="blog__title">{% trans 'БЛОГ' %}</h1>
+            </section>
+            <section class="blog__items container">
+                {% for article in articles %}
+                    <div class="swiper-slide blog-swiper-slide blog__items-item">
+                        <img src="{{ article.preview.url }}" alt="">
+                        <h5 class="adventage-swiper-slide-title">{{ article.title }}</h5>
+                        <p class="adventage-swiper-slide-descr">{{ article.excerpt }}</p>
+                    </div>
+                {% endfor %}
+            </section>
+        </section>
+    </main>
+{% endblock %}
