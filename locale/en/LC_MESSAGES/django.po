@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-10 17:41+0500\n"
+"POT-Creation-Date: 2024-09-11 09:51+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: canaan/settings.py:117
+#: canaan/settings.py:118
 msgid "Russia"
 msgstr ""
 
-#: canaan/settings.py:118
+#: canaan/settings.py:119
 msgid "English"
 msgstr ""
 
-#: core/templates/core/about.html:10 templates/base.html:38
+#: core/templates/core/about.html:10 templates/base.html:1872
 msgid "О нас"
 msgstr "About us"
 
@@ -36,8 +36,8 @@ msgstr "Briefly about us"
 
 #: core/templates/core/about.html:19
 msgid ""
-"Туристическая компания Centrum Holidays начала свою деятельность в 2006 "
-"году. Мы\n"
+"Туристическая компания Canaan-travel начала свою деятельность в 2006 году. "
+"Мы\n"
 "                    поставили перед собой цель\n"
 "                    открыть все разнообразие мира для каждого человека — "
 "перед узбекистанцами открыть двери в другие\n"
@@ -48,8 +48,8 @@ msgid ""
 "формате «человек-человек» безвсяких национальных\n"
 "                    признаков."
 msgstr ""
-"The travel company Centrum Holidays began its activities in 2006. We set a "
-"goal for ourselves\n"
+"The travel company Canaan-travel began its activities in 2006. We set a goal "
+"for ourselves\n"
 "open all the diversity of the world for every person - beforeUzbeks open "
 "doors to other countries\n"
 "and for foreigners - to Central Asia. Thusa traveler gets to know the "
@@ -254,7 +254,7 @@ msgstr "Book a tour"
 msgid "БЛОГ"
 msgstr "BLOG"
 
-#: core/templates/core/booking.html:13 templates/base.html:44
+#: core/templates/core/booking.html:13 templates/base.html:1878
 msgid "Бронирование"
 msgstr "Booking"
 
@@ -309,15 +309,45 @@ msgstr "Your E-mail"
 msgid "Ваше сообщение"
 msgstr "your message"
 
-#: core/templates/core/hotel_detail.html:56
+#: core/templates/core/hotel_detail.html:69
+#: core/templates/core/tour_detail.html:120
+msgid "Или"
+msgstr "or"
+
+#: core/templates/core/hotel_detail.html:74
+#: core/templates/core/tour_detail.html:125
+msgid "Имя владельца карты"
+msgstr "Card holder name"
+
+#: core/templates/core/hotel_detail.html:75
+#: core/templates/core/tour_detail.html:126
+msgid "Введите свое полное имя"
+msgstr "Write your full name"
+
+#: core/templates/core/hotel_detail.html:78
+#: core/templates/core/tour_detail.html:129
+msgid "Номер карты"
+msgstr "Card number"
+
+#: core/templates/core/hotel_detail.html:82
+#: core/templates/core/tour_detail.html:133
+msgid "Дата истечения срока"
+msgstr "Expiration date"
+
+#: core/templates/core/hotel_detail.html:90
+#: core/templates/core/tour_detail.html:141
+msgid "Оформить"
+msgstr "Checkout"
+
+#: core/templates/core/hotel_detail.html:94
 msgid "Рекомендации"
 msgstr "Recommendation"
 
-#: core/templates/core/hotel_detail.html:64 core/templates/core/hotels.html:23
+#: core/templates/core/hotel_detail.html:104 core/templates/core/hotels.html:23
 msgid "ночь"
 msgstr "night"
 
-#: core/templates/core/hotel_detail.html:65 core/templates/core/hotels.html:23
+#: core/templates/core/hotel_detail.html:105 core/templates/core/hotels.html:23
 msgid "Забронировать"
 msgstr "Book"
 
@@ -474,8 +504,8 @@ msgid ""
 "Узбекистана и оформить бронирование. Узбекистан,\n"
 "                увидеть который желают странники со всего мира, ждет вас. И "
 "вам не нужно переживать о своем комфорте в\n"
-"                поездке, ведь Centrum Holidays позаботится о том, чтобы у "
-"вас не возникло никаких сложностей и неудобств.\n"
+"                поездке, ведь Canaan-travel позаботится о том, чтобы у вас "
+"не возникло никаких сложностей и неудобств.\n"
 "                Наши\n"
 "                специалисты будут с вами на связи на протяжении всего вашего "
 "путешествия."
@@ -495,8 +525,8 @@ msgstr ""
 "reservation. Uzbekistan,\n"
 "What travelers from all over the world want to see is waiting for you. "
 "Andyou don't need to worry about your comfort in\n"
-" your trip, because Centrum Holidays will make sure that you have there were "
-"no difficulties or inconveniences.\n"
+" your trip, because Canaan-travel will make sure that you have there were no "
+"difficulties or inconveniences.\n"
 "Ours\n"
 "specialists will be in touch with you throughout your entire staytrips."
 
@@ -510,13 +540,13 @@ msgstr "Popular tours"
 
 #: core/templates/core/index.html:39 core/templates/core/index.html:67
 #: core/templates/core/search_page.html:51
-#: core/templates/core/tour_detail.html:21 core/templates/core/tours.html:30
+#: core/templates/core/tour_detail.html:21 core/templates/core/tours.html:35
 msgid "дней"
 msgstr "days"
 
 #: core/templates/core/index.html:39 core/templates/core/index.html:67
 #: core/templates/core/search_page.html:51
-#: core/templates/core/tour_detail.html:21 core/templates/core/tours.html:31
+#: core/templates/core/tour_detail.html:21 core/templates/core/tours.html:36
 msgid "ночей"
 msgstr "nights"
 
@@ -557,7 +587,7 @@ msgstr "Find out more about the East with us"
 #| "                    всему\n"
 #| "                    миру жителям Центральной Азии."
 msgid ""
-" canaan-travel — туристическая компания полного цикла, ставящая перед собой\n"
+" Canaan-travel — туристическая компания полного цикла, ставящая перед собой\n"
 "            цель открыть красоту всего мира для каждого человека сегодня. Мы "
 "стремимся ближе познакомить Восток\n"
 "            и\n"
@@ -566,7 +596,7 @@ msgid ""
 "            всему\n"
 "            миру жителям Центральной Азии."
 msgstr ""
-" Centrum-Holidays is a full-service travel company, putting itself before "
+" Canaan-travel is a full-service travel company, putting itself before "
 "itself\n"
 "the goal is to discover the beauty of the whole world for every persontoday. "
 "We strive to introduce the East closer\n"
@@ -613,7 +643,7 @@ msgstr "Yoru E-mail"
 msgid "Подписаться"
 msgstr "Subscribe"
 
-#: core/templates/core/index.html:141 templates/base.html:133
+#: core/templates/core/index.html:141 templates/base.html:1967
 msgid "Блог"
 msgstr "Blog"
 
@@ -689,6 +719,7 @@ msgstr ""
 "certain\n"
 "legislation terms are carried out according to <span>foreignpassport</"
 "span>.\n"
+""
 
 #: core/templates/core/info.html:40
 msgid ""
@@ -971,7 +1002,6 @@ msgstr ""
 
 #: core/templates/core/info.html:144
 msgid ""
-"\n"
 "                <span>МИД Республики Узбекистан оставляет имеет право "
 "отказать в выдаче разрешения, не предоставляя причин отказа. В случае отказа "
 "уплаченная пошлина не возвращается.</span>\n"
@@ -1380,7 +1410,7 @@ msgstr ""
 "parent\n"
 "to prevent possible misunderstandings at the airport departures."
 
-#: core/templates/core/mission.html:10 templates/base.html:127
+#: core/templates/core/mission.html:10 templates/base.html:1961
 msgid "Наша миссия"
 msgstr "Our mission"
 
@@ -1483,7 +1513,7 @@ msgstr ""
 "li>\n"
 "<li>Increasing interest in Uzbekistan in the world.</li>"
 
-#: core/templates/core/reviews.html:15 templates/base.html:41
+#: core/templates/core/reviews.html:15 templates/base.html:1875
 msgid "Отзывы"
 msgstr "Reviews"
 
@@ -1491,21 +1521,21 @@ msgstr "Reviews"
 msgid "Найденные туры"
 msgstr "Popular tours"
 
-#: core/templates/core/search_page.html:15
+#: core/templates/core/search_page.html:15 templates/base.html:1902
 #, fuzzy
 #| msgid "Туры в Узбекистан с Centrum-Holidays"
-msgid "Туры в Узбекистан с  canaan-travel"
-msgstr "Tours to Uzbekistan with Centrum-Holidays"
+msgid "Туры в Узбекистан с Canaan-travel"
+msgstr "Tours to Uzbekistan with Canaan-travel"
 
-#: core/templates/core/search_page.html:16 templates/base.html:69
+#: core/templates/core/search_page.html:16 templates/base.html:1903
 msgid "Откройте для себя сказочный Восток!"
 msgstr "Discover the fabulous East!"
 
-#: core/templates/core/search_page.html:18 templates/base.html:71
+#: core/templates/core/search_page.html:18 templates/base.html:1905
 msgid "Куда держим курс?"
 msgstr "Where are we headed?"
 
-#: core/templates/core/search_page.html:19 templates/base.html:72
+#: core/templates/core/search_page.html:19 templates/base.html:1906
 msgid "Поиск"
 msgstr "Search"
 
@@ -1573,81 +1603,55 @@ msgstr "Conditions"
 msgid "Гостиницы по маршруту"
 msgstr "Hotels along the route"
 
-#: core/templates/core/tour_detail.html:120
-msgid "Или"
-msgstr "or"
-
-#: core/templates/core/tour_detail.html:125
-msgid "Имя владельца карты"
-msgstr "Card holder name"
-
-#: core/templates/core/tour_detail.html:126
-msgid "Введите свое полное имя"
-msgstr "Write your full name"
-
-#: core/templates/core/tour_detail.html:129
-msgid "Номер карты"
-msgstr "Card number"
-
-#: core/templates/core/tour_detail.html:133
-msgid "Дата истечения срока"
-msgstr "Expiration date"
-
-#: core/templates/core/tour_detail.html:141
-msgid "Оформить"
-msgstr "Checkout"
-
 #: core/templates/core/tours.html:5 core/templates/core/tours.html:17
 msgid "ТУРЫ В УЗБЕКИСТАН"
 msgstr "TOURS TO UZBEKISTAN"
 
-#: templates/base.html:39
+#: core/templates/core/tours.html:31
+msgid "Цена по запросу"
+msgstr "Price by request"
+
+#: templates/base.html:1873
 msgid "Туры"
 msgstr "Tours"
 
-#: templates/base.html:40
+#: templates/base.html:1874
 msgid "Отели Узбекистана"
 msgstr "Hotels of Uzbekistan"
 
-#: templates/base.html:68
-#, fuzzy
-#| msgid "Туры в Узбекистан с Centrum-Holidays"
-msgid "Туры в Узбекистан с canaan-travel"
-msgstr "Tours to Uzbekistan with Centrum-Holidays"
-
-#: templates/base.html:76
+#: templates/base.html:1910
 msgid "лет на рынке"
 msgstr "years on the market"
 
-#: templates/base.html:79
+#: templates/base.html:1913
 msgid "отелей"
 msgstr "hotels"
 
-#: templates/base.html:82
+#: templates/base.html:1916
 msgid "гидов"
 msgstr "guides"
 
-#: templates/base.html:95
+#: templates/base.html:1929
 msgid "Контакты"
 msgstr "Contacts"
 
-#: templates/base.html:125
+#: templates/base.html:1959
 msgid "О компании"
 msgstr "About company"
 
-#: templates/base.html:128
+#: templates/base.html:1962
 msgid "Карта сайта"
 msgstr "Site map"
 
-#: templates/base.html:134
+#: templates/base.html:1968
 msgid "Информация туристам"
 msgstr "Information for tourists"
 
-#: templates/base.html:136
+#: templates/base.html:1970
 msgid "Туры в Узбекистан"
 msgstr "Tours to Uzbekistan"
 
-#: templates/base.html:141
+#: templates/base.html:1975
 msgid ""
 "Информация туристам Туры в Узбекистан Достопримечательности Наша компания "
 "имеет все необходимые лицензии и сертификаты качества."
@@ -1655,7 +1659,7 @@ msgstr ""
 "Information for tourists Tours to Uzbekistan Sights Our companyhas all the "
 "necessary licenses and quality certificates."
 
-#: templates/base.html:142
+#: templates/base.html:1976
 msgid "Независимые отзывы о нас читайте на"
 msgstr "Read independent reviews about us at"
 
@@ -2920,6 +2924,11 @@ msgstr ""
 #: venv/lib/python3.12/site-packages/modeltranslation/widgets.py:24
 msgid "None"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Туры в Узбекистан с Centrum-Holidays"
+#~ msgid "Туры в Узбекистан с  canaan-travel"
+#~ msgstr "Tours to Uzbekistan with Centrum-Holidays"
 
 #~ msgid "Достопримечательности"
 #~ msgstr "Attractions"

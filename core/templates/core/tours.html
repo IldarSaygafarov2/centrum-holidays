@@ -26,7 +26,12 @@
                         {% if not tour.price and not tour.data and not tour.nights %}
                             <p class="popular__destinations-cards-item-descr">{{ tour.short_description }}</p>
                         {% else %}
-                            <span>{{ tour.price }}</span>
+
+                            {% if tour.price == '0' %}
+                                <span>{% trans 'Цена по запросу' %}</span>
+                            {% else %}
+                                <span>{{ tour.price }}</span>
+                            {% endif %}
                             <p class="popular__destinations-cards-item-descr">{{ tour.days }} {% trans 'дней' %}
                                 / {{ tour.nights }} {% trans 'ночей' %}</p>
                         {% endif %}
