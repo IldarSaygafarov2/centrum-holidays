@@ -30,8 +30,9 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "45.138.158.114",
     "centrum.travel",
+    "canaan.travel",
 ]
-CSRF_TRUSTED_ORIGINS = ["https://centrum.travel"]
+CSRF_TRUSTED_ORIGINS = ["https://centrum.travel", "https://canaan.travel"]
 # Application definition
 
 INSTALLED_APPS = [
