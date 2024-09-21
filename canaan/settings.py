@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "127.0.0.1",
-    "45.130.148.76"
+    "45.130.148.76",
     "canaan.travel",
 ]
 CSRF_TRUSTED_ORIGINS = ["https://centrum.travel", "https://canaan.travel"]
