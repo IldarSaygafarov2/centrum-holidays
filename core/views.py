@@ -1,10 +1,11 @@
 import requests
 from django.conf import settings
+from django.core import mail
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 
 from . import models
-from django.core import mail
+
 
 # Create your views here.
 
@@ -20,7 +21,7 @@ def book_tour_with_price(request):
         subject='Бронирование тура',
         message=msg,
         from_email=data["email"],
-        recipient_list=['info@canaan.travel'],
+        recipient_list=['travelcanaanbooking@gmail.com'],
     )
     requests.post(settings.CHANNEL_API_LINK.format(
         token=settings.BOT_TOKEN,
@@ -41,7 +42,7 @@ def book_hotel(request):
         subject='Бронирование отеля',
         message=msg,
         from_email=data["email"],
-        recipient_list=['info@canaan.travel'],
+        recipient_list=['travelcanaanbooking@gmail.com'],
     )
     requests.post(settings.CHANNEL_API_LINK.format(
         token=settings.BOT_TOKEN,
@@ -57,7 +58,7 @@ def send_mail(request):
         subject='Оставленная почта',
         message=f'Оставленная почта с сайта: {data["email"]}',
         from_email=data["email"],
-        recipient_list=['info@canaan.travel'],
+        recipient_list=['travelcanaanbooking@gmail.com'],
         auth_user=settings.EMAIL_HOST_USER,
         auth_password=settings.EMAIL_HOST_PASSWORD
     )
@@ -78,7 +79,7 @@ def send_username_and_phone(request):
         subject='Данные пользователя для бронирования тура',
         message=f"Имя пользователя: {data['username']}\nНомер телефона: {data['phone']}",
         from_email=settings.EMAIL_HOST_USER,
-        recipient_list=['info@canaan.travel'],
+        recipient_list=['travelcanaanbooking@gmail.com'],
         auth_user=settings.EMAIL_HOST_USER,
         auth_password=settings.EMAIL_HOST_PASSWORD
     )
@@ -104,7 +105,7 @@ def book_tour(request):
         subject='Бронирование тура',
         message=msg,
         from_email=settings.EMAIL_HOST_USER,
-        recipient_list=['info@canaan.travel'],
+        recipient_list=['travelcanaanbooking@gmail.com'],
         auth_user=settings.EMAIL_HOST_USER,
         auth_password=settings.EMAIL_HOST_PASSWORD
     )
@@ -126,9 +127,7 @@ def home_view(request):
     recommended_tours = models.TourWithPrice.objects.filter(is_recommended=True)
 
     articles = models.Article.objects.all()
-    
 
-    
     context = {
         'reviews': reviews,
         'clients': clients,

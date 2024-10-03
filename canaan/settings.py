@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-mq^eq1d&ou83a6@rk6_ay9j%kma=i!p3t#j-b!v(^c6c!ft_@r"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "127.0.0.1",
@@ -151,5 +151,5 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_USE_TLS = False
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
-EMAIL_HOST_USER = "info@canaan.travel"
-EMAIL_HOST_PASSWORD = "brme cpsd bvvb infn"
+EMAIL_HOST_USER = "travelcanaanbooking@gmail.com"
+EMAIL_HOST_PASSWORD = "nzyr aqyt axyc rzsg"
