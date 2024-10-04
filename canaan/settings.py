@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -138,8 +141,10 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-BOT_TOKEN = "6565957524:AAFYCcXm9yykA3FAm7jucAeVTWg3r9xqMM0"
-CHANNEL_ID = -1002122123292
+
+# BOT_TOKEN = "6565957524:AAFYCcXm9yykA3FAm7jucAeVTWg3r9xqMM0"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
 CHANNEL_API_LINK = (
     "https://api.telegram.org/bot{token}/sendMessage?chat_id={channel_id}&text={text}"
 )
@@ -151,5 +156,5 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_USE_TLS = False
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
-EMAIL_HOST_USER = "travelcanaanbooking@gmail.com"
-EMAIL_HOST_PASSWORD = "nzyr aqyt axyc rzsg"
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
