@@ -95,6 +95,7 @@ def book_tour(request):
     data = request.POST
 
     msg = f"""
+***Бронирование тура***
 Имя: {data['username']}
 Дата: {data['date']}
 Почта: {data['email']}
@@ -109,11 +110,13 @@ def book_tour(request):
         auth_user=settings.EMAIL_HOST_USER,
         auth_password=settings.EMAIL_HOST_PASSWORD
     )
-    requests.post(settings.CHANNEL_API_LINK.format(
+    resp = requests.post(settings.CHANNEL_API_LINK.format(
         token=settings.BOT_TOKEN,
         channel_id=settings.CHANNEL_ID,
         text=msg
     ))
+    resp.raise_for_status()
+    print(resp)
     return redirect('home')
 
 
