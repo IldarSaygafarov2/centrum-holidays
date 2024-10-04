@@ -85,11 +85,14 @@ def send_username_and_phone(request):
         auth_user=settings.EMAIL_HOST_USER,
         auth_password=settings.EMAIL_HOST_PASSWORD
     )
-    requests.post(settings.CHANNEL_API_LINK.format(
+    resp = requests.post(settings.CHANNEL_API_LINK.format(
         token=settings.BOT_TOKEN,
         channel_id=settings.CHANNEL_ID,
         text=msg
     ))
+    print(resp)
+    with open(os.path.join(settings.BASE_DIR, 'resp.txt'), mode='w', encoding='utf-8') as f:
+        f.write(resp.text)
     return redirect('home')
 
 
@@ -117,10 +120,8 @@ def book_tour(request):
         channel_id=settings.CHANNEL_ID,
         text=msg
     ))
+
     resp.raise_for_status()
-    print(resp)
-    with open(os.path.join(settings.BASE_DIR, 'resp.txt'), mode='w', encoding='utf-8') as f:
-        f.write(resp.text)
     return redirect('home')
 
 
