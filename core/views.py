@@ -1,3 +1,5 @@
+import os
+
 import requests
 from django.conf import settings
 from django.core import mail
@@ -117,6 +119,8 @@ def book_tour(request):
     ))
     resp.raise_for_status()
     print(resp)
+    with open(os.path.join(settings.BASE_DIR, 'resp.txt'), mode='w', encoding='utf-8') as f:
+        f.write(resp.text)
     return redirect('home')
 
 
