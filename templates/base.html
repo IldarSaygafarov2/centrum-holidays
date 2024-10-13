@@ -425,7 +425,7 @@ img {
 
 .special__btn span {
     color: #fff;
-    font-size: 18;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -1869,7 +1869,9 @@ button.accordion.is-open {
             <img src="{% static 'images/Canaan-logo-1.png' %}" alt="" width="120" height="120" style="object-fit: contain">
         </a>
         <ul class="nav__list">
-            <li class="nav__list-item"><a href="{% url 'about' %}" class="nav__list-link">{% trans 'О нас' %}</a></li>
+            {#            <li class="nav__list-item"><a href="{% url 'about' %}" class="nav__list-link">{% trans 'О нас' %}</a></li>#}
+            <li class="nav__list-item"><a href="{% url 'mission' %}"
+                                          class="nav__list-link">{% trans 'Наша миссия' %}</a></li>
             <li class="nav__list-item"><a href="{% url 'tours' %}" class="nav__list-link">{% trans 'Туры' %}</a></li>
             <li class="nav__list-item"><a href="{% url 'hotels' %}" class="nav__list-link">{% trans 'Отели Узбекистана' %}</a></li>
             <li class="nav__list-item"><a href="{% url 'reviews' %}" class="nav__list-link">{% trans 'Отзывы' %}</a>
@@ -1972,7 +1974,7 @@ button.accordion.is-open {
             </ul>
         </div>
         <div class="footer__content-item">
-            <p class="footer__content-item-descr">{% trans 'Информация туристам Туры в Узбекистан Достопримечательности Наша компания имеет все необходимые лицензии и сертификаты качества.' %}</p>
+            <div class="footer__content-item-descr">{{ home_page_content.footer_text|safe  }}</div>
             <p class="footer__content-item-descr">{% trans 'Независимые отзывы о нас читайте на' %} TripAdvisor</p><a
                 href="https://www.tripadvisor.ru/Attraction_Review-g293968-d15672817-Reviews-Canaan_Travel-Tashkent_Tashkent_Province.html"
                 target="blank"><img width="120px"

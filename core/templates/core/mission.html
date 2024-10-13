@@ -7,13 +7,14 @@ Canaan Travel
 
 {% block header %}
     <header class="about__header mission__header" style="background-image: url('{% static 'images/Mission.jpg' %}')">
-        <h1 class="about__header-title">{% trans 'Наша миссия'|upper %}</h1>
+        <h1 class="about__header-title">{{ mission_page_content.page_title|upper }}</h1>
     </header>
 {% endblock %}
 
 {% block content %}
     <main class="about__main">
         <div class="container about__main-content">
+            {{ mission_page_content.page_content|safe }}
             <h2>{% trans "Открыть мир, сохранив его" %}</h2>
             <p>
                 {% blocktrans %}Центральная Азия — древнейший оплот науки и культуры. Многие века назад здесь совершались гениальные

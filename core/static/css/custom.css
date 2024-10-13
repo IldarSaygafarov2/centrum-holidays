@@ -316,7 +316,18 @@
     transform: scale(0.95);
 }
 
-@font-face {
-    font-family: 'EuclidCircularA';
-    src: url("");
+.about__main-content ul {
+    background: rgba(255, 0, 231, .75);
+    padding: 20px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 15px;
+
+}
+.about__main-content li {
+    color: #fff;
+    list-style: circle;
+    font-weight: 700;
 }

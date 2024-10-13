@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 import os
 from pathlib import Path
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -37,7 +38,14 @@ CSRF_TRUSTED_ORIGINS = ["https://canaan.travel"]
 # Application definition
 
 INSTALLED_APPS = [
-    "jazzmin",
+    "unfold",  # before django.contrib.admin
+    "unfold.contrib.filters",  # optional, if special filters are needed
+    "unfold.contrib.forms",  # optional, if special form elements are needed
+    "unfold.contrib.inlines",  # optional, if special inlines are needed
+    "unfold.contrib.import_export",  # optional, if django-import-export package is used
+    "unfold.contrib.guardian",  # optional, if django-guardian package is used
+    "unfold.contrib.simple_history",
+
     "modeltranslation",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -48,6 +56,7 @@ INSTALLED_APPS = [
     "ckeditor",
     'ckeditor_uploader',
     "core.apps.CoreConfig",
+    'site_pages.apps.SitePagesConfig',
 ]
 
 MIDDLEWARE = [
@@ -158,3 +167,9 @@ EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+
+
+MODELTRANSLATION_TRANSLATION_FILES = (
+    'core.translation',
+    'site_pages.translation',
+)

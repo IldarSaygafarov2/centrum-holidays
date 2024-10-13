@@ -5,7 +5,7 @@ from django.conf import settings
 from django.core import mail
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
-
+from site_pages.models import HomePageStatic, OurMissionStatic
 from . import models
 
 
@@ -52,6 +52,7 @@ def book_hotel(request):
         text=msg
     ))
     return redirect('home')
+
 
 def send_mail(request):
     data = request.POST
@@ -136,6 +137,8 @@ def home_view(request):
 
     articles = models.Article.objects.all()
 
+    home_page_content = HomePageStatic.objects.first()
+
     context = {
         'reviews': reviews,
         'clients': clients,
@@ -143,48 +146,71 @@ def home_view(request):
         'destinations': destinations,
         'popular_tours': popular_tours,
         'recommended_tours': recommended_tours,
-        'articles': articles
+        'articles': articles,
+        'home_page_content': home_page_content
     }
     return render(request, 'core/index.html', context)
 
 
 def about_view(request):
     clients = models.Client.objects.all()
+    home_page_content = HomePageStatic.objects.first()
     context = {
-        'clients': clients
+        'clients': clients,
+        'home_page_content': home_page_content
     }
     return render(request, 'core/about.html', context)
 
 
 def reviews_view(request):
     reviews = models.Review.objects.all()
+    home_page_content = HomePageStatic.objects.first()
     context = {
-        'reviews': reviews
+        'reviews': reviews,
+        'home_page_content': home_page_content
     }
     return render(request, 'core/reviews.html', context)
 
 
 def booking_view(request):
-    return render(request, 'core/booking.html')
+    home_page_content = HomePageStatic.objects.first()
+    context = {
+        'home_page_content': home_page_content
+    }
+    return render(request, 'core/booking.html', context)
 
 
 def mission_view(request):
-    return render(request, 'core/mission.html')
+    home_page_content = HomePageStatic.objects.first()
+    mission_page_content = OurMissionStatic.objects.first()
+    context = {
+        'home_page_content': home_page_content,
+        'mission_page_content': mission_page_content
+    }
+    return render(request, 'core/mission.html', context)
 
 
 def tourists_info_view(request):
-    return render(request, 'core/info.html')
+    home_page_content = HomePageStatic.objects.first()
+    context = {
+        'home_page_content': home_page_content
+    }
+    return render(request, 'core/info.html', context)
 
 
 def blog_view(request):
     articles = models.Article.objects.all()
+    home_page_content = HomePageStatic.objects.first()
+
     context = {
-        'articles': articles
+        'articles': articles,
+        'home_page_content': home_page_content
     }
     return render(request, 'core/blog.html', context)
 
 
 def destinations_view(request, slug):
+    home_page_content = HomePageStatic.objects.first()
     destination = models.Destination.objects.get(slug=slug)
     tours = models.Tour.objects.filter(destination=destination)
 
@@ -192,6 +218,7 @@ def destinations_view(request, slug):
     page = request.GET.get('page')
     qs = paginator.get_page(page)
     context = {
+        'home_page_content': home_page_content,
         'title': destination.title,
         'tours': qs
     }
@@ -199,12 +226,14 @@ def destinations_view(request, slug):
 
 
 def tours_view(request):
+    home_page_content = HomePageStatic.objects.first()
     popular_tours = models.TourWithPrice.objects.all()
     paginator = Paginator(popular_tours, 8)
     page = request.GET.get('page')
     qs = paginator.get_page(page)
 
     context = {
+        'home_page_content': home_page_content,
         'tours': qs
     }
     return render(request, 'core/tours.html', context)
@@ -213,7 +242,9 @@ def tours_view(request):
 def tour_with_price_detail(request, tour_id):
     tour = models.TourWithPrice.objects.get(pk=tour_id)
     places = ' — '.join([x.place for x in tour.placestourwithprice_set.all()])
+    home_page_content = HomePageStatic.objects.first()
     context = {
+        'home_page_content': home_page_content,
         'tour': tour,
         'places': places
     }
@@ -222,7 +253,9 @@ def tour_with_price_detail(request, tour_id):
 
 def tour_detail(request, slug):
     tour = models.Tour.objects.get(slug=slug)
+    home_page_content = HomePageStatic.objects.first()
     context = {
+        'home_page_content': home_page_content,
         'tour': tour
     }
     return render(request, 'core/detail.html', context)
@@ -233,8 +266,10 @@ def hotels_view(request):
     paginator = Paginator(hotels, 8)
     page = request.GET.get('page')
     qs = paginator.get_page(page)
+    home_page_content = HomePageStatic.objects.first()
     context = {
-        'tours': qs
+        'tours': qs,
+        'home_page_content': home_page_content
     }
     return render(request, 'core/hotels.html', context)
 
@@ -242,9 +277,10 @@ def hotels_view(request):
 def hotel_detail(request, hotel_slug):
     hotel = models.HotelItem.objects.get(slug=hotel_slug)
     hotels = models.HotelItem.objects.all()
+    home_page_content = HomePageStatic.objects.first()
     context = {
         'hotel': hotel,
-
+        'home_page_content': home_page_content,
         'hotels': hotels[:8]
     }
     return render(request, 'core/hotel_detail.html', context)

@@ -6,27 +6,29 @@ Canaan Travel
 {% endblock %}
 
 
-{% block content %}
+{% block content %}w
 <main class="main">
     <section class="popular__destinations">
         <div class="container popular__destinations-content">
-            <h2 class="popular__destinations-title">{% trans 'Популярные направления' %}</h2>
+            {#            <h2 class="popular__destinations-title">{% trans 'Популярные направления' %}</h2>#}
+            <h2 class="popular__destinations-title">{{ home_page_content.section_title_1 }}</h2>
             <div class="popular__destinations-cards">
                 {% for destination in destinations %}
-                <a href="{% url 'destinations' destination.slug %}" class="popular__destinations-cards-item">
-                    <img src="{{ destination.preview.url }}" alt="card-item">
-                    <div class="popular__destinations-cards-item-content">
-                        <h4 class="popular__destinations-cards-item-title">{{ destination.title }}</h4>
-                        <p class="popular__destinations-cards-item-descr">{{ destination.short_description }}</p>
-                    </div>
-                </a>
+                    <a href="{% url 'destinations' destination.slug %}" class="popular__destinations-cards-item">
+                        <img src="{{ destination.preview.url }}" alt="card-item">
+                        <div class="popular__destinations-cards-item-content">
+                            <h4 class="popular__destinations-cards-item-title">{{ destination.title }}</h4>
+                            <p class="popular__destinations-cards-item-descr">{{ destination.short_description }}</p>
+                        </div>
+                    </a>
                 {% endfor %}
             </div>
         </div>
     </section>
     <section class="popular__destinations">
         <div class="container popular__destinations-content">
-            <h2 class="popular__destinations-title">{% trans 'Популярные туры' %}</h2>
+            {#            <h2 class="popular__destinations-title">{% trans 'Популярные туры' %}</h2>#}
+            <h2 class="popular__destinations-title">{{ home_page_content.section_title_2 }}</h2>
             <div class="popular__destinations-cards tours">
                 {% for tour in popular_tours %}
                 <a href="{% url 'tour_with_price_detail' tour.pk %}"
@@ -47,14 +49,15 @@ Canaan Travel
     <section class="special">
         <img src="{% static 'images/samarkand-registan.jpg' %}" alt="registan">
         <div class="special__content">
-            <h4 class="special__title">{% trans 'Специальное предложение' %}</h4>
-            <h5 class="special__subtitle">{% trans 'Путешествуйте дешевле!' %}</h5><a href=""
+            <h4 class="special__title">{{ home_page_content.special_offer_text }}</h4>
+            <h5 class="special__subtitle">{{ home_page_content.special_offer_text_2 }}</h5><a href=""
                 class="special__btn"><span>{% trans 'УЗНАТЬ БОЛЬШЕ' %}</span></a>
         </div>
     </section>
     <section class="popular__destinations">
         <div class="container popular__destinations-content">
-            <h2 class="popular__destinations-title">{% trans 'Мы рекомендуем' %}</h2>
+            {#            <h2 class="popular__destinations-title">{% trans 'Мы рекомендуем' %}</h2>#}
+            <h2 class="popular__destinations-title">{{ home_page_content.we_recommend_title }}</h2>
             <div class="popular__destinations-cards tours">
                 {% for tour in recommended_tours %}
                 <a href="{% url 'tour_with_price_detail' tour.pk %}"
@@ -74,7 +77,7 @@ Canaan Travel
         </div>
     </section>
     <section class="more__info" style="background-image: url('{% static "images/khiva-panorama.jpg" %}')">
-        <h2 class="more__info-title">{% trans 'Узнайте о Востоке больше' %}</h2>
+        <h2 class="more__info-title">{{ home_page_content.know_more_block }}</h2>
     </section>
     <section class="traveler__reviews">
         <div class="traveler__reviews-content">
@@ -95,23 +98,28 @@ Canaan Travel
         </div>
     </section>
     <section class="travel__info" style="background-image: url('{% static "images/img_canaan.jpg" %}')">
-        <h2 class="travel__info-title">{% trans 'Узнайте о Востоке больше вместе с нами' %}</h2>
-        <p class="travel__info-descr">
-            {% blocktrans %} Canaan-travel — туристическая компания полного цикла, ставящая перед собой
-            цель открыть красоту всего мира для каждого человека сегодня. Мы стремимся ближе познакомить Восток
-            и
-            Запад, предлагая путешествия по Центральной Азии туристам из СНГ, Европы и Америки и поездки по
-            всему
-            миру жителям Центральной Азии.{% endblocktrans %}
-        </p>
-        <p class="travel__info-descr">
-            {% blocktrans %}Мы работаем как с отдельными туристами, так и с компаниями. Наличие
-            собственных авиакассы, автотранспорта и сотрудничество с лучшими гидами и отелями помогают нам
-            формировать уникальные предложения в индивидуальном порядке.{% endblocktrans %}
-        </p>
+        <h2 class="travel__info-title">{{ home_page_content.know_more_block_2_title }}</h2>
+
+        <div class="travel__info-descr">
+            {{ home_page_content.know_more_block_2_text|safe }}
+        </div>
+
+        {#        <p class="travel__info-descr">#}
+        {#            {% blocktrans %} Canaan-travel — туристическая компания полного цикла, ставящая перед собой#}
+        {#            цель открыть красоту всего мира для каждого человека сегодня. Мы стремимся ближе познакомить Восток#}
+        {#            и#}
+        {#            Запад, предлагая путешествия по Центральной Азии туристам из СНГ, Европы и Америки и поездки по#}
+        {#            всему#}
+        {#            миру жителям Центральной Азии.{% endblocktrans %}#}
+        {#        </p>#}
+        {#        <p class="travel__info-descr">#}
+        {#            {% blocktrans %}Мы работаем как с отдельными туристами, так и с компаниями. Наличие#}
+        {#            собственных авиакассы, автотранспорта и сотрудничество с лучшими гидами и отелями помогают нам#}
+        {#            формировать уникальные предложения в индивидуальном порядке.{% endblocktrans %}#}
+        {#        </p>#}
     </section>
     <section class="adventage">
-        <h2 class="adventage__title">{% trans 'Преимущество нашего обслуживания' %}</h2>
+        <h2 class="adventage__title">{{ home_page_content.advantages_title }}</h2>
         <div class="swiper mySwiper adventage-swiper">
             <div class="swiper-wrapper">
                 {% for advantage in advantages %}
@@ -129,7 +137,7 @@ Canaan Travel
     </section>
     <section class="newsletter">
         <div class="newsletter__content">
-            <h2 class="newsletter__title">{% trans 'Подпишитесь на рассылку интересных предложений' %}</h2>
+            <h2 class="newsletter__title">{{ home_page_content.email_resend_title }}</h2>
             <form action="{% url 'send_mail' %}" class="newsletter__form" method="post">
                 {% csrf_token %}
                 <input type="text" placeholder="{% trans 'Ваш адрес E-mail' %}" name="email">
@@ -153,8 +161,8 @@ Canaan Travel
     </section>
     <section class="reservation">
         <div class="container reservation__content">
-            <h2 class="reservation__title">{% trans 'Хотите забронировать тур?' %}</h2>
-            <span>{% trans 'Заполните небольшую форму, и мы подберем тур именно для вас' %}</span>
+            <h2 class="reservation__title">{{ home_page_content.booking_block_title }}</h2>
+            <span>{{ home_page_content.booking_block_text }}</span>
             <form action="{% url 'send_username_and_phone' %}" class="reservation__form" method="post">
                 {% csrf_token %}
                 <input type="text" placeholder="{% trans 'Ваше имя' %}" name="username">
@@ -164,7 +172,7 @@ Canaan Travel
         </div>
     </section>
     <section class="partners">
-        <h2 class="partners__title">{% trans 'Наши партнеры' %}</h2>
+        <h2 class="partners__title">{{ home_page_content.our_partners_title }}</h2>
         <div class="swiper mySwiper partners-swiper">
             <div class="swiper-wrapper">
                 {% for client in clients %}

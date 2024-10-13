@@ -1,5 +1,5 @@
-from django.db import models
 from ckeditor_uploader.fields import RichTextUploadingField
+from django.db import models
 
 
 class Review(models.Model):
@@ -231,4 +231,3 @@ class HotelGallery(models.Model):
     class Meta:
         verbose_name = 'Фото отеля'
         verbose_name_plural = 'Фото отеля'
-        
