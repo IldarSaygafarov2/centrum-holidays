@@ -1773,7 +1773,7 @@ button.accordion.is-open {
     gap: 30px
 }
 
-.about__main-content div {
+.about__main-content ul {
     background: rgba(255, 0, 231, .75);
     padding: 20px;
     display: flex;
@@ -1782,34 +1782,34 @@ button.accordion.is-open {
     gap: 15px
 }
 
-.about__main-content div p {
+.about__main-content p {
     color: #fff
 }
 
 @media(max-width: 576px) {
-    .about__main-content div p {
+    .about__main-content p {
         font-size: 12px
     }
 }
 
-.about__main-content div p span {
+.about__main-content p span {
     font-weight: 700
 }
 
-.about__main-content div ul {
+.about__main-content ul {
     padding: 0 40px;
     display: flex;
     flex-direction: column;
     gap: 10px
 }
 
-.about__main-content div li {
+.about__main-content li {
     color: #fff;
     list-style: circle
 }
 
 @media(max-width: 576px) {
-    .about__main-content div li {
+    .about__main-content  li {
         font-size: 14px
     }
 }

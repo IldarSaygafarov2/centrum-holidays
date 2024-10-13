@@ -45,3 +45,20 @@ class OurMissionStatic(models.Model):
     class Meta:
         verbose_name = 'Наша миссия'
         verbose_name_plural = 'Наша миссия'
+
+
+class HotelPageStatic(models.Model):
+    page_title = models.CharField(max_length=100, default='Отели Узбекистана')
+    page_content = models.TextField()
+
+    class Meta:
+        verbose_name = 'Страница отелей'
+        verbose_name_plural = 'Страница отелей'
+
+
+class TourDetailStatic(models.Model):
+    text = models.TextField()
+
+    class Meta:
+        verbose_name = 'Детальная страница'
+        verbose_name_plural = 'Детальная страница'

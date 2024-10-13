@@ -1,6 +1,6 @@
 from modeltranslation.translator import translator, TranslationOptions
 
-from .models import HomePageStatic, OurMissionStatic
+from .models import HomePageStatic, OurMissionStatic, HotelPageStatic, TourDetailStatic
 
 
 class HomePageStaticTranslationOptions(TranslationOptions):
@@ -31,5 +31,14 @@ class OurMissionStaticTranslationOptions(TranslationOptions):
     fields = ('page_title', 'page_content')
 
 
+class HotelPageStaticTranslationOptions(TranslationOptions):
+    fields = ('page_title', 'page_content')
+
+
+class TourDetailStaticTranslationOptions(TranslationOptions):
+    fields = ('text',)
+
 translator.register(HomePageStatic, HomePageStaticTranslationOptions)
 translator.register(OurMissionStatic, OurMissionStaticTranslationOptions)
+translator.register(HotelPageStatic, HotelPageStaticTranslationOptions)
+translator.register(TourDetailStatic, TourDetailStaticTranslationOptions)

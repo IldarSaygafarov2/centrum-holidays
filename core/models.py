@@ -82,7 +82,7 @@ class TourWithPrice(models.Model):
     days = models.PositiveSmallIntegerField(verbose_name='Дней', null=True, blank=True)
     nights = models.PositiveSmallIntegerField(verbose_name='Ночей', null=True, blank=True)
     season = models.CharField(verbose_name='Сезон', max_length=50, null=True, blank=True)
-    stars = models.IntegerField(verbose_name='Звездность', default=0)
+    stars = models.CharField(verbose_name='Звездность', default='0', max_length=100, null=True, blank=True)
     route = models.URLField(verbose_name='Ссылка маршрута тура', blank=True, null=True)
     is_popular = models.BooleanField(default=False, verbose_name='Сделать популярным ?')
     is_recommended = models.BooleanField(default=False, verbose_name='Сделать рекомендуемым ?')

@@ -5,7 +5,12 @@ from django.conf import settings
 from django.core import mail
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
-from site_pages.models import HomePageStatic, OurMissionStatic
+from site_pages.models import (
+    HomePageStatic,
+    OurMissionStatic,
+    HotelPageStatic,
+    TourDetailStatic
+)
 from . import models
 
 
@@ -243,10 +248,12 @@ def tour_with_price_detail(request, tour_id):
     tour = models.TourWithPrice.objects.get(pk=tour_id)
     places = ' — '.join([x.place for x in tour.placestourwithprice_set.all()])
     home_page_content = HomePageStatic.objects.first()
+    detail_page_content = TourDetailStatic.objects.first()
     context = {
         'home_page_content': home_page_content,
         'tour': tour,
-        'places': places
+        'places': places,
+        'detail_page_content': detail_page_content
     }
     return render(request, 'core/tour_detail.html', context)
 
@@ -254,9 +261,11 @@ def tour_with_price_detail(request, tour_id):
 def tour_detail(request, slug):
     tour = models.Tour.objects.get(slug=slug)
     home_page_content = HomePageStatic.objects.first()
+    detail_page_content = TourDetailStatic.objects.first()
     context = {
         'home_page_content': home_page_content,
-        'tour': tour
+        'tour': tour,
+        'detail_page_content': detail_page_content
     }
     return render(request, 'core/detail.html', context)
 
@@ -267,9 +276,11 @@ def hotels_view(request):
     page = request.GET.get('page')
     qs = paginator.get_page(page)
     home_page_content = HomePageStatic.objects.first()
+    hotel_page_content = HotelPageStatic.objects.first()
     context = {
         'tours': qs,
-        'home_page_content': home_page_content
+        'home_page_content': home_page_content,
+        'hotel_page_content': hotel_page_content
     }
     return render(request, 'core/hotels.html', context)
 

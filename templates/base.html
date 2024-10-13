@@ -1791,23 +1791,18 @@ button.accordion.is-open {
     transform: scale(0.95)
 }
 
-.about__main-content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px
-}
-
-.about__main-content div {
+.about__main-content ul {
     background: rgba(255, 0, 231, .75);
     padding: 20px;
+    padding-left: 40px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     gap: 15px
 }
 
-.about__main-content div p {
-    color: #fff
+.about__main-content p {
+    color: #000
 }
 
 @media(max-width: 576px) {
@@ -1816,7 +1811,7 @@ button.accordion.is-open {
     }
 }
 
-.about__main-content div p span {
+.about__main-content p span {
     font-weight: 700
 }
 
@@ -1827,7 +1822,7 @@ button.accordion.is-open {
     gap: 10px
 }
 
-.about__main-content div li {
+.about__main-content li {
     color: #fff;
     list-style: circle
 }

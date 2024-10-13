@@ -60,7 +60,10 @@
                 {% endfor %}
 
             </ul>
-            <h2>{% trans 'Дополнительные экскурсии' %}</h2>
+            {% if tour.addontourwithprice_set.all %}
+                <h2>{% trans 'Дополнительные экскурсии' %}</h2>
+            {% endif %}
+
             {% for item in tour.addontourwithprice_set.all %}
                 <button class="accordion">{{ item.name }}</button>
                 <div class="accordion-content">
@@ -71,6 +74,7 @@
             <p>* {% blocktrans %}Все дополнительные экскурсии обговариваются с гидом заранее и оплачиваются гиду на
                 месте. Минимальная
                 группа для любой доп. экскурсии – 5 человек.{% endblocktrans %}</p>
+            
             <div class="toursDetailPage__main-content-priceInfo">
                 <div class="toursDetailPage__main-content-priceInfo-left"><h2>{% trans 'Цена включает' %}:</h2>
                     <ul>

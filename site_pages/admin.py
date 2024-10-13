@@ -4,7 +4,7 @@ from modeltranslation.admin import TranslationAdmin
 from unfold.admin import ModelAdmin
 from unfold.contrib.forms.widgets import WysiwygWidget
 
-from .models import HomePageStatic, OurMissionStatic
+from .models import HomePageStatic, OurMissionStatic, HotelPageStatic, TourDetailStatic
 
 
 class BaseStaticContentAdmin(ModelAdmin, TranslationAdmin):
@@ -23,5 +23,15 @@ class OurHomePageStaticAdmin(BaseStaticContentAdmin):
     pass
 
 
+class HotelPageStaticAdmin(BaseStaticContentAdmin):
+    pass
+
+
+class TourDetailStaticAdmin(BaseStaticContentAdmin):
+    pass
+
+
 admin.site.register(HomePageStatic, HomePageStaticAdmin)
 admin.site.register(OurMissionStatic, OurHomePageStaticAdmin)
+admin.site.register(HotelPageStatic, HotelPageStaticAdmin)
+admin.site.register(TourDetailStatic, TourDetailStaticAdmin)
