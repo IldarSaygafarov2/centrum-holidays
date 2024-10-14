@@ -33,6 +33,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "45.130.148.76",
     "canaan.travel",
+    "80.87.197.184"
 ]
 CSRF_TRUSTED_ORIGINS = ["https://canaan.travel"]
 # Application definition
