@@ -97,14 +97,14 @@
 
     <section class="hotels__main-items container details">
         {% for item in hotels %}
-        <div class="hotels__main-item">
-            <img src="{{ item.preview.url }}" alt="">
-            <div class="hotels__main-item-content">
-                <h3 class="hotels__main-item-content-title">{{ item.name }}</h3>
-                <span>${{ item.price }} / {% trans 'ночь' %}</span>
-                <a href="hotel_detail.html">{% trans 'Забронировать' %}</a>
+            <div class="hotels__main-item">
+                <img src="{{ item.preview.url }}" alt="">
+                <div class="hotels__main-item-content">
+                    <h3 class="hotels__main-item-content-title">{{ item.name }}</h3>
+                    <span>${{ item.price }} / {% trans 'ночь' %}</span>
+                    <a href="hotel_detail.html">{% trans 'Забронировать' %}</a>
+                </div>
             </div>
-        </div>
         {% endfor %}
     </section>
 

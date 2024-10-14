@@ -1,0 +1,1903 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-10-13T13:57:21.251Z",
+      "user": 1,
+      "content_type": 25,
+      "object_id": "1",
+      "object_repr": "HomePageStatic object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-10-13T14:00:14.826Z",
+      "user": 1,
+      "content_type": 25,
+      "object_id": "1",
+      "object_repr": "HomePageStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-10-13T14:02:51.070Z",
+      "user": 1,
+      "content_type": 25,
+      "object_id": "1",
+      "object_repr": "HomePageStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Know more block 2 text\", \"Footer text\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-10-13T14:11:34.871Z",
+      "user": 1,
+      "content_type": 25,
+      "object_id": "1",
+      "object_repr": "HomePageStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Know more block 2 text [ru]\", \"Know more block 2 text [en]\", \"Footer text [ru]\", \"Footer text [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-10-13T14:11:40.930Z",
+      "user": 1,
+      "content_type": 25,
+      "object_id": "1",
+      "object_repr": "HomePageStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-10-13T14:28:37.497Z",
+      "user": 1,
+      "content_type": 25,
+      "object_id": "1",
+      "object_repr": "HomePageStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Know more block 2 text [ru]\", \"Know more block 2 text [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-10-13T15:10:37.847Z",
+      "user": 1,
+      "content_type": 25,
+      "object_id": "1",
+      "object_repr": "HomePageStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Footer text [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2024-10-13T15:10:51.432Z",
+      "user": 1,
+      "content_type": 25,
+      "object_id": "1",
+      "object_repr": "HomePageStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Footer text [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2024-10-13T15:24:41.008Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2024-10-13T15:43:05.182Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\", \"Page content [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2024-10-13T15:44:11.758Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2024-10-13T15:44:39.456Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2024-10-13T15:44:53.980Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2024-10-13T15:46:27.323Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2024-10-13T15:46:49.478Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2024-10-13T15:47:20.547Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2024-10-13T15:47:34.315Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2024-10-13T15:47:42.993Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2024-10-13T15:48:24.103Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2024-10-13T15:48:30.281Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2024-10-13T15:48:39.278Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2024-10-13T15:48:53.342Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2024-10-13T15:49:01.979Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2024-10-13T15:49:19.817Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Page content [ru]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2024-10-13T15:50:35.636Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "OurMissionStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2024-10-14T08:31:48.910Z",
+      "user": 1,
+      "content_type": 27,
+      "object_id": "1",
+      "object_repr": "HotelPageStatic object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2024-10-14T08:44:23.597Z",
+      "user": 1,
+      "content_type": 29,
+      "object_id": "1",
+      "object_repr": "InfoPageStatic object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2024-10-14T09:04:26.087Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "1",
+      "object_repr": "123",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0421\\u0442\\u043e\\u0438\\u043c\\u043e\\u0441\\u0442\\u044c \\u0441 \\u0447\\u0435\\u043b\\u043e\\u0432\\u0435\\u043a\\u0430\", \"object\": \"2 \\u0447\\u0435\\u043b - 123 USD\"}}, {\"added\": {\"name\": \"\\u0421\\u0442\\u043e\\u0438\\u043c\\u043e\\u0441\\u0442\\u044c \\u0441 \\u0447\\u0435\\u043b\\u043e\\u0432\\u0435\\u043a\\u0430\", \"object\": \"4 \\u0447\\u0435\\u043b - 246 USD\"}}, {\"added\": {\"name\": \"\\u0421\\u0442\\u043e\\u0438\\u043c\\u043e\\u0441\\u0442\\u044c \\u0441 \\u0447\\u0435\\u043b\\u043e\\u0432\\u0435\\u043a\\u0430\", \"object\": \"2 \\u0447\\u0435\\u043b - 123 USD\"}}, {\"added\": {\"name\": \"\\u0421\\u0442\\u043e\\u0438\\u043c\\u043e\\u0441\\u0442\\u044c \\u0441 \\u0447\\u0435\\u043b\\u043e\\u0432\\u0435\\u043a\\u0430\", \"object\": \"4 \\u0447\\u0435\\u043b - 246 USD\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2024-10-14T09:04:55.091Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "1",
+      "object_repr": "123",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0441\\u0442\\u0430\\u0432\\u043a\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2024-10-14T10:07:57.940Z",
+      "user": 1,
+      "content_type": 28,
+      "object_id": "1",
+      "object_repr": "TourDetailStatic object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2024-10-14T10:09:09.593Z",
+      "user": 1,
+      "content_type": 28,
+      "object_id": "1",
+      "object_repr": "TourDetailStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Text [ru]\", \"Text [en]\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2024-10-14T10:09:48.678Z",
+      "user": 1,
+      "content_type": 28,
+      "object_id": "1",
+      "object_repr": "TourDetailStatic object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Text [ru]\", \"Text [en]\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Отзыв",
+      "content_type": 7,
+      "codename": "add_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Отзыв",
+      "content_type": 7,
+      "codename": "change_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Отзыв",
+      "content_type": 7,
+      "codename": "delete_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Отзыв",
+      "content_type": 7,
+      "codename": "view_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Клиент",
+      "content_type": 8,
+      "codename": "add_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Клиент",
+      "content_type": 8,
+      "codename": "change_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Клиент",
+      "content_type": 8,
+      "codename": "delete_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Клиент",
+      "content_type": 8,
+      "codename": "view_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Преимущество",
+      "content_type": 9,
+      "codename": "add_advantage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Преимущество",
+      "content_type": 9,
+      "codename": "change_advantage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Преимущество",
+      "content_type": 9,
+      "codename": "delete_advantage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Преимущество",
+      "content_type": 9,
+      "codename": "view_advantage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add Направление",
+      "content_type": 10,
+      "codename": "add_destination"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change Направление",
+      "content_type": 10,
+      "codename": "change_destination"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete Направление",
+      "content_type": 10,
+      "codename": "delete_destination"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view Направление",
+      "content_type": 10,
+      "codename": "view_destination"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add Тур",
+      "content_type": 11,
+      "codename": "add_tour"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change Тур",
+      "content_type": 11,
+      "codename": "change_tour"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete Тур",
+      "content_type": 11,
+      "codename": "delete_tour"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view Тур",
+      "content_type": 11,
+      "codename": "view_tour"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add Статья",
+      "content_type": 12,
+      "codename": "add_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change Статья",
+      "content_type": 12,
+      "codename": "change_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete Статья",
+      "content_type": 12,
+      "codename": "delete_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view Статья",
+      "content_type": 12,
+      "codename": "view_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add Отель",
+      "content_type": 13,
+      "codename": "add_hotelitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change Отель",
+      "content_type": 13,
+      "codename": "change_hotelitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete Отель",
+      "content_type": 13,
+      "codename": "delete_hotelitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view Отель",
+      "content_type": 13,
+      "codename": "view_hotelitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add Тур с ценой",
+      "content_type": 14,
+      "codename": "add_tourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change Тур с ценой",
+      "content_type": 14,
+      "codename": "change_tourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete Тур с ценой",
+      "content_type": 14,
+      "codename": "delete_tourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view Тур с ценой",
+      "content_type": 14,
+      "codename": "view_tourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can add Дополнительная экскурсия",
+      "content_type": 15,
+      "codename": "add_addontourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can change Дополнительная экскурсия",
+      "content_type": 15,
+      "codename": "change_addontourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can delete Дополнительная экскурсия",
+      "content_type": 15,
+      "codename": "delete_addontourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can view Дополнительная экскурсия",
+      "content_type": 15,
+      "codename": "view_addontourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+      "name": "Can add День тура",
+      "content_type": 16,
+      "codename": "add_daytourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+      "name": "Can change День тура",
+      "content_type": 16,
+      "codename": "change_daytourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+      "name": "Can delete День тура",
+      "content_type": 16,
+      "codename": "delete_daytourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+      "name": "Can view День тура",
+      "content_type": 16,
+      "codename": "view_daytourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+      "name": "Can add Место посещения тура",
+      "content_type": 17,
+      "codename": "add_placestourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+      "name": "Can change Место посещения тура",
+      "content_type": 17,
+      "codename": "change_placestourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+      "name": "Can delete Место посещения тура",
+      "content_type": 17,
+      "codename": "delete_placestourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+      "name": "Can view Место посещения тура",
+      "content_type": 17,
+      "codename": "view_placestourwithprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+      "name": "Can add Условие тура",
+      "content_type": 18,
+      "codename": "add_tourcondition"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+      "name": "Can change Условие тура",
+      "content_type": 18,
+      "codename": "change_tourcondition"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+      "name": "Can delete Условие тура",
+      "content_type": 18,
+      "codename": "delete_tourcondition"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+      "name": "Can view Условие тура",
+      "content_type": 18,
+      "codename": "view_tourcondition"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+      "name": "Can add Отель тура",
+      "content_type": 19,
+      "codename": "add_tourhotel"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+      "name": "Can change Отель тура",
+      "content_type": 19,
+      "codename": "change_tourhotel"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+      "name": "Can delete Отель тура",
+      "content_type": 19,
+      "codename": "delete_tourhotel"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+      "name": "Can view Отель тура",
+      "content_type": 19,
+      "codename": "view_tourhotel"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+      "name": "Can add Цена не включает",
+      "content_type": 20,
+      "codename": "add_tourpricedoesnotinclude"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+      "name": "Can change Цена не включает",
+      "content_type": 20,
+      "codename": "change_tourpricedoesnotinclude"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+      "name": "Can delete Цена не включает",
+      "content_type": 20,
+      "codename": "delete_tourpricedoesnotinclude"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+      "name": "Can view Цена не включает",
+      "content_type": 20,
+      "codename": "view_tourpricedoesnotinclude"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+      "name": "Can add Цена включает",
+      "content_type": 21,
+      "codename": "add_tourpriceinclude"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+      "name": "Can change Цена включает",
+      "content_type": 21,
+      "codename": "change_tourpriceinclude"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+      "name": "Can delete Цена включает",
+      "content_type": 21,
+      "codename": "delete_tourpriceinclude"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+      "name": "Can view Цена включает",
+      "content_type": 21,
+      "codename": "view_tourpriceinclude"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 85,
+    "fields": {
+      "name": "Can add Стоимость с человека",
+      "content_type": 22,
+      "codename": "add_pricebyhumantour"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 86,
+    "fields": {
+      "name": "Can change Стоимость с человека",
+      "content_type": 22,
+      "codename": "change_pricebyhumantour"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 87,
+    "fields": {
+      "name": "Can delete Стоимость с человека",
+      "content_type": 22,
+      "codename": "delete_pricebyhumantour"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 88,
+    "fields": {
+      "name": "Can view Стоимость с человека",
+      "content_type": 22,
+      "codename": "view_pricebyhumantour"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 89,
+    "fields": {
+      "name": "Can add Услуга отеля",
+      "content_type": 23,
+      "codename": "add_bun"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 90,
+    "fields": {
+      "name": "Can change Услуга отеля",
+      "content_type": 23,
+      "codename": "change_bun"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 91,
+    "fields": {
+      "name": "Can delete Услуга отеля",
+      "content_type": 23,
+      "codename": "delete_bun"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 92,
+    "fields": {
+      "name": "Can view Услуга отеля",
+      "content_type": 23,
+      "codename": "view_bun"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 93,
+    "fields": {
+      "name": "Can add Фото отеля",
+      "content_type": 24,
+      "codename": "add_hotelgallery"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 94,
+    "fields": {
+      "name": "Can change Фото отеля",
+      "content_type": 24,
+      "codename": "change_hotelgallery"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 95,
+    "fields": {
+      "name": "Can delete Фото отеля",
+      "content_type": 24,
+      "codename": "delete_hotelgallery"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 96,
+    "fields": {
+      "name": "Can view Фото отеля",
+      "content_type": 24,
+      "codename": "view_hotelgallery"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 97,
+    "fields": {
+      "name": "Can add Страница сайта",
+      "content_type": 25,
+      "codename": "add_homepagestatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 98,
+    "fields": {
+      "name": "Can change Страница сайта",
+      "content_type": 25,
+      "codename": "change_homepagestatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 99,
+    "fields": {
+      "name": "Can delete Страница сайта",
+      "content_type": 25,
+      "codename": "delete_homepagestatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 100,
+    "fields": {
+      "name": "Can view Страница сайта",
+      "content_type": 25,
+      "codename": "view_homepagestatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 101,
+    "fields": {
+      "name": "Can add Наша миссия",
+      "content_type": 26,
+      "codename": "add_ourmissionstatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 102,
+    "fields": {
+      "name": "Can change Наша миссия",
+      "content_type": 26,
+      "codename": "change_ourmissionstatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 103,
+    "fields": {
+      "name": "Can delete Наша миссия",
+      "content_type": 26,
+      "codename": "delete_ourmissionstatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 104,
+    "fields": {
+      "name": "Can view Наша миссия",
+      "content_type": 26,
+      "codename": "view_ourmissionstatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 105,
+    "fields": {
+      "name": "Can add Страница отелей",
+      "content_type": 27,
+      "codename": "add_hotelpagestatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 106,
+    "fields": {
+      "name": "Can change Страница отелей",
+      "content_type": 27,
+      "codename": "change_hotelpagestatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 107,
+    "fields": {
+      "name": "Can delete Страница отелей",
+      "content_type": 27,
+      "codename": "delete_hotelpagestatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 108,
+    "fields": {
+      "name": "Can view Страница отелей",
+      "content_type": 27,
+      "codename": "view_hotelpagestatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 109,
+    "fields": {
+      "name": "Can add Детальная страница",
+      "content_type": 28,
+      "codename": "add_tourdetailstatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 110,
+    "fields": {
+      "name": "Can change Детальная страница",
+      "content_type": 28,
+      "codename": "change_tourdetailstatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 111,
+    "fields": {
+      "name": "Can delete Детальная страница",
+      "content_type": 28,
+      "codename": "delete_tourdetailstatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 112,
+    "fields": {
+      "name": "Can view Детальная страница",
+      "content_type": 28,
+      "codename": "view_tourdetailstatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 113,
+    "fields": {
+      "name": "Can add Страница \"Информация туристам\"",
+      "content_type": 29,
+      "codename": "add_infopagestatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 114,
+    "fields": {
+      "name": "Can change Страница \"Информация туристам\"",
+      "content_type": 29,
+      "codename": "change_infopagestatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 115,
+    "fields": {
+      "name": "Can delete Страница \"Информация туристам\"",
+      "content_type": 29,
+      "codename": "delete_infopagestatic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 116,
+    "fields": {
+      "name": "Can view Страница \"Информация туристам\"",
+      "content_type": 29,
+      "codename": "view_infopagestatic"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fWpMqXCzGjyIMxKrQc1N3z$TXSI1gBdaiG2OYKjWoSzEzMMBDPN/qmg9np7DStxLKY=",
+      "last_login": "2024-10-13T13:12:16.857Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-10-13T13:12:13.193Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "core",
+      "model": "review"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "core",
+      "model": "client"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "core",
+      "model": "advantage"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "core",
+      "model": "destination"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "core",
+      "model": "tour"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "core",
+      "model": "article"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "core",
+      "model": "hotelitem"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "core",
+      "model": "tourwithprice"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "core",
+      "model": "addontourwithprice"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+      "app_label": "core",
+      "model": "daytourwithprice"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+      "app_label": "core",
+      "model": "placestourwithprice"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+      "app_label": "core",
+      "model": "tourcondition"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+      "app_label": "core",
+      "model": "tourhotel"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+      "app_label": "core",
+      "model": "tourpricedoesnotinclude"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+      "app_label": "core",
+      "model": "tourpriceinclude"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 22,
+    "fields": {
+      "app_label": "core",
+      "model": "pricebyhumantour"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 23,
+    "fields": {
+      "app_label": "core",
+      "model": "bun"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 24,
+    "fields": {
+      "app_label": "core",
+      "model": "hotelgallery"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 25,
+    "fields": {
+      "app_label": "site_pages",
+      "model": "homepagestatic"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 26,
+    "fields": {
+      "app_label": "site_pages",
+      "model": "ourmissionstatic"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 27,
+    "fields": {
+      "app_label": "site_pages",
+      "model": "hotelpagestatic"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 28,
+    "fields": {
+      "app_label": "site_pages",
+      "model": "tourdetailstatic"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 29,
+    "fields": {
+      "app_label": "site_pages",
+      "model": "infopagestatic"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "ucur8hx6rd2w39zr9bqtjqp0einr4tfu",
+    "fields": {
+      "session_data": ".eJxVjMsOgyAQRf-FdUNAAdFl9_0GMjCM2hpJeKya_ns1cdFu7zn3vJmDVhfXSsxuRTYxyW6_m4fwivsJ8An7nHhIe82r56fCL1r4I2Hc7pf7F1igLMcbRgloJIxKo--CgZ6iIiAySqDsSWhDlkYpUdghaN-JwSpQtsdB24DhiNY0z1t0ZcXoIbOp5hY_XyZVQFk:1t0GfJ:fK0IJIXPkEKEAuOvcseeVTyE9Lftbu1p3qUWuQeCBWI",
+      "expire_date": "2024-10-28T08:42:57.976Z"
+    }
+  },
+  {
+    "model": "core.tourwithprice",
+    "pk": 1,
+    "fields": {
+      "title": "123",
+      "title_ru": "123",
+      "title_en": "123",
+      "preview": "tours/bd9df6d5.jpg",
+      "full_description": "<p>123</p>",
+      "full_description_ru": "<p>123</p>",
+      "full_description_en": "<p>123</p>",
+      "price": "123",
+      "days": 2,
+      "nights": 3,
+      "season": "qwe",
+      "season_ru": "qwe",
+      "season_en": "qwe",
+      "stars": "3",
+      "route": null,
+      "is_popular": false,
+      "is_recommended": false,
+      "slug": "123"
+    }
+  },
+  {
+    "model": "core.pricebyhumantour",
+    "pk": 1,
+    "fields": {
+      "tour": 1,
+      "category_of_price": "test 1",
+      "category_of_price_ru": "test 1",
+      "category_of_price_en": "test 1",
+      "qty": 2,
+      "price": 123
+    }
+  },
+  {
+    "model": "core.pricebyhumantour",
+    "pk": 2,
+    "fields": {
+      "tour": 1,
+      "category_of_price": "test 1",
+      "category_of_price_ru": "test 1",
+      "category_of_price_en": "test 1",
+      "qty": 4,
+      "price": 246
+    }
+  },
+  {
+    "model": "core.pricebyhumantour",
+    "pk": 3,
+    "fields": {
+      "tour": 1,
+      "category_of_price": "test 2",
+      "category_of_price_ru": "test 2",
+      "category_of_price_en": "test 2",
+      "qty": 2,
+      "price": 123
+    }
+  },
+  {
+    "model": "core.pricebyhumantour",
+    "pk": 4,
+    "fields": {
+      "tour": 1,
+      "category_of_price": "test 2",
+      "category_of_price_ru": "test 2",
+      "category_of_price_en": "test 2",
+      "qty": 4,
+      "price": 246
+    }
+  },
+  {
+    "model": "site_pages.homepagestatic",
+    "pk": 1,
+    "fields": {
+      "hero_title": "Туры в Узбекистан с Canaan-travel",
+      "hero_title_ru": "Туры в Узбекистан с Canaan-travel",
+      "hero_title_en": "Туры в Узбекистан с Canaan-travel",
+      "hero_subtitle": "Откройте для себя сказочный Восток!",
+      "hero_subtitle_ru": "Откройте для себя сказочный Восток!",
+      "hero_subtitle_en": "Откройте для себя сказочный Восток!",
+      "hero_years": "17",
+      "hero_years_ru": "17",
+      "hero_years_en": "17",
+      "hero_hotel_total": "500+",
+      "hero_hotel_total_ru": "500+",
+      "hero_hotel_total_en": "500+",
+      "hero_guides_total": "300+",
+      "hero_guides_total_ru": "300+",
+      "hero_guides_total_en": "300+",
+      "section_title_1": "Популярные направления",
+      "section_title_1_ru": "Популярные направления",
+      "section_title_1_en": "Популярные направления",
+      "section_title_2": "Популярные туры",
+      "section_title_2_ru": "Популярные туры",
+      "section_title_2_en": "Популярные туры",
+      "special_offer_text": "Специальное предложение",
+      "special_offer_text_ru": "Специальное предложение",
+      "special_offer_text_en": "Специальное предложение",
+      "special_offer_text_2": "Путешествуйте дешевле!",
+      "special_offer_text_2_ru": "Путешествуйте дешевле!",
+      "special_offer_text_2_en": "Путешествуйте дешевле!",
+      "we_recommend_title": "Мы рекомендуем",
+      "we_recommend_title_ru": "Мы рекомендуем",
+      "we_recommend_title_en": "Мы рекомендуем",
+      "know_more_block": "Узнайте больше о востоке",
+      "know_more_block_ru": "Узнайте больше о востоке",
+      "know_more_block_en": "Узнайте больше о востоке",
+      "know_more_block_2_title": "Узнайте о востоке больше вместе с нами",
+      "know_more_block_2_title_ru": "Узнайте о востоке больше вместе с нами",
+      "know_more_block_2_title_en": "Узнайте о востоке больше вместе с нами",
+      "know_more_block_2_text": "<div>Canaan-travel — туристическая компания полного цикла, ставящая перед собой цель открыть красоту всего мира для каждого человека сегодня. Мы стремимся ближе познакомить Восток и Запад, предлагая путешествия по Центральной Азии туристам из СНГ, Европы и Америки и поездки по всему миру жителям Центральной Азии. <br><br>Мы работаем как с отдельными туристами, так и с компаниями. Наличие собственных авиакассы, автотранспорта и сотрудничество с лучшими гидами и отелями помогают нам формировать уникальные предложения в индивидуальном порядке.</div>",
+      "know_more_block_2_text_ru": "<div>Canaan-travel — туристическая компания полного цикла, ставящая перед собой цель открыть красоту всего мира для каждого человека сегодня. Мы стремимся ближе познакомить Восток и Запад, предлагая путешествия по Центральной Азии туристам из СНГ, Европы и Америки и поездки по всему миру жителям Центральной Азии. <br><br>Мы работаем как с отдельными туристами, так и с компаниями. Наличие собственных авиакассы, автотранспорта и сотрудничество с лучшими гидами и отелями помогают нам формировать уникальные предложения в индивидуальном порядке.</div>",
+      "know_more_block_2_text_en": "<div>Canaan-travel — туристическая компания полного цикла, ставящая перед собой цель открыть красоту всего мира для каждого человека сегодня. Мы стремимся ближе познакомить Восток и Запад, предлагая путешествия по Центральной Азии туристам из СНГ, Европы и Америки и поездки по всему миру жителям Центральной Азии. <br><br>Мы работаем как с отдельными туристами, так и с компаниями. Наличие собственных авиакассы, автотранспорта и сотрудничество с лучшими гидами и отелями помогают нам формировать уникальные предложения в индивидуальном порядке.</div>",
+      "advantages_title": "Преимущества нашего обслуживания",
+      "advantages_title_ru": "Преимущества нашего обслуживания",
+      "advantages_title_en": "Преимущества нашего обслуживания",
+      "email_resend_title": "Подпишись на рассылку интересных предложений",
+      "email_resend_title_ru": "Подпишись на рассылку интересных предложений",
+      "email_resend_title_en": "Подпишись на рассылку интересных предложений",
+      "booking_block_title": "Хотите забронировать тур?",
+      "booking_block_title_ru": "Хотите забронировать тур?",
+      "booking_block_title_en": "Хотите забронировать тур?",
+      "booking_block_text": "Заполните небольшую форму и мы подберем тур именно для вас",
+      "booking_block_text_ru": "Заполните небольшую форму и мы подберем тур именно для вас",
+      "booking_block_text_en": "Заполните небольшую форму и мы подберем тур именно для вас",
+      "our_partners_title": "Наши партнеры",
+      "our_partners_title_ru": "Наши партнеры",
+      "our_partners_title_en": "Наши партнеры",
+      "footer_text": "<div>Информация туристам Туры в Узбекистан Достопримечательности. <br>Наша компания имеет все необходимые лицензии и сертификаты качества. <br><br></div>",
+      "footer_text_ru": "<div>Информация туристам Туры в Узбекистан Достопримечательности. <br>Наша компания имеет все необходимые лицензии и сертификаты качества. <br><br></div>",
+      "footer_text_en": "<div>Информация туристам Туры в Узбекистан Достопримечательности. <br>Наша компания имеет все необходимые лицензии и сертификаты качества. <br><br></div>"
+    }
+  },
+  {
+    "model": "site_pages.ourmissionstatic",
+    "pk": 1,
+    "fields": {
+      "page_title": "Наша миссия",
+      "page_title_ru": "Наша миссия",
+      "page_title_en": "Our mission",
+      "page_content": "<h2>Открыть мир, сохранив его</h2><div>Центральная Азия — древнейший оплот науки и культуры. Многие века назад здесь совершались гениальные открытия, сооружались уникальные архитектурные шедевры, появлялись новые веяния и ремёсла, ставшие столпами человеческой цивилизации.</div><div>Мы считаем, что наш регион — достояние всего мира. Именно по этой причине мы хотим познакомить с этими землями каждого жителя Земли. При этом мы не забываем ни на минуту о том, что под «каждым жителем Земли» подразумеваются и будущие поколения. Вот почему мы уделяем так много внимания устойчивому туризму — направлению деятельности, которое призвано сохранить природу, культуру и историю нашей родной земли.</div><div> </div><h2>Цели компании</h2><ul><li>Популяризация стран региона</li><li>Сохранение природы</li><li>Глобализация</li></ul><h2>Видение</h2><p>Мир огромен и прекрасен, но возможности человека ограничены. Увидеть каждый уголок планеты человеку не удастся, но мы ставим перед собой задачу сделать всё возможное для этого. Для достижения этой цели компания использует следующие средства:</p><ul><li>Помощь в путешествиях иностранцам и местным жителям;</li><li>Просветительская деятельность — публикация информационных материалов и поддержка проектов в сферах истории, востоковедения, науки и техники;</li><li>Благотворительные программы по защите экологии;</li><li>Сотрудничество с Travelife и фондами защиты природы;</li><li>Повышение профессионализма сотрудников и качества услуг;</li><li>Повышение интереса к Узбекистану в мире.</li></ul>",
+      "page_content_ru": "<h2>Открыть мир, сохранив его</h2><div>Центральная Азия — древнейший оплот науки и культуры. Многие века назад здесь совершались гениальные открытия, сооружались уникальные архитектурные шедевры, появлялись новые веяния и ремёсла, ставшие столпами человеческой цивилизации.</div><div>Мы считаем, что наш регион — достояние всего мира. Именно по этой причине мы хотим познакомить с этими землями каждого жителя Земли. При этом мы не забываем ни на минуту о том, что под «каждым жителем Земли» подразумеваются и будущие поколения. Вот почему мы уделяем так много внимания устойчивому туризму — направлению деятельности, которое призвано сохранить природу, культуру и историю нашей родной земли.</div><div> </div><h2>Цели компании</h2><ul><li>Популяризация стран региона</li><li>Сохранение природы</li><li>Глобализация</li></ul><h2>Видение</h2><p>Мир огромен и прекрасен, но возможности человека ограничены. Увидеть каждый уголок планеты человеку не удастся, но мы ставим перед собой задачу сделать всё возможное для этого. Для достижения этой цели компания использует следующие средства:</p><ul><li>Помощь в путешествиях иностранцам и местным жителям;</li><li>Просветительская деятельность — публикация информационных материалов и поддержка проектов в сферах истории, востоковедения, науки и техники;</li><li>Благотворительные программы по защите экологии;</li><li>Сотрудничество с Travelife и фондами защиты природы;</li><li>Повышение профессионализма сотрудников и качества услуг;</li><li>Повышение интереса к Узбекистану в мире.</li></ul>",
+      "page_content_en": "<h2>Открыть мир, сохранив его</h2><p>Центральная Азия — древнейший оплот науки и культуры. Многие века назад здесь совершались гениальные открытия, сооружались уникальные архитектурные шедевры, появлялись новые веяния и ремёсла, ставшие столпами человеческой цивилизации.Мы считаем, что наш регион — достояние всего мира. Именно по этой причине мы хотим познакомить с этими землями каждого жителя Земли. При этом мы не забываем ни на минуту о том, что под «каждым жителем Земли» подразумеваются и будущие поколения. Вот почему мы уделяем так много внимания устойчивому туризму — направлению деятельности, которое призвано сохранить природу, культуру и историю нашей родной земли.</p><h2>Цели компании</h2><ul><li>Популяризация стран региона</li><li>Сохранение природы</li><li>Глобализация</li></ul><h2>Видение</h2><p>Мир огромен и прекрасен, но возможности человека ограничены. Увидеть каждый уголок планеты человеку не удастся, но мы ставим перед собой задачу сделать всё возможное для этого. Для достижения этой цели компания использует следующие средства:</p><ul><li>Помощь в путешествиях иностранцам и местным жителям;</li><li>Просветительская деятельность — публикация информационных материалов и поддержка проектов в сферах истории, востоковедения, науки и техники;</li><li>Благотворительные программы по защите экологии;</li><li>Сотрудничество с Travelife и фондами защиты природы;</li><li>Повышение профессионализма сотрудников и качества услуг;</li><li>Повышение интереса к Узбекистану в мире.</li></ul>"
+    }
+  },
+  {
+    "model": "site_pages.hotelpagestatic",
+    "pk": 1,
+    "fields": {
+      "page_title": "Отели Узбекистана",
+      "page_title_ru": "Отели Узбекистана",
+      "page_title_en": "Отели Узбекистана",
+      "page_content": "<div><br></div><p>Ведомый страстью к приключениям путник в своих странствиях далеко от дома. Но он так же нуждается в крове и уюте, чтобы отдохнуть и отправиться в путь с новыми силами. И где еще найти приют в далеком крае, как не в отеле. Располагайся, странник, здесь ты узнаешь о лучших отелях Узбекистана и сможешь забронировать самый удобный номер по хорошей цене.</p><h3>Гостиницы Узбекистана</h3><p>Узбекистан — страна с большой и разнообразной историей, интерес к которой проявляют туристы со всего мира. Поэтому нет ничего удивительного в том, что найти отель в Узбекистане не составляет никакого труда — здесь так много предложений, что можно удовлетворить даже самую изысканную потребность. Узбекское гостеприимство известно во всем мире, так что каждый хозяин будет вам рад. Кухня в местных отелях разнообразная — от восточной до европейской. Конечно, мало кто отказывается от возможности насладиться такими узбекскими блюдами, как плов, самса, нарын, но все-таки приятно иметь возможность позавтракать чем-то привычным. Но, как шутят иногда местные, «зачем есть не плов, если можно поесть плов?». Особенно удобно то, что многие отели расположены достаточно близко к самым популярным достопримечательностям, иногда памятники видны прямо из окна номера. Есть отели и для тех, кто приехал в страну с деловыми целями. Например, ташкентский отель Wyndham располагает комфортабельными и хорошо оборудованными конференц-залами для проведения бизнес-встреч и презентаций.</p><h3>Цены и удобства</h3><p>Поскольку Узбекистан смело можно назвать туристическим краем, отели открываются всех возможных классов — от простых и бюджетных типа «постель и завтрак» до люксовых как, например, Hilton в Ташкенте. Как принято на международном уровне, количество звезд отеля указывает на гарантируемый набор условий и комфортабельность. В остальном — обязательно проверьте описание отеля на нашем сайте, где отмечены все удобства от химчистки до сувенирного магазина. Настоятельно рекомендуется проверить наличие кондиционера в номере, если вы посещаете солнечный Узбекистан летом, ведь дневная температура здесь может превышать 50 градусов, что очень непривычно для многих гостей Средней Азии.</p><h3>Узнать подробнее</h3><p>В каждом городе — от Ташкента до Нураты — дюжины вариантов на любой вкус и кошелек, мы же предлагаем только лучшие и проверенные отели, с которыми лично имели дело. Описание гостиницы обычно отвечает на все вопросы, но иногда намного информативнее узнать ее рейтинг или прочесть отзыв другого туриста, ведь не все условия можно узнать по фотографиям. Вы можете получить подробную информацию онлайн или связаться с нашими операторами. Мы поможем вам подобрать подходящий отель Узбекистана и оформить бронирование. Узбекистан, увидеть который желают странники со всего мира, ждет вас. И вам не нужно переживать о своем комфорте в поездке, ведь Canaan-travel позаботится о том, чтобы у вас не возникло никаких сложностей и неудобств. Наши специалисты будут с вами на связи на протяжении всего вашего путешествия.</p>",
+      "page_content_ru": "<div><br></div><p>Ведомый страстью к приключениям путник в своих странствиях далеко от дома. Но он так же нуждается в крове и уюте, чтобы отдохнуть и отправиться в путь с новыми силами. И где еще найти приют в далеком крае, как не в отеле. Располагайся, странник, здесь ты узнаешь о лучших отелях Узбекистана и сможешь забронировать самый удобный номер по хорошей цене.</p><h3>Гостиницы Узбекистана</h3><p>Узбекистан — страна с большой и разнообразной историей, интерес к которой проявляют туристы со всего мира. Поэтому нет ничего удивительного в том, что найти отель в Узбекистане не составляет никакого труда — здесь так много предложений, что можно удовлетворить даже самую изысканную потребность. Узбекское гостеприимство известно во всем мире, так что каждый хозяин будет вам рад. Кухня в местных отелях разнообразная — от восточной до европейской. Конечно, мало кто отказывается от возможности насладиться такими узбекскими блюдами, как плов, самса, нарын, но все-таки приятно иметь возможность позавтракать чем-то привычным. Но, как шутят иногда местные, «зачем есть не плов, если можно поесть плов?». Особенно удобно то, что многие отели расположены достаточно близко к самым популярным достопримечательностям, иногда памятники видны прямо из окна номера. Есть отели и для тех, кто приехал в страну с деловыми целями. Например, ташкентский отель Wyndham располагает комфортабельными и хорошо оборудованными конференц-залами для проведения бизнес-встреч и презентаций.</p><h3>Цены и удобства</h3><p>Поскольку Узбекистан смело можно назвать туристическим краем, отели открываются всех возможных классов — от простых и бюджетных типа «постель и завтрак» до люксовых как, например, Hilton в Ташкенте. Как принято на международном уровне, количество звезд отеля указывает на гарантируемый набор условий и комфортабельность. В остальном — обязательно проверьте описание отеля на нашем сайте, где отмечены все удобства от химчистки до сувенирного магазина. Настоятельно рекомендуется проверить наличие кондиционера в номере, если вы посещаете солнечный Узбекистан летом, ведь дневная температура здесь может превышать 50 градусов, что очень непривычно для многих гостей Средней Азии.</p><h3>Узнать подробнее</h3><p>В каждом городе — от Ташкента до Нураты — дюжины вариантов на любой вкус и кошелек, мы же предлагаем только лучшие и проверенные отели, с которыми лично имели дело. Описание гостиницы обычно отвечает на все вопросы, но иногда намного информативнее узнать ее рейтинг или прочесть отзыв другого туриста, ведь не все условия можно узнать по фотографиям. Вы можете получить подробную информацию онлайн или связаться с нашими операторами. Мы поможем вам подобрать подходящий отель Узбекистана и оформить бронирование. Узбекистан, увидеть который желают странники со всего мира, ждет вас. И вам не нужно переживать о своем комфорте в поездке, ведь Canaan-travel позаботится о том, чтобы у вас не возникло никаких сложностей и неудобств. Наши специалисты будут с вами на связи на протяжении всего вашего путешествия.</p>",
+      "page_content_en": "<div><br></div><p>Ведомый страстью к приключениям путник в своих странствиях далеко от дома. Но он так же нуждается в крове и уюте, чтобы отдохнуть и отправиться в путь с новыми силами. И где еще найти приют в далеком крае, как не в отеле. Располагайся, странник, здесь ты узнаешь о лучших отелях Узбекистана и сможешь забронировать самый удобный номер по хорошей цене.</p><h3>Гостиницы Узбекистана</h3><p>Узбекистан — страна с большой и разнообразной историей, интерес к которой проявляют туристы со всего мира. Поэтому нет ничего удивительного в том, что найти отель в Узбекистане не составляет никакого труда — здесь так много предложений, что можно удовлетворить даже самую изысканную потребность. Узбекское гостеприимство известно во всем мире, так что каждый хозяин будет вам рад. Кухня в местных отелях разнообразная — от восточной до европейской. Конечно, мало кто отказывается от возможности насладиться такими узбекскими блюдами, как плов, самса, нарын, но все-таки приятно иметь возможность позавтракать чем-то привычным. Но, как шутят иногда местные, «зачем есть не плов, если можно поесть плов?». Особенно удобно то, что многие отели расположены достаточно близко к самым популярным достопримечательностям, иногда памятники видны прямо из окна номера. Есть отели и для тех, кто приехал в страну с деловыми целями. Например, ташкентский отель Wyndham располагает комфортабельными и хорошо оборудованными конференц-залами для проведения бизнес-встреч и презентаций.</p><h3>Цены и удобства</h3><p>Поскольку Узбекистан смело можно назвать туристическим краем, отели открываются всех возможных классов — от простых и бюджетных типа «постель и завтрак» до люксовых как, например, Hilton в Ташкенте. Как принято на международном уровне, количество звезд отеля указывает на гарантируемый набор условий и комфортабельность. В остальном — обязательно проверьте описание отеля на нашем сайте, где отмечены все удобства от химчистки до сувенирного магазина. Настоятельно рекомендуется проверить наличие кондиционера в номере, если вы посещаете солнечный Узбекистан летом, ведь дневная температура здесь может превышать 50 градусов, что очень непривычно для многих гостей Средней Азии.</p><h3>Узнать подробнее</h3><p>В каждом городе — от Ташкента до Нураты — дюжины вариантов на любой вкус и кошелек, мы же предлагаем только лучшие и проверенные отели, с которыми лично имели дело. Описание гостиницы обычно отвечает на все вопросы, но иногда намного информативнее узнать ее рейтинг или прочесть отзыв другого туриста, ведь не все условия можно узнать по фотографиям. Вы можете получить подробную информацию онлайн или связаться с нашими операторами. Мы поможем вам подобрать подходящий отель Узбекистана и оформить бронирование. Узбекистан, увидеть который желают странники со всего мира, ждет вас. И вам не нужно переживать о своем комфорте в поездке, ведь Canaan-travel позаботится о том, чтобы у вас не возникло никаких сложностей и неудобств. Наши специалисты будут с вами на связи на протяжении всего вашего путешествия.</p>"
+    }
+  },
+  {
+    "model": "site_pages.tourdetailstatic",
+    "pk": 1,
+    "fields": {
+      "text": "<p>* Все дополнительные экскурсии обговариваются с гидом заранее и оплачиваются гиду на месте. Минимальная группа для любой доп. экскурсии – 5 человек.</p>",
+      "text_ru": "<p>* Все дополнительные экскурсии обговариваются с гидом заранее и оплачиваются гиду на месте. Минимальная группа для любой доп. экскурсии – 5 человек.</p>",
+      "text_en": "<p>* Все дополнительные экскурсии обговариваются с гидом заранее и оплачиваются гиду на месте. Минимальная группа для любой доп. экскурсии – 5 человек.</p>",
+      "price_include_block": "Стоимость тура на весну 2025, с человека:",
+      "price_include_block_ru": "Стоимость тура на весну 2025, с человека:",
+      "price_include_block_en": "Стоимость тура на весну 2025, с человека:"
+    }
+  },
+  {
+    "model": "site_pages.infopagestatic",
+    "pk": 1,
+    "fields": {
+      "page_title": "Виза - информация туристам",
+      "page_title_ru": "Виза - информация туристам",
+      "page_title_en": "Виза - информация туристам",
+      "page_content": "<p>Республика Узбекистан на сегодняшний день имеет различный статус дипломатических отношений со странами мирового сообщества. Для иностранных граждан всего мира способ въезда в Узбекистан может отличаться.Существует несколько режимов въезда в Республику Узбекистан:</p><ul><li>безвизовый режим</li><li>упрощенный режим</li><li>въезд по электронной визе</li><li>въезд с приглашением</li><li>въезд с оформлением в аэропорту</li><li>транзитная виза в Узбекистан</li><li>безвизовый въезд при транзите через Узбекистан</li></ul><h2>Безвизовый режим</h2><p>Для въезда в Узбекистан резидентам нижеприведенных стран получение визы не требуется. Въезд на определенные законодательством сроки осуществляется по <strong>заграничному паспорту</strong>.</p><h3>Бессрочно</h3><p>Азербайджан<br>Грузия<br>Россия<br>Армения<br>Казахстан<br>Украина<br>Белорусия<br>Молдова</p><h3>Въезд сроком на 60 дней</h3><p>Кыргызстан</p><h3>Въезд сроком на 30 дней</h3><p>Австралия<br>Исландия<br>Россия<br>Сан-Марино<br>АвстралияЕсли граждане <strong>вышеперечисленных государств</strong> имеют необходимость оставаться на территории Республики Узбекистан больше установленных сроков, они должны получить въездную визу в соответствии с установленным МИД порядком.</p><h2>Упрощенный порядок получения визы</h2><p>Для резидентов следующих государств введен упрощенный порядок получения виз в течение <strong>3 рабочих дней</strong>, не требующий предоставления в МИД приглашения со стороны юридического/физического лица из Республики Узбекистан:Албания<br>Кабо-Верде<br>Парагвай<br>Алжир<br>Камбоджа<br>Перу<br>Ангола<br>КамерунСамоа<br>Антигуа и Барбуда<br>Катар<br>Алжир<br>Саудовская Аравия<br>Багамские Острова<br>Кирибати<br>Сейшельские ОстроваБангладеш<br>Кабо-Верде<br>Китай<br>Сенегал<br>Барбадос<br>Колумбия<br>Сент-Винсент и Гренадины<br>БахрейнКНДР<br>Кабо-Верде<br>Сент-Китс и Невис<br>Белиз<br>Коста-Рикa<br>Колумбия<br>Сент-Люсия<br>БоливияКот-д’Ивуар<br>Содружество Доминикие<br>Бутан<br>Куба<br>Соединенные Штаты<br>Америки<br>Вануату<br>КувейтСоломоновы Острова<br>Венесуэла<br>Лаос<br>Суринам<br>Вьетнам<br>Ливан<br>Таиланд<br>ГабонМаврикий<br>Тонга<br>Гайана<br>Македония<br>Тринидад и Тобаго<br>Гана<br>Мальдивы<br>ТунисГватемала<br>Марокко<br>Уругвай<br>Гондурас<br>Тринидад и Тобаго<br>Маршалловы Острова<br>Федеративные Штаты<br>МикронезиигонконгМексика<br>Фиджи<br>Уругвай<br>Гренада<br>Науру<br>Филиппины<br>Доминиканская Республика<br>НепалШри-Ланка<br>Египет<br>Никарагуа<br>Индия<br>Науру<br>Объединенные Арабские Эмираты<br>Эль-Сальвадор<br>ИорданияОман<br>Южно-Африканская Республика<br>Палау<br>Ямайка<br>ПанамаОформление визы происходит по личному обращению иностранных граждан в соответствующее <strong>дипломатическое представительство или консульство Республики Узбекистан</strong> в стране их пребывания со следующим списком документов:</p><ul><li><strong>электронная визовая анкета</strong> (в распечатанном и заполненном виде);</li><li><strong>оригинал паспорта</strong> (срок действия которого должен превышать срок действия визы не менее чем на 3 месяца);</li><li><strong>1 цветная фотография</strong> (паспортного размера);</li><li><strong>консульский сбор</strong> (согласно тарифам приведенным в разделе <strong>Пошлина</strong>)</li></ul><h2>Электронная туристическая виза</h2><p>Резиденты <strong>вышеперечисленных государств</strong> также имеют возможность получить электронную <strong>туристическую</strong> визу, заполнив анкету на портале <strong>E-VISA</strong> и оплатив пошлину в размере 2 <strong>0 USD</strong>. Электронная виза предоставляется в формате <strong>PDF</strong> на e-mail заявителя и не вклеивается в паспорт.</p><ul><li>Длительность рассмотрения поданных документов или электронной заявки составляет <strong>3 рабочих дня</strong>.</li><li>Действие электронной визы составляет <strong>90 дней</strong> со дня выдачи.</li><li>Срок пребывания на территории Узбекистана по электронной визе составляет <strong>30 дней</strong>.</li></ul><p><strong>В случае если заявитель имеет двойное гражданство, электронная визовая анкета должна быть заполнена данными того паспорта, на основании которого планируется въезд в Республику Узбекистан. В случае замены паспорта в период действия электронной визы, электронную визу необходимо получить повторно.</strong></p><h2>Въезд с приглашением</h2><p>Для граждан всех остальных стран въездная виза оформляется на основании <strong>визовой поддержки</strong>. Для оформления визовой поддержки, Вам необходимо предоставить нашей компании следующий список документов:</p><ul><li><strong>Заполненную анкету для визовой поддержки </strong><a href=\"http://127.0.0.1:8000/ru/info/\"><strong>(скачать)</strong></a></li><li><strong>Сканированную копию Вашего паспорта</strong></li><li><strong>Сканированную копию справки с места работы</strong></li></ul><p>После получения нами всей необходимой информации, мы оформим визовую поддержку в МИД Республики Узбекистан в Ташкенте которое рассмотрит Ваши документы в течение <strong>7 рабочих дней</strong>.<strong>МИД Республики Узбекистан оставляет имеет право отказать в выдаче разрешения, не предоставляя причин отказа. В случае отказа уплаченная пошлина не возвращается.</strong> Получив разрешение МИД, мы вышлем Вам на почту <strong>номер телекса</strong> после чего Вы сможете обратиться в <strong>дипломатическое представительство или консульство Республики Узбекистан</strong> в стране вашего пребывания с перечнем следующих документов:</p><ul><li><strong>Оригинал паспорта</strong> (срок действия которого должен превышать срок действия визы не менее чем на 3 месяца);</li><li><strong>Заполненная визовая анкета в 2 экземплярах;</strong></li><li><strong>2 цветные фотографии</strong> (паспортного размера);</li><li><strong>Номер телекса</strong> (высланный Вам на почту);</li><li><strong>Консульский сбор</strong> (согласно тарифам приведенным в разделе <strong>Пошлина</strong>)</li></ul><p>Длительность рассмотрения поданных документов составляет <strong>3 рабочих дня</strong>.<strong>Оформление визовой поддержки прекращается если клиент отказывается от ранее забронированного пакета туристических услуг.</strong></p><h2>Виза с оформлением в аэропорту</h2><p>Если в стране Вашего пребывания <strong>нет дипломатического представительства или консульства Республики Узбекистан</strong>, то Вы сможете оформить въездную визу по прибытию в международный аэропорт имени Ислама Каримова в <strong>секторе визового обеспечения</strong>.Для этого Вам необходимо оформить визовую поддержку в нашей компании прислав нам следующий перечень документов:</p><ul><li><strong>Заполненную анкету для визовой поддержки</strong></li><li><strong>Сканированную копию Вашего паспорта</strong></li><li><strong>Сканированную копию справки с места работы</strong></li><li><strong>Сканированные копии авиабилетов или брони</strong></li></ul><p>После получения нами всей необходимой информации, мы оформим визовую поддержку в МИД Республики Узбекистан в Ташкенте которое рассмотрит Ваши документы в течение <strong>7 рабочих дней</strong>.Получив разрешение МИД, мы вышлем Вам на почту официальный разрешающий документ с <strong>номером телекса</strong>.Данный документ должен быть предъявлен Вами при прохождении паспортного контроля в стране Вашего пребывания и на его основании Вам оформляется виза по прибытию в международный аэропорт имени «Ислама Каримова» в секторе визового обеспечения МИД Республики Узбекистан.</p><h2>Транзитная виза в Узбекистан</h2><p>Иностранные граждане следующие транзитом через Республику Узбекистан, <strong>для получения транзитной визы сроком на 72 часа </strong>, должны предоставить в <strong>дипломатическое представительство или консульство Республики Узбекистан</strong> в стране своего пребывания <strong>весь перечень документов</strong> необходимый для оформления туристической визы, а также приложить к нему:</p><ul><li><strong>Визу государства следования;</strong></li><li><strong>Проездные документы с подтвержденной датой отправления из Узбекистана в страну следования;</strong></li></ul><p>Длительность рассмотрения поданных документов составляет <strong>3 рабочих дня</strong></p><h2>Безвизовый въезд при транзите через Узбекистан</h2><p>Для граждан ряда государств (<strong>список стран приводится ниже</strong>) въезжающих в Республику Узбекистан на срок <strong>до 5 суток</strong> с последующим выездом в третью страну, ( <strong>при условии наличия у них авиабилетов, оформленных через национальную авиакомпанию Uzbekistan Airways как в Узбекистан, так и в третью страну</strong> ), установлен <strong>краткосрочный безвизовый режим.</strong><strong>Государство следования не может являться отправным государством транзитного переезда.</strong> Для граждан нижеперечисленных стран введен <strong>безвизовый въезд при транзите</strong> через Узбекистан сроком не более чем на <strong>5 суток</strong>:Албания<br>Кабо-Верде<br>Парагвай<br>Алжир<br>Камбоджа<br>Перу<br>Ангола<br>КамерунСамоа<br>Антигуа и Барбуда<br>Катар<br>Алжир<br>Саудовская Аравия<br>Багамские Острова<br>Кирибати<br>Сейшельские ОстроваБангладеш<br>Кабо-Верде<br>Китай<br>Сенегал<br>Барбадос<br>Колумбия<br>Сент-Винсент и Гренадины<br>БахрейнКНДР<br>Кабо-Верде<br>Сент-Китс и Невис<br>Белиз<br>Коста-Рикa<br>Колумбия<br>Сент-Люсия<br>БоливияКот-д’Ивуар<br>Содружество Доминикие<br>Бутан<br>Куба<br>Соединенные Штаты<br>Америки<br>Вануату<br>КувейтСоломоновы Острова<br>Венесуэла<br>Лаос<br>Суринам<br>Вьетнам<br>Ливан<br>Таиланд<br>ГабонГватемала<br>Марокко<br>Уругвай<br>Гондурас<br>Тринидад и Тобаго<br>Маршалловы Острова<br>Федеративные Штаты<br>МикронезиигонконгМаврикий<br>Тонга<br>Гайана<br>Македония<br>Тринидад и Тобаго<br>Гана<br>Мальдивы<br>ТунисМексика<br>Фиджи<br>Уругвай<br>Гренада<br>Науру<br>Филиппины<br>Доминиканская Республика<br>НепалШри-Ланка<br>Египет<br>Никарагуа<br>Индия<br>Науру<br>Объединенные Арабские Эмираты<br>Эль-Сальвадор<br>ИорданияОман<br>Южно-Африканская Республика<br>Палау<br>Ямайка<br>Панама</p><h2>Пошлина</h2><p>За оформление и выдачу виз предусмотрены следующие тарифы консульских сборов:<strong>1. Однократные визы:</strong></p><ul><li>до 7 дней — 40 USD;</li><li>до 15 дней — 50 USD;</li><li>до 30 дней — 60 USD;</li><li>до 3 месяцев — 80 USD;</li><li>до 6 месяцев — 120 USD;</li><li>до 1 года — 160 USD.</li></ul><p><strong>За каждую дополнительную кратность визы ставка тарифа увеличивается на 10 USD.</strong><strong>2. Многократные визы:</strong></p><ul><li>до 6 месяцев — 150 USD;</li><li>до 1 года — 250 USD.</li></ul><p><strong>3. Транзитные визы:</strong></p><ul><li>до 72 часов — 40 USD;</li><li>за двукратную транзитную визу — 50 USD.</li></ul><p><strong>4. Групповые визы</strong>(не менее 5 человек, исключая детей до 16 лет):</p><ul><li>до 15 дней — 15 USD с каждого человека;</li><li>до 30 дней — 25 USD с каждого человека.</li></ul><p><strong>При оформлении визы требуется также уплатить фактический расход. Размеры таких расходов зависят от места оформления визы и не зависят от гражданства заявителя.</strong></p><h2>ВАЖНО ЗНАТЬ</h2><p>Для иностранных граждан, не достигших <strong>16-летнего возраста</strong>, въезд в Республику Узбекистан не требует получения визы и осуществляется по собственному заграничному паспорту на срок действия визы сопровождающего лица, но <strong>не более 90 суток</strong> со дня въезда в страну. Если ребенок путешествует с одним из родителей, с собой желательно иметь нотариально заверенное разрешение на выезд ребенка из родной страны от второго родителя для предупреждения возможных недоразумений в аэропорту отправления.</p><div><br></div>",
+      "page_content_ru": "<p>Республика Узбекистан на сегодняшний день имеет различный статус дипломатических отношений со странами мирового сообщества. Для иностранных граждан всего мира способ въезда в Узбекистан может отличаться.Существует несколько режимов въезда в Республику Узбекистан:</p><ul><li>безвизовый режим</li><li>упрощенный режим</li><li>въезд по электронной визе</li><li>въезд с приглашением</li><li>въезд с оформлением в аэропорту</li><li>транзитная виза в Узбекистан</li><li>безвизовый въезд при транзите через Узбекистан</li></ul><h2>Безвизовый режим</h2><p>Для въезда в Узбекистан резидентам нижеприведенных стран получение визы не требуется. Въезд на определенные законодательством сроки осуществляется по <strong>заграничному паспорту</strong>.</p><h3>Бессрочно</h3><p>Азербайджан<br>Грузия<br>Россия<br>Армения<br>Казахстан<br>Украина<br>Белорусия<br>Молдова</p><h3>Въезд сроком на 60 дней</h3><p>Кыргызстан</p><h3>Въезд сроком на 30 дней</h3><p>Австралия<br>Исландия<br>Россия<br>Сан-Марино<br>АвстралияЕсли граждане <strong>вышеперечисленных государств</strong> имеют необходимость оставаться на территории Республики Узбекистан больше установленных сроков, они должны получить въездную визу в соответствии с установленным МИД порядком.</p><h2>Упрощенный порядок получения визы</h2><p>Для резидентов следующих государств введен упрощенный порядок получения виз в течение <strong>3 рабочих дней</strong>, не требующий предоставления в МИД приглашения со стороны юридического/физического лица из Республики Узбекистан:Албания<br>Кабо-Верде<br>Парагвай<br>Алжир<br>Камбоджа<br>Перу<br>Ангола<br>КамерунСамоа<br>Антигуа и Барбуда<br>Катар<br>Алжир<br>Саудовская Аравия<br>Багамские Острова<br>Кирибати<br>Сейшельские ОстроваБангладеш<br>Кабо-Верде<br>Китай<br>Сенегал<br>Барбадос<br>Колумбия<br>Сент-Винсент и Гренадины<br>БахрейнКНДР<br>Кабо-Верде<br>Сент-Китс и Невис<br>Белиз<br>Коста-Рикa<br>Колумбия<br>Сент-Люсия<br>БоливияКот-д’Ивуар<br>Содружество Доминикие<br>Бутан<br>Куба<br>Соединенные Штаты<br>Америки<br>Вануату<br>КувейтСоломоновы Острова<br>Венесуэла<br>Лаос<br>Суринам<br>Вьетнам<br>Ливан<br>Таиланд<br>ГабонМаврикий<br>Тонга<br>Гайана<br>Македония<br>Тринидад и Тобаго<br>Гана<br>Мальдивы<br>ТунисГватемала<br>Марокко<br>Уругвай<br>Гондурас<br>Тринидад и Тобаго<br>Маршалловы Острова<br>Федеративные Штаты<br>МикронезиигонконгМексика<br>Фиджи<br>Уругвай<br>Гренада<br>Науру<br>Филиппины<br>Доминиканская Республика<br>НепалШри-Ланка<br>Египет<br>Никарагуа<br>Индия<br>Науру<br>Объединенные Арабские Эмираты<br>Эль-Сальвадор<br>ИорданияОман<br>Южно-Африканская Республика<br>Палау<br>Ямайка<br>ПанамаОформление визы происходит по личному обращению иностранных граждан в соответствующее <strong>дипломатическое представительство или консульство Республики Узбекистан</strong> в стране их пребывания со следующим списком документов:</p><ul><li><strong>электронная визовая анкета</strong> (в распечатанном и заполненном виде);</li><li><strong>оригинал паспорта</strong> (срок действия которого должен превышать срок действия визы не менее чем на 3 месяца);</li><li><strong>1 цветная фотография</strong> (паспортного размера);</li><li><strong>консульский сбор</strong> (согласно тарифам приведенным в разделе <strong>Пошлина</strong>)</li></ul><h2>Электронная туристическая виза</h2><p>Резиденты <strong>вышеперечисленных государств</strong> также имеют возможность получить электронную <strong>туристическую</strong> визу, заполнив анкету на портале <strong>E-VISA</strong> и оплатив пошлину в размере 2 <strong>0 USD</strong>. Электронная виза предоставляется в формате <strong>PDF</strong> на e-mail заявителя и не вклеивается в паспорт.</p><ul><li>Длительность рассмотрения поданных документов или электронной заявки составляет <strong>3 рабочих дня</strong>.</li><li>Действие электронной визы составляет <strong>90 дней</strong> со дня выдачи.</li><li>Срок пребывания на территории Узбекистана по электронной визе составляет <strong>30 дней</strong>.</li></ul><p><strong>В случае если заявитель имеет двойное гражданство, электронная визовая анкета должна быть заполнена данными того паспорта, на основании которого планируется въезд в Республику Узбекистан. В случае замены паспорта в период действия электронной визы, электронную визу необходимо получить повторно.</strong></p><h2>Въезд с приглашением</h2><p>Для граждан всех остальных стран въездная виза оформляется на основании <strong>визовой поддержки</strong>. Для оформления визовой поддержки, Вам необходимо предоставить нашей компании следующий список документов:</p><ul><li><strong>Заполненную анкету для визовой поддержки </strong><a href=\"http://127.0.0.1:8000/ru/info/\"><strong>(скачать)</strong></a></li><li><strong>Сканированную копию Вашего паспорта</strong></li><li><strong>Сканированную копию справки с места работы</strong></li></ul><p>После получения нами всей необходимой информации, мы оформим визовую поддержку в МИД Республики Узбекистан в Ташкенте которое рассмотрит Ваши документы в течение <strong>7 рабочих дней</strong>.<strong>МИД Республики Узбекистан оставляет имеет право отказать в выдаче разрешения, не предоставляя причин отказа. В случае отказа уплаченная пошлина не возвращается.</strong> Получив разрешение МИД, мы вышлем Вам на почту <strong>номер телекса</strong> после чего Вы сможете обратиться в <strong>дипломатическое представительство или консульство Республики Узбекистан</strong> в стране вашего пребывания с перечнем следующих документов:</p><ul><li><strong>Оригинал паспорта</strong> (срок действия которого должен превышать срок действия визы не менее чем на 3 месяца);</li><li><strong>Заполненная визовая анкета в 2 экземплярах;</strong></li><li><strong>2 цветные фотографии</strong> (паспортного размера);</li><li><strong>Номер телекса</strong> (высланный Вам на почту);</li><li><strong>Консульский сбор</strong> (согласно тарифам приведенным в разделе <strong>Пошлина</strong>)</li></ul><p>Длительность рассмотрения поданных документов составляет <strong>3 рабочих дня</strong>.<strong>Оформление визовой поддержки прекращается если клиент отказывается от ранее забронированного пакета туристических услуг.</strong></p><h2>Виза с оформлением в аэропорту</h2><p>Если в стране Вашего пребывания <strong>нет дипломатического представительства или консульства Республики Узбекистан</strong>, то Вы сможете оформить въездную визу по прибытию в международный аэропорт имени Ислама Каримова в <strong>секторе визового обеспечения</strong>.Для этого Вам необходимо оформить визовую поддержку в нашей компании прислав нам следующий перечень документов:</p><ul><li><strong>Заполненную анкету для визовой поддержки</strong></li><li><strong>Сканированную копию Вашего паспорта</strong></li><li><strong>Сканированную копию справки с места работы</strong></li><li><strong>Сканированные копии авиабилетов или брони</strong></li></ul><p>После получения нами всей необходимой информации, мы оформим визовую поддержку в МИД Республики Узбекистан в Ташкенте которое рассмотрит Ваши документы в течение <strong>7 рабочих дней</strong>.Получив разрешение МИД, мы вышлем Вам на почту официальный разрешающий документ с <strong>номером телекса</strong>.Данный документ должен быть предъявлен Вами при прохождении паспортного контроля в стране Вашего пребывания и на его основании Вам оформляется виза по прибытию в международный аэропорт имени «Ислама Каримова» в секторе визового обеспечения МИД Республики Узбекистан.</p><h2>Транзитная виза в Узбекистан</h2><p>Иностранные граждане следующие транзитом через Республику Узбекистан, <strong>для получения транзитной визы сроком на 72 часа </strong>, должны предоставить в <strong>дипломатическое представительство или консульство Республики Узбекистан</strong> в стране своего пребывания <strong>весь перечень документов</strong> необходимый для оформления туристической визы, а также приложить к нему:</p><ul><li><strong>Визу государства следования;</strong></li><li><strong>Проездные документы с подтвержденной датой отправления из Узбекистана в страну следования;</strong></li></ul><p>Длительность рассмотрения поданных документов составляет <strong>3 рабочих дня</strong></p><h2>Безвизовый въезд при транзите через Узбекистан</h2><p>Для граждан ряда государств (<strong>список стран приводится ниже</strong>) въезжающих в Республику Узбекистан на срок <strong>до 5 суток</strong> с последующим выездом в третью страну, ( <strong>при условии наличия у них авиабилетов, оформленных через национальную авиакомпанию Uzbekistan Airways как в Узбекистан, так и в третью страну</strong> ), установлен <strong>краткосрочный безвизовый режим.</strong><strong>Государство следования не может являться отправным государством транзитного переезда.</strong> Для граждан нижеперечисленных стран введен <strong>безвизовый въезд при транзите</strong> через Узбекистан сроком не более чем на <strong>5 суток</strong>:Албания<br>Кабо-Верде<br>Парагвай<br>Алжир<br>Камбоджа<br>Перу<br>Ангола<br>КамерунСамоа<br>Антигуа и Барбуда<br>Катар<br>Алжир<br>Саудовская Аравия<br>Багамские Острова<br>Кирибати<br>Сейшельские ОстроваБангладеш<br>Кабо-Верде<br>Китай<br>Сенегал<br>Барбадос<br>Колумбия<br>Сент-Винсент и Гренадины<br>БахрейнКНДР<br>Кабо-Верде<br>Сент-Китс и Невис<br>Белиз<br>Коста-Рикa<br>Колумбия<br>Сент-Люсия<br>БоливияКот-д’Ивуар<br>Содружество Доминикие<br>Бутан<br>Куба<br>Соединенные Штаты<br>Америки<br>Вануату<br>КувейтСоломоновы Острова<br>Венесуэла<br>Лаос<br>Суринам<br>Вьетнам<br>Ливан<br>Таиланд<br>ГабонГватемала<br>Марокко<br>Уругвай<br>Гондурас<br>Тринидад и Тобаго<br>Маршалловы Острова<br>Федеративные Штаты<br>МикронезиигонконгМаврикий<br>Тонга<br>Гайана<br>Македония<br>Тринидад и Тобаго<br>Гана<br>Мальдивы<br>ТунисМексика<br>Фиджи<br>Уругвай<br>Гренада<br>Науру<br>Филиппины<br>Доминиканская Республика<br>НепалШри-Ланка<br>Египет<br>Никарагуа<br>Индия<br>Науру<br>Объединенные Арабские Эмираты<br>Эль-Сальвадор<br>ИорданияОман<br>Южно-Африканская Республика<br>Палау<br>Ямайка<br>Панама</p><h2>Пошлина</h2><p>За оформление и выдачу виз предусмотрены следующие тарифы консульских сборов:<strong>1. Однократные визы:</strong></p><ul><li>до 7 дней — 40 USD;</li><li>до 15 дней — 50 USD;</li><li>до 30 дней — 60 USD;</li><li>до 3 месяцев — 80 USD;</li><li>до 6 месяцев — 120 USD;</li><li>до 1 года — 160 USD.</li></ul><p><strong>За каждую дополнительную кратность визы ставка тарифа увеличивается на 10 USD.</strong><strong>2. Многократные визы:</strong></p><ul><li>до 6 месяцев — 150 USD;</li><li>до 1 года — 250 USD.</li></ul><p><strong>3. Транзитные визы:</strong></p><ul><li>до 72 часов — 40 USD;</li><li>за двукратную транзитную визу — 50 USD.</li></ul><p><strong>4. Групповые визы</strong>(не менее 5 человек, исключая детей до 16 лет):</p><ul><li>до 15 дней — 15 USD с каждого человека;</li><li>до 30 дней — 25 USD с каждого человека.</li></ul><p><strong>При оформлении визы требуется также уплатить фактический расход. Размеры таких расходов зависят от места оформления визы и не зависят от гражданства заявителя.</strong></p><h2>ВАЖНО ЗНАТЬ</h2><p>Для иностранных граждан, не достигших <strong>16-летнего возраста</strong>, въезд в Республику Узбекистан не требует получения визы и осуществляется по собственному заграничному паспорту на срок действия визы сопровождающего лица, но <strong>не более 90 суток</strong> со дня въезда в страну. Если ребенок путешествует с одним из родителей, с собой желательно иметь нотариально заверенное разрешение на выезд ребенка из родной страны от второго родителя для предупреждения возможных недоразумений в аэропорту отправления.</p><div><br></div>",
+      "page_content_en": "<p>Республика Узбекистан на сегодняшний день имеет различный статус дипломатических отношений со странами мирового сообщества. Для иностранных граждан всего мира способ въезда в Узбекистан может отличаться.Существует несколько режимов въезда в Республику Узбекистан:</p><ul><li>безвизовый режим</li><li>упрощенный режим</li><li>въезд по электронной визе</li><li>въезд с приглашением</li><li>въезд с оформлением в аэропорту</li><li>транзитная виза в Узбекистан</li><li>безвизовый въезд при транзите через Узбекистан</li></ul><h2>Безвизовый режим</h2><p>Для въезда в Узбекистан резидентам нижеприведенных стран получение визы не требуется. Въезд на определенные законодательством сроки осуществляется по <strong>заграничному паспорту</strong>.</p><h3>Бессрочно</h3><p>Азербайджан<br>Грузия<br>Россия<br>Армения<br>Казахстан<br>Украина<br>Белорусия<br>Молдова</p><h3>Въезд сроком на 60 дней</h3><p>Кыргызстан</p><h3>Въезд сроком на 30 дней</h3><p>Австралия<br>Исландия<br>Россия<br>Сан-Марино<br>АвстралияЕсли граждане <strong>вышеперечисленных государств</strong> имеют необходимость оставаться на территории Республики Узбекистан больше установленных сроков, они должны получить въездную визу в соответствии с установленным МИД порядком.</p><h2>Упрощенный порядок получения визы</h2><p>Для резидентов следующих государств введен упрощенный порядок получения виз в течение <strong>3 рабочих дней</strong>, не требующий предоставления в МИД приглашения со стороны юридического/физического лица из Республики Узбекистан:Албания<br>Кабо-Верде<br>Парагвай<br>Алжир<br>Камбоджа<br>Перу<br>Ангола<br>КамерунСамоа<br>Антигуа и Барбуда<br>Катар<br>Алжир<br>Саудовская Аравия<br>Багамские Острова<br>Кирибати<br>Сейшельские ОстроваБангладеш<br>Кабо-Верде<br>Китай<br>Сенегал<br>Барбадос<br>Колумбия<br>Сент-Винсент и Гренадины<br>БахрейнКНДР<br>Кабо-Верде<br>Сент-Китс и Невис<br>Белиз<br>Коста-Рикa<br>Колумбия<br>Сент-Люсия<br>БоливияКот-д’Ивуар<br>Содружество Доминикие<br>Бутан<br>Куба<br>Соединенные Штаты<br>Америки<br>Вануату<br>КувейтСоломоновы Острова<br>Венесуэла<br>Лаос<br>Суринам<br>Вьетнам<br>Ливан<br>Таиланд<br>ГабонМаврикий<br>Тонга<br>Гайана<br>Македония<br>Тринидад и Тобаго<br>Гана<br>Мальдивы<br>ТунисГватемала<br>Марокко<br>Уругвай<br>Гондурас<br>Тринидад и Тобаго<br>Маршалловы Острова<br>Федеративные Штаты<br>МикронезиигонконгМексика<br>Фиджи<br>Уругвай<br>Гренада<br>Науру<br>Филиппины<br>Доминиканская Республика<br>НепалШри-Ланка<br>Египет<br>Никарагуа<br>Индия<br>Науру<br>Объединенные Арабские Эмираты<br>Эль-Сальвадор<br>ИорданияОман<br>Южно-Африканская Республика<br>Палау<br>Ямайка<br>ПанамаОформление визы происходит по личному обращению иностранных граждан в соответствующее <strong>дипломатическое представительство или консульство Республики Узбекистан</strong> в стране их пребывания со следующим списком документов:</p><ul><li><strong>электронная визовая анкета</strong> (в распечатанном и заполненном виде);</li><li><strong>оригинал паспорта</strong> (срок действия которого должен превышать срок действия визы не менее чем на 3 месяца);</li><li><strong>1 цветная фотография</strong> (паспортного размера);</li><li><strong>консульский сбор</strong> (согласно тарифам приведенным в разделе <strong>Пошлина</strong>)</li></ul><h2>Электронная туристическая виза</h2><p>Резиденты <strong>вышеперечисленных государств</strong> также имеют возможность получить электронную <strong>туристическую</strong> визу, заполнив анкету на портале <strong>E-VISA</strong> и оплатив пошлину в размере 2 <strong>0 USD</strong>. Электронная виза предоставляется в формате <strong>PDF</strong> на e-mail заявителя и не вклеивается в паспорт.</p><ul><li>Длительность рассмотрения поданных документов или электронной заявки составляет <strong>3 рабочих дня</strong>.</li><li>Действие электронной визы составляет <strong>90 дней</strong> со дня выдачи.</li><li>Срок пребывания на территории Узбекистана по электронной визе составляет <strong>30 дней</strong>.</li></ul><p><strong>В случае если заявитель имеет двойное гражданство, электронная визовая анкета должна быть заполнена данными того паспорта, на основании которого планируется въезд в Республику Узбекистан. В случае замены паспорта в период действия электронной визы, электронную визу необходимо получить повторно.</strong></p><h2>Въезд с приглашением</h2><p>Для граждан всех остальных стран въездная виза оформляется на основании <strong>визовой поддержки</strong>. Для оформления визовой поддержки, Вам необходимо предоставить нашей компании следующий список документов:</p><ul><li><strong>Заполненную анкету для визовой поддержки </strong><a href=\"http://127.0.0.1:8000/ru/info/\"><strong>(скачать)</strong></a></li><li><strong>Сканированную копию Вашего паспорта</strong></li><li><strong>Сканированную копию справки с места работы</strong></li></ul><p>После получения нами всей необходимой информации, мы оформим визовую поддержку в МИД Республики Узбекистан в Ташкенте которое рассмотрит Ваши документы в течение <strong>7 рабочих дней</strong>.<strong>МИД Республики Узбекистан оставляет имеет право отказать в выдаче разрешения, не предоставляя причин отказа. В случае отказа уплаченная пошлина не возвращается.</strong> Получив разрешение МИД, мы вышлем Вам на почту <strong>номер телекса</strong> после чего Вы сможете обратиться в <strong>дипломатическое представительство или консульство Республики Узбекистан</strong> в стране вашего пребывания с перечнем следующих документов:</p><ul><li><strong>Оригинал паспорта</strong> (срок действия которого должен превышать срок действия визы не менее чем на 3 месяца);</li><li><strong>Заполненная визовая анкета в 2 экземплярах;</strong></li><li><strong>2 цветные фотографии</strong> (паспортного размера);</li><li><strong>Номер телекса</strong> (высланный Вам на почту);</li><li><strong>Консульский сбор</strong> (согласно тарифам приведенным в разделе <strong>Пошлина</strong>)</li></ul><p>Длительность рассмотрения поданных документов составляет <strong>3 рабочих дня</strong>.<strong>Оформление визовой поддержки прекращается если клиент отказывается от ранее забронированного пакета туристических услуг.</strong></p><h2>Виза с оформлением в аэропорту</h2><p>Если в стране Вашего пребывания <strong>нет дипломатического представительства или консульства Республики Узбекистан</strong>, то Вы сможете оформить въездную визу по прибытию в международный аэропорт имени Ислама Каримова в <strong>секторе визового обеспечения</strong>.Для этого Вам необходимо оформить визовую поддержку в нашей компании прислав нам следующий перечень документов:</p><ul><li><strong>Заполненную анкету для визовой поддержки</strong></li><li><strong>Сканированную копию Вашего паспорта</strong></li><li><strong>Сканированную копию справки с места работы</strong></li><li><strong>Сканированные копии авиабилетов или брони</strong></li></ul><p>После получения нами всей необходимой информации, мы оформим визовую поддержку в МИД Республики Узбекистан в Ташкенте которое рассмотрит Ваши документы в течение <strong>7 рабочих дней</strong>.Получив разрешение МИД, мы вышлем Вам на почту официальный разрешающий документ с <strong>номером телекса</strong>.Данный документ должен быть предъявлен Вами при прохождении паспортного контроля в стране Вашего пребывания и на его основании Вам оформляется виза по прибытию в международный аэропорт имени «Ислама Каримова» в секторе визового обеспечения МИД Республики Узбекистан.</p><h2>Транзитная виза в Узбекистан</h2><p>Иностранные граждане следующие транзитом через Республику Узбекистан, <strong>для получения транзитной визы сроком на 72 часа </strong>, должны предоставить в <strong>дипломатическое представительство или консульство Республики Узбекистан</strong> в стране своего пребывания <strong>весь перечень документов</strong> необходимый для оформления туристической визы, а также приложить к нему:</p><ul><li><strong>Визу государства следования;</strong></li><li><strong>Проездные документы с подтвержденной датой отправления из Узбекистана в страну следования;</strong></li></ul><p>Длительность рассмотрения поданных документов составляет <strong>3 рабочих дня</strong></p><h2>Безвизовый въезд при транзите через Узбекистан</h2><p>Для граждан ряда государств (<strong>список стран приводится ниже</strong>) въезжающих в Республику Узбекистан на срок <strong>до 5 суток</strong> с последующим выездом в третью страну, ( <strong>при условии наличия у них авиабилетов, оформленных через национальную авиакомпанию Uzbekistan Airways как в Узбекистан, так и в третью страну</strong> ), установлен <strong>краткосрочный безвизовый режим.</strong><strong>Государство следования не может являться отправным государством транзитного переезда.</strong> Для граждан нижеперечисленных стран введен <strong>безвизовый въезд при транзите</strong> через Узбекистан сроком не более чем на <strong>5 суток</strong>:Албания<br>Кабо-Верде<br>Парагвай<br>Алжир<br>Камбоджа<br>Перу<br>Ангола<br>КамерунСамоа<br>Антигуа и Барбуда<br>Катар<br>Алжир<br>Саудовская Аравия<br>Багамские Острова<br>Кирибати<br>Сейшельские ОстроваБангладеш<br>Кабо-Верде<br>Китай<br>Сенегал<br>Барбадос<br>Колумбия<br>Сент-Винсент и Гренадины<br>БахрейнКНДР<br>Кабо-Верде<br>Сент-Китс и Невис<br>Белиз<br>Коста-Рикa<br>Колумбия<br>Сент-Люсия<br>БоливияКот-д’Ивуар<br>Содружество Доминикие<br>Бутан<br>Куба<br>Соединенные Штаты<br>Америки<br>Вануату<br>КувейтСоломоновы Острова<br>Венесуэла<br>Лаос<br>Суринам<br>Вьетнам<br>Ливан<br>Таиланд<br>ГабонГватемала<br>Марокко<br>Уругвай<br>Гондурас<br>Тринидад и Тобаго<br>Маршалловы Острова<br>Федеративные Штаты<br>МикронезиигонконгМаврикий<br>Тонга<br>Гайана<br>Македония<br>Тринидад и Тобаго<br>Гана<br>Мальдивы<br>ТунисМексика<br>Фиджи<br>Уругвай<br>Гренада<br>Науру<br>Филиппины<br>Доминиканская Республика<br>НепалШри-Ланка<br>Египет<br>Никарагуа<br>Индия<br>Науру<br>Объединенные Арабские Эмираты<br>Эль-Сальвадор<br>ИорданияОман<br>Южно-Африканская Республика<br>Палау<br>Ямайка<br>Панама</p><h2>Пошлина</h2><p>За оформление и выдачу виз предусмотрены следующие тарифы консульских сборов:<strong>1. Однократные визы:</strong></p><ul><li>до 7 дней — 40 USD;</li><li>до 15 дней — 50 USD;</li><li>до 30 дней — 60 USD;</li><li>до 3 месяцев — 80 USD;</li><li>до 6 месяцев — 120 USD;</li><li>до 1 года — 160 USD.</li></ul><p><strong>За каждую дополнительную кратность визы ставка тарифа увеличивается на 10 USD.</strong><strong>2. Многократные визы:</strong></p><ul><li>до 6 месяцев — 150 USD;</li><li>до 1 года — 250 USD.</li></ul><p><strong>3. Транзитные визы:</strong></p><ul><li>до 72 часов — 40 USD;</li><li>за двукратную транзитную визу — 50 USD.</li></ul><p><strong>4. Групповые визы</strong>(не менее 5 человек, исключая детей до 16 лет):</p><ul><li>до 15 дней — 15 USD с каждого человека;</li><li>до 30 дней — 25 USD с каждого человека.</li></ul><p><strong>При оформлении визы требуется также уплатить фактический расход. Размеры таких расходов зависят от места оформления визы и не зависят от гражданства заявителя.</strong></p><h2>ВАЖНО ЗНАТЬ</h2><p>Для иностранных граждан, не достигших <strong>16-летнего возраста</strong>, въезд в Республику Узбекистан не требует получения визы и осуществляется по собственному заграничному паспорту на срок действия визы сопровождающего лица, но <strong>не более 90 суток</strong> со дня въезда в страну. Если ребенок путешествует с одним из родителей, с собой желательно иметь нотариально заверенное разрешение на выезд ребенка из родной страны от второго родителя для предупреждения возможных недоразумений в аэропорту отправления.</p><div><br></div>"
+    }
+  }
+]

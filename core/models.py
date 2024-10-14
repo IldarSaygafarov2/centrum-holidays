@@ -98,6 +98,7 @@ class TourWithPrice(models.Model):
 
 class PriceByHumanTour(models.Model):
     tour = models.ForeignKey(TourWithPrice, on_delete=models.CASCADE, verbose_name='Тур', null=True)
+    category_of_price = models.CharField(verbose_name='Категория для цены', max_length=100, null=True, blank=True)
     qty = models.IntegerField(verbose_name='Количество человек')
     price = models.IntegerField(verbose_name='Цена')
 

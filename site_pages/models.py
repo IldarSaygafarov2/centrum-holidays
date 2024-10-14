@@ -58,7 +58,18 @@ class HotelPageStatic(models.Model):
 
 class TourDetailStatic(models.Model):
     text = models.TextField()
+    price_include_block = models.CharField(max_length=150, default='Стоимость тура на весну 2025, с человека:')
+
 
     class Meta:
         verbose_name = 'Детальная страница'
         verbose_name_plural = 'Детальная страница'
+
+
+class InfoPageStatic(models.Model):
+    page_title = models.CharField(max_length=100, default='Виза - информация туристам')
+    page_content = models.TextField()
+
+    class Meta:
+        verbose_name = 'Страница "Информация туристам"'
+        verbose_name_plural = 'Страница "Информация туристам"'

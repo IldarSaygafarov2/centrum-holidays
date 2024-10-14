@@ -53,13 +53,19 @@
                 </div>
             {% endfor %}
 
-            <h2>{% trans 'Стоимость тура на весну 2024, с человека' %}:</h2>
-            <ul>
-                {% for item in tour.pricebyhumantour_set.all %}
-                    <li>{{ item.qty }} {% trans 'чел' %}. — <span>{{ item.price }} USD</span></li>
+            <h2>{{ detail_page_content.price_include_block }}</h2>
+            <div style="display:flex; justify-content:center; column-gap: 40px">
+                {% for key, values in prices.items %}
+                    <div>
+                        {{ key }}
+                        <ul>
+                            {% for value in values %}
+                                <li>{{ value.0 }} {% trans 'чел' %}. — &nbsp <span>{{ value.1 }} USD</span></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 {% endfor %}
-
-            </ul>
+            </div>
             {% if tour.addontourwithprice_set.all %}
                 <h2>{% trans 'Дополнительные экскурсии' %}</h2>
             {% endif %}
@@ -71,9 +77,10 @@
                 </div>
             {% endfor %}
 
-            <p>* {% blocktrans %}Все дополнительные экскурсии обговариваются с гидом заранее и оплачиваются гиду на
-                месте. Минимальная
-                группа для любой доп. экскурсии – 5 человек.{% endblocktrans %}</p>
+            {#            <p>* {% blocktrans %}Все дополнительные экскурсии обговариваются с гидом заранее и оплачиваются гиду на#}
+            {#                месте. Минимальная#}
+            {#                группа для любой доп. экскурсии – 5 человек.{% endblocktrans %}</p>#}
+            {{ detail_page_content.text|safe }}
             
             <div class="toursDetailPage__main-content-priceInfo">
                 <div class="toursDetailPage__main-content-priceInfo-left"><h2>{% trans 'Цена включает' %}:</h2>

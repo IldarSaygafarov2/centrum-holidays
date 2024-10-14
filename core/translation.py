@@ -71,3 +71,7 @@ class DestinationTranslationOptions(TranslationOptions):
 @register(models.Article)
 class ArticleTranslationOptions(TranslationOptions):
     fields = ('title', 'excerpt')
+
+@register(models.PriceByHumanTour)
+class PriceByHumanTourTranslationOptions(TranslationOptions):
+    fields = ('category_of_price',)

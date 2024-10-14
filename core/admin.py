@@ -47,7 +47,7 @@ class TourPriceDoesNotIncludeInline(UnfoldTabularInline, TranslationTabularInlin
     extra = 1
 
 
-class PriceByHumanTourInline(UnfoldTabularInline):
+class PriceByHumanTourInline(UnfoldTabularInline, TranslationTabularInline):
     model = models.PriceByHumanTour
     extra = 1
 # TourWithPrice inlines end

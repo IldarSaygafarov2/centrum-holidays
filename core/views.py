@@ -5,11 +5,13 @@ from django.conf import settings
 from django.core import mail
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
+
 from site_pages.models import (
     HomePageStatic,
     OurMissionStatic,
     HotelPageStatic,
-    TourDetailStatic
+    TourDetailStatic,
+    InfoPageStatic
 )
 from . import models
 
@@ -197,8 +199,10 @@ def mission_view(request):
 
 def tourists_info_view(request):
     home_page_content = HomePageStatic.objects.first()
+    info_page_content = InfoPageStatic.objects.first()
     context = {
-        'home_page_content': home_page_content
+        'home_page_content': home_page_content,
+        'info_page_content': info_page_content
     }
     return render(request, 'core/info.html', context)
 
@@ -249,11 +253,21 @@ def tour_with_price_detail(request, tour_id):
     places = ' — '.join([x.place for x in tour.placestourwithprice_set.all()])
     home_page_content = HomePageStatic.objects.first()
     detail_page_content = TourDetailStatic.objects.first()
+
+    prices_by_human = tour.pricebyhumantour_set.all().values('category_of_price', 'price', 'qty')
+    prices = {}
+    for obj in prices_by_human:
+        prices[obj['category_of_price']] = []
+
+    for obj in prices_by_human:
+        prices[obj['category_of_price']].append((obj['price'], obj['qty']))
+
     context = {
         'home_page_content': home_page_content,
         'tour': tour,
         'places': places,
-        'detail_page_content': detail_page_content
+        'detail_page_content': detail_page_content,
+        'prices': prices
     }
     return render(request, 'core/tour_detail.html', context)
 
