@@ -35,7 +35,8 @@ ALLOWED_HOSTS = [
     "canaan.travel",
     "80.87.197.184"
 ]
-CSRF_TRUSTED_ORIGINS = ["https://canaan.travel", "http://canaan.travel", "https://canaan.travel:81"]
+CSRF_TRUSTED_ORIGINS = ["https://canaan.travel",
+                        "http://canaan.travel", "https://canaan.travel:81"]
 # Application definition
 
 INSTALLED_APPS = [
@@ -57,6 +58,7 @@ INSTALLED_APPS = [
     'django_dump_load_utf8',
     "ckeditor",
     'ckeditor_uploader',
+    'constance',
     "core.apps.CoreConfig",
     'site_pages.apps.SitePagesConfig',
 ]
@@ -125,7 +127,10 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "ru"
 
-gettext = lambda s: s
+
+def gettext(s): return s
+
+
 LANGUAGES = (
     ("ru", gettext("Russia")),
     ("en", gettext("English")),
@@ -175,3 +180,12 @@ MODELTRANSLATION_TRANSLATION_FILES = (
     'core.translation',
     'site_pages.translation',
 )
+
+CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
+
+
+CONSTANCE_CONFIG = {
+    'PHONE_NUMBER_1': ('+99878 148 0740', 'Номер телефона'),
+    'PHONE_NUMBER_2': ('+99890 064 0740', 'Номер телефона 2'),
+    'EMAIL_ADDRESS': ('info@canaan.travel', 'Почта'),
+}
