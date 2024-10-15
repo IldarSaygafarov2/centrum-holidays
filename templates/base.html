@@ -1872,7 +1872,7 @@ button.accordion.is-open {
 
 <body>
 
-<nav class="nav" id="nav">
+<nav class="nav" id="nav" style="padding: 20px 0">
     <div class="container nav__content">
         <div class="">
             <a href="{% url 'home' %}" class="nav__logo">
@@ -1880,8 +1880,8 @@ button.accordion.is-open {
                      style="object-fit: contain">
             </a>
             <div>
-                <a href="" style="margin-right: 10px">{{ config.PHONE_NUMBER_1 }}</a>
-                <a href="">{{ config.EMAIL_ADDRESS }}</a>
+                <a class="nav__list-link" href="" style="margin-right: 10px">{{ config.PHONE_NUMBER_1 }}</a>
+                <a class="nav__list-link" href="">{{ config.EMAIL_ADDRESS }}</a>
             </div>
         </div>
         <ul class="nav__list">
