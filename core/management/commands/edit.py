@@ -9,11 +9,11 @@ class Command(BaseCommand):
         tours = Tour.objects.all()
         key = 'Centrum Holidays'
         for tour in tours:
-            if tour.full_description2 is None:
+            if tour.full_description2_en is None:
                 continue
 
-            if key in tour.full_description2:
-                tour.full_description2 = tour.full_description2.replace(
+            if key in tour.full_description2_en:
+                tour.full_description2_en = tour.full_description2.replace(
                     key, 'Canaan Travel')
                 tour.save()
 
