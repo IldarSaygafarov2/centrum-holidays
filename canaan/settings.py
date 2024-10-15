@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [
     "canaan.travel",
     "80.87.197.184"
 ]
-CSRF_TRUSTED_ORIGINS = ["https://canaan.travel", "http://canaan.travel", "http://canaan.travel:81"]
+CSRF_TRUSTED_ORIGINS = ["https://canaan.travel", "http://canaan.travel", "https://canaan.travel:81"]
 # Application definition
 
 INSTALLED_APPS = [
