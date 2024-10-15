@@ -30,7 +30,7 @@ def book_tour_with_price(request):
         subject='Бронирование тура',
         message=msg,
         from_email=data["email"],
-        recipient_list=['travelcanaanbooking@gmail.com'],
+        recipient_list=['info@canaan.travel'],
     )
     requests.post(settings.CHANNEL_API_LINK.format(
         token=settings.BOT_TOKEN,
@@ -51,7 +51,7 @@ def book_hotel(request):
         subject='Бронирование отеля',
         message=msg,
         from_email=data["email"],
-        recipient_list=['travelcanaanbooking@gmail.com'],
+        recipient_list=['info@canaan.travel'],
     )
     requests.post(settings.CHANNEL_API_LINK.format(
         token=settings.BOT_TOKEN,
@@ -68,7 +68,7 @@ def send_mail(request):
         subject='Оставленная почта',
         message=f'Оставленная почта с сайта: {data["email"]}',
         from_email=data["email"],
-        recipient_list=['travelcanaanbooking@gmail.com'],
+        recipient_list=['info@canaan.travel'],
         auth_user=settings.EMAIL_HOST_USER,
         auth_password=settings.EMAIL_HOST_PASSWORD
     )
@@ -89,7 +89,7 @@ def send_username_and_phone(request):
         subject='Данные пользователя для бронирования тура',
         message=f"Имя пользователя: {data['username']}\nНомер телефона: {data['phone']}",
         from_email=settings.EMAIL_HOST_USER,
-        recipient_list=['travelcanaanbooking@gmail.com'],
+        recipient_list=['info@canaan.travel'],
         auth_user=settings.EMAIL_HOST_USER,
         auth_password=settings.EMAIL_HOST_PASSWORD
     )
@@ -109,29 +109,32 @@ def book_tour(request):
 
     msg = f"""
 ***Бронирование тура***
-Имя: {data['username']}
-Дата: {data['date']}
-Почта: {data['email']}
-Номер телефона: {data['phone']}
-Комментарий: {data['body']}
+Имя: {data.get('username')}
+Дата: {data.get('date')}
+Почта: {data.get('email')}
+Номер телефона: {data.get('phone')}
+Комментарий: {data.get('body')}
 """
-    mail.send_mail(
-        subject='Бронирование тура',
-        message=msg,
-        from_email=settings.EMAIL_HOST_USER,
-        recipient_list=['travelcanaanbooking@gmail.com'],
-        auth_user=settings.EMAIL_HOST_USER,
-        auth_password=settings.EMAIL_HOST_PASSWORD
-    )
-    resp = requests.post(settings.CHANNEL_API_LINK.format(
-        token=settings.BOT_TOKEN,
-        channel_id=settings.CHANNEL_ID,
-        text=msg
-    ))
+    try:
+        mail.send_mail(
+            subject='Бронирование тура',
+            message=msg,
+            from_email=settings.EMAIL_HOST_USER,
+            recipient_list=['info@canaan.travel'],
+            auth_user=settings.EMAIL_HOST_USER,
+            auth_password=settings.EMAIL_HOST_PASSWORD
+        )
+        resp = requests.post(settings.CHANNEL_API_LINK.format(
+            token=settings.BOT_TOKEN,
+            channel_id=settings.CHANNEL_ID,
+            text=msg
+        ))
 
-    resp.raise_for_status()
-    return redirect('home')
-
+        resp.raise_for_status()
+        return redirect('home')
+    except Exception as e:
+        print(e)
+        return redirect('home')
 
 def home_view(request):
     reviews = models.Review.objects.all()
