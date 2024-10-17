@@ -1,203 +1,212 @@
-{% extends 'base.html' %} {% load i18n %} {% block title %} {{ tour.title }}
-{%endblock %} {% block header %} {% endblock %} {% block content %}
-<main class="toursDetailPage__main">
-  <section class="toursDetailPage__main-header">
-    <img src="{{ tour.preview.url }}" alt="" />
-    <h1>{{ tour.title }}</h1>
-  </section>
-  <section class="toursDetailPage__main-content container">
-    <h2>{% trans 'Места посещения' %}:</h2>
-    <p>{{ places }}</p>
-    <div class="toursDetailPage__main-content-items">
-      <div class="toursDetailPage__main-content-items-card">
-        {{ tour.days }} {% trans 'дней' %}/ {{ tour.nights }} {% trans 'ночей'
-        %}
-      </div>
-      <div class="toursDetailPage__main-content-items-card">
-        {% trans 'Сезон' %}: {{ tour.season }}
-      </div>
-      <div class="toursDetailPage__main-content-items-card">
-        {% trans 'Звездность' %}: {{ tour.stars }}
-      </div>
-    </div>
-    <form
-      action="{% url 'book_tour_with_price' %}"
-      class="toursDetailPage__main-content-form"
-      method="post"
-    >
-      {% csrf_token %}
-      <h3>{% trans 'ЗАБРОНИРОВАТЬ' %}</h3>
-      <p>{% trans 'Цена от' %} <span>{{ tour.price }}</span></p>
-      <input
-        type="text"
-        name="username"
-        id=""
-        placeholder="{% trans 'Ваше Имя' %}*"
-        required
-      />
-      <input
-        type="text"
-        name="email"
-        id=""
-        placeholder="{% trans 'Ваш email' %}*"
-        required
-      />
-      <textarea
-        name="text"
-        id=""
-        cols="30"
-        rows="5"
-        placeholder="{% trans 'Ваше сообщение' %}"
-      ></textarea>
-      <button>{% trans 'Отправить' %}</button>
-    </form>
-    <h2>{% trans 'Детали' %}</h2>
-    {{ tour.full_description|safe }}
-    <h2>{% trans 'Маршрут' %}</h2>
-    <div class="map" style="position: relative; overflow: hidden">
-      <a
-        href="https://yandex.uz/maps?utm_medium=mapframe&utm_source=maps"
-        style="color: #eee; font-size: 12px; position: absolute; top: 0px"
-        >Яндекс Карты</a
-      ><a
-        href="{{ tour.route }}"
-        style="color: #eee; font-size: 12px; position: absolute; top: 14px"
-        >Яндекс Карты — транспорт, навигация, поиск мест</a
-      >
-      <iframe
-        src="{{ tour.route }}"
-        width="100%"
-        height="400"
-        frameborder="1"
-        allowfullscreen="true"
-        style="position: relative"
-      ></iframe>
-    </div>
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %} {{ tour.title }}{% endblock %}
 
-    {% for foo in tour.daytourwithprice_set.all %}
-    <button class="accordion">
-      <b>{% trans 'День' %} {{ forloop.counter }}</b> {{ foo.name }}
-    </button>
-    <div class="accordion-content">
-      <span>{{ foo.descr|safe }}</span>
-    </div>
-    {% endfor %}
+{% block header %}
 
-    <h2>{{ detail_page_content.price_include_block }}</h2>
-    <div style="display: flex; justify-content: center; column-gap: 40px">
-      {% for key, values in prices.items %}
-      <div>
-        {% if key%} {{ key }} {%endif%}
-        <ul>
-          {% for value in values %}
-          <li>
-            {{ value.1 }} {% trans 'чел' %}. — &nbsp
-            <span>{{ value.0 }} USD</span>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endfor %}
-    </div>
-    {% if tour.addontourwithprice_set.all %}
-    <h2>{% trans 'Дополнительные экскурсии' %}</h2>
-    {% endif %} {% for item in tour.addontourwithprice_set.all %}
-    <button class="accordion">{{ item.name }}</button>
-    <div class="accordion-content">
-      <span>{{ item.descr|safe }}</span>
-    </div>
-    {% endfor %} {{ detail_page_content.text|safe }}
+{% endblock %}
 
-    <div class="toursDetailPage__main-content-priceInfo">
-      <div class="toursDetailPage__main-content-priceInfo-left">
-        <h2>{% trans 'Цена включает' %}:</h2>
-        <ul>
-          {% for item in tour.tourpriceinclude_set.all %}
-          <li>✅ {{ item.text|safe }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="toursDetailPage__main-content-priceInfo-right">
-        <h2>{% trans 'Цена не включает' %}:</h2>
-        <ul>
-          {% for item in tour.tourpricedoesnotinclude_set.all %}
-          <li>❌ {{ item.text }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <div class="toursDetailPage__main-content-priceInfo">
-      <div class="toursDetailPage__main-content-priceInfo-left">
-        <h2>{% trans 'Условия' %}:</h2>
-        <ul>
-          {% for item in tour.tourcondition_set.all %}
-          <li>{{ item.text }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="toursDetailPage__main-content-priceInfo-right">
-        <h2>{% trans 'Гостиницы по маршруту' %}:</h2>
-        <ul>
-          {% for item in tour.tourhotel_set.all %}
-          <li>{{ item.text }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </section>
+{% block content %}
+    <main class="toursDetailPage__main">
+        <section class="toursDetailPage__main-header">
+            <img src="{{ tour.preview.url }}" alt=""/>
+            <h1>{{ tour.title }}</h1>
+        </section>
+        <section class="toursDetailPage__main-content container">
+            <h2>{% trans 'Места посещения' %}:</h2>
+            <p>{{ places }}</p>
+            <div class="toursDetailPage__main-content-items">
+                <div class="toursDetailPage__main-content-items-card">
+                    {{ tour.days }} {% trans 'дней' %}/ {{ tour.nights }} {% trans 'ночей' %}
+                </div>
+                <div class="toursDetailPage__main-content-items-card">
+                    {% trans 'Сезон' %}: {{ tour.season }}
+                </div>
+                <div class="toursDetailPage__main-content-items-card">
+                    {% trans 'Звездность' %}: {{ tour.stars }}
+                </div>
+            </div>
+            <form
+                    action="{% url 'book_tour_with_price' %}"
+                    class="toursDetailPage__main-content-form"
+                    method="post"
+            >
+                {% csrf_token %}
+                <h3>{% trans 'ЗАБРОНИРОВАТЬ' %}</h3>
+                <p>{% trans 'Цена от' %} <span>{{ tour.price }}</span></p>
+                <input
+                        type="text"
+                        name="username"
+                        id=""
+                        placeholder="{% trans 'Ваше Имя' %}*"
+                        required
+                />
+                <input
+                        type="text"
+                        name="email"
+                        id=""
+                        placeholder="{% trans 'Ваш email' %}*"
+                        required
+                />
+                <textarea
+                        name="text"
+                        id=""
+                        cols="30"
+                        rows="5"
+                        placeholder="{% trans 'Ваше сообщение' %}"
+                ></textarea>
+                <button>{% trans 'Отправить' %}</button>
+            </form>
+            <h2>{% trans 'Детали' %}</h2>
+            {{ tour.full_description|safe }}
+            <h2>{% trans 'Маршрут' %}</h2>
+            <div class="map" style="position: relative; overflow: hidden">
+                <a
+                        href="https://yandex.uz/maps?utm_medium=mapframe&utm_source=maps"
+                        style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+                >Яндекс Карты</a
+                ><a
+                    href="{{ tour.route }}"
+                    style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Яндекс Карты — транспорт, навигация, поиск мест</a
+            >
+                <iframe
+                        src="{{ tour.route }}"
+                        width="100%"
+                        height="400"
+                        frameborder="1"
+                        allowfullscreen="true"
+                        style="position: relative"
+                ></iframe>
+            </div>
 
-  <div class="modal">
-    <form class="form">
-      <div class="paymentother">
-        <button name="apple-pay" type="button">Uzcard</button>
-        <button name="google-pay" type="button">Humo</button>
-      </div>
-      <div class="separator">
-        <hr class="line" />
-        <p>{% trans 'Или' %}</p>
-        <hr class="line" />
-      </div>
-      <div class="card-info">
-        <div class="input_container">
-          <label class="input_label">{% trans 'Имя владельца карты' %}</label>
-          <input
-            class="input_field"
-            type="text"
-            placeholder="{% trans 'Введите свое полное имя' %}"
-          />
+            {% for foo in tour.daytourwithprice_set.all %}
+                <button class="accordion">
+                    <b>{% trans 'День' %} {{ forloop.counter }}</b> {{ foo.name }}
+                </button>
+                <div class="accordion-content">
+                    <span>{{ foo.descr|safe }}</span>
+                </div>
+            {% endfor %}
+
+            <h2>{{ detail_page_content.price_include_block }}</h2>
+            <div style="display: flex; justify-content: center; column-gap: 40px">
+                {% for key, values in prices.items %}
+                    <div>
+                        {% if key %} {{ key }} {% endif %}
+                        <ul>
+                            {% for value in values %}
+                                <li>
+                                    {{ value.1 }} {% trans 'чел' %}. — &nbsp
+                                    <span>{{ value.0 }} USD</span>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+            </div>
+            {% if tour.addontourwithprice_set.all %}
+                <h2>{% trans 'Дополнительные экскурсии' %}</h2>
+            {% endif %}
+
+            {% for item in tour.addontourwithprice_set.all %}
+                <button class="accordion">{{ item.name }}</button>
+                <div class="accordion-content">
+                    <span>{{ item.descr|safe }}</span>
+                </div>
+            {% endfor %}
+            {{ detail_page_content.text|safe }}
+
+            <div class="toursDetailPage__main-content-priceInfo">
+                <div class="toursDetailPage__main-content-priceInfo-left">
+                    <h2>{% trans 'Цена включает' %}:</h2>
+                    <ul>
+                        {% for item in tour.tourpriceinclude_set.all %}
+                            <li>✅ {{ item.text|safe }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="toursDetailPage__main-content-priceInfo-right">
+                    <h2>{% trans 'Цена не включает' %}:</h2>
+                    <ul>
+                        {% for item in tour.tourpricedoesnotinclude_set.all %}
+                            <li>❌ {{ item.text }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="toursDetailPage__main-content-priceInfo">
+                <div class="toursDetailPage__main-content-priceInfo-left">
+                    <h2>{% trans 'Условия' %}:</h2>
+                    <ul>
+                        {% for item in tour.tourcondition_set.all %}
+                            <li>{{ item.text }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="toursDetailPage__main-content-priceInfo-right">
+                    <h2>{% trans 'Гостиницы по маршруту' %}:</h2>
+                    <ul>
+                        {% for item in tour.tourhotel_set.all %}
+                            <li>{{ item.text }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal">
+            <form class="form">
+                <div class="paymentother">
+                    <button name="apple-pay" type="button">Uzcard</button>
+                    <button name="google-pay" type="button">Humo</button>
+                </div>
+                <div class="separator">
+                    <hr class="line"/>
+                    <p>{% trans 'Или' %}</p>
+                    <hr class="line"/>
+                </div>
+                <div class="card-info">
+                    <div class="input_container">
+                        <label class="input_label">{% trans 'Имя владельца карты' %}</label>
+                        <input
+                                class="input_field"
+                                type="text"
+                                placeholder="{% trans 'Введите свое полное имя' %}"
+                        />
+                    </div>
+                    <div class="input_container">
+                        <label class="input_label">{% trans 'Номер карты' %}</label>
+                        <input
+                                class="input_field"
+                                type="number"
+                                placeholder="0000 0000 0000 0000"
+                        />
+                    </div>
+                    <div class="input_container">
+                        <label class="input_label"
+                        >{% trans 'Дата истечения срока' %} / CVV</label
+                        >
+                        <div class="split">
+                            <input
+                                    class="input_field"
+                                    style="width: 250px"
+                                    type="text"
+                                    placeholder="01/23"
+                            />
+                            <input
+                                    class="input_field"
+                                    style="width: 110px"
+                                    type="number"
+                                    placeholder="CVV"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <button class="checkout" style="cursor: pointer">
+                    <span>{% trans 'Оформить' %}</span>
+                </button>
+            </form>
         </div>
-        <div class="input_container">
-          <label class="input_label">{% trans 'Номер карты' %}</label>
-          <input
-            class="input_field"
-            type="number"
-            placeholder="0000 0000 0000 0000"
-          />
-        </div>
-        <div class="input_container">
-          <label class="input_label"
-            >{% trans 'Дата истечения срока' %} / CVV</label
-          >
-          <div class="split">
-            <input
-              class="input_field"
-              style="width: 250px"
-              type="text"
-              placeholder="01/23"
-            />
-            <input
-              class="input_field"
-              style="width: 110px"
-              type="number"
-              placeholder="CVV"
-            />
-          </div>
-        </div>
-      </div>
-      <button class="checkout" style="cursor: pointer">
-        <span>{% trans 'Оформить' %}</span>
-      </button>
-    </form>
-  </div>
-</main>
+    </main>
 {% endblock %}

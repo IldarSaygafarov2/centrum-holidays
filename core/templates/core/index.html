@@ -10,7 +10,6 @@ Canaan Travel
 <main class="main">
     <section class="popular__destinations">
         <div class="container popular__destinations-content">
-            {#            <h2 class="popular__destinations-title">{% trans 'Популярные направления' %}</h2>#}
             <h2 class="popular__destinations-title">{{ home_page_content.section_title_1 }}</h2>
             <div class="popular__destinations-cards">
                 {% for destination in destinations %}
@@ -27,7 +26,6 @@ Canaan Travel
     </section>
     <section class="popular__destinations">
         <div class="container popular__destinations-content">
-            {#            <h2 class="popular__destinations-title">{% trans 'Популярные туры' %}</h2>#}
             <h2 class="popular__destinations-title">{{ home_page_content.section_title_2 }}</h2>
             <div class="popular__destinations-cards tours">
                 {% for tour in popular_tours %}
@@ -56,7 +54,6 @@ Canaan Travel
     </section>
     <section class="popular__destinations">
         <div class="container popular__destinations-content">
-            {#            <h2 class="popular__destinations-title">{% trans 'Мы рекомендуем' %}</h2>#}
             <h2 class="popular__destinations-title">{{ home_page_content.we_recommend_title }}</h2>
             <div class="popular__destinations-cards tours">
                 {% for tour in recommended_tours %}
@@ -103,20 +100,6 @@ Canaan Travel
         <div class="travel__info-descr">
             {{ home_page_content.know_more_block_2_text|safe }}
         </div>
-
-        {#        <p class="travel__info-descr">#}
-        {#            {% blocktrans %} Canaan-travel — туристическая компания полного цикла, ставящая перед собой#}
-        {#            цель открыть красоту всего мира для каждого человека сегодня. Мы стремимся ближе познакомить Восток#}
-        {#            и#}
-        {#            Запад, предлагая путешествия по Центральной Азии туристам из СНГ, Европы и Америки и поездки по#}
-        {#            всему#}
-        {#            миру жителям Центральной Азии.{% endblocktrans %}#}
-        {#        </p>#}
-        {#        <p class="travel__info-descr">#}
-        {#            {% blocktrans %}Мы работаем как с отдельными туристами, так и с компаниями. Наличие#}
-        {#            собственных авиакассы, автотранспорта и сотрудничество с лучшими гидами и отелями помогают нам#}
-        {#            формировать уникальные предложения в индивидуальном порядке.{% endblocktrans %}#}
-        {#        </p>#}
     </section>
     <section class="adventage">
         <h2 class="adventage__title">{{ home_page_content.advantages_title }}</h2>
