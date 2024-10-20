@@ -87,6 +87,7 @@ class TourWithPrice(models.Model):
     is_popular = models.BooleanField(default=False, verbose_name='Сделать популярным ?')
     is_recommended = models.BooleanField(default=False, verbose_name='Сделать рекомендуемым ?')
     slug = models.SlugField(blank=True)
+    is_active = models.BooleanField(verbose_name='Показать/скрыть тур', default=True)
 
     def __str__(self):
         return self.title

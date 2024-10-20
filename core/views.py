@@ -239,7 +239,7 @@ def destinations_view(request, slug):
 
 def tours_view(request):
     home_page_content = HomePageStatic.objects.first()
-    popular_tours = models.TourWithPrice.objects.all()
+    popular_tours = models.TourWithPrice.objects.filter(is_active=True)
     paginator = Paginator(popular_tours, 8)
     page = request.GET.get('page')
     qs = paginator.get_page(page)
