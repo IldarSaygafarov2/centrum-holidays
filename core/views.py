@@ -29,7 +29,7 @@ def book_tour_with_price(request):
     mail.send_mail(
         subject='Бронирование тура',
         message=msg,
-        from_email=data["email"],
+        from_email=settings.EMAIL_HOST_USER,
         recipient_list=['info@canaan.travel'],
     )
     requests.post(settings.CHANNEL_API_LINK.format(
@@ -50,7 +50,7 @@ def book_hotel(request):
     mail.send_mail(
         subject='Бронирование отеля',
         message=msg,
-        from_email=data["email"],
+        from_email=settings.EMAIL_HOST_USER,
         recipient_list=['info@canaan.travel'],
     )
     requests.post(settings.CHANNEL_API_LINK.format(
@@ -67,7 +67,7 @@ def send_mail(request):
     mail.send_mail(
         subject='Оставленная почта',
         message=f'Оставленная почта с сайта: {data["email"]}',
-        from_email=data["email"],
+        from_email=settings.EMAIL_HOST_USER,
         recipient_list=['info@canaan.travel'],
         auth_user=settings.EMAIL_HOST_USER,
         auth_password=settings.EMAIL_HOST_PASSWORD
@@ -135,6 +135,7 @@ def book_tour(request):
     except Exception as e:
         print(e)
         return redirect('home')
+
 
 def home_view(request):
     reviews = models.Review.objects.all()
