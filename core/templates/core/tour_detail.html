@@ -9,7 +9,9 @@
 {% block content %}
     <main class="toursDetailPage__main">
         <section class="toursDetailPage__main-header">
-            <img src="{{ tour.preview.url }}" alt=""/>
+            {% if tour.preview %}
+                <img src="{{ tour.preview.url }}" alt=""/>
+            {% endif %}
             <h1>{{ tour.title }}</h1>
         </section>
         <section class="toursDetailPage__main-content container">
