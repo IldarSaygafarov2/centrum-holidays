@@ -141,3 +141,4 @@ venvScriptsactivate/
 
 *.sqlite3
 logs/
+resp.txt

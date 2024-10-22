@@ -20,7 +20,9 @@
             {% for tour in tours %}
                 <a href="{% url 'tour_with_price_detail' tour.pk %}"
                    class="popular__destinations-cards-item tours__item">
-                    <img src="{{ tour.preview.url }}" alt="card-item">
+                    {% if tour.preview %}
+                        <img src="{{ tour.preview.url }}" alt="card-item">
+                    {% endif %}
                     <div class="popular__destinations-cards-item-content tours__item-content">
                         <h4 class="popular__destinations-cards-item-title">{{ tour.title }}</h4>
                         {% if not tour.price and not tour.data and not tour.nights %}
