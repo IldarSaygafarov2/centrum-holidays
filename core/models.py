@@ -1,5 +1,6 @@
 from ckeditor_uploader.fields import RichTextUploadingField
 from django.db import models
+import re
 
 
 class Review(models.Model):
@@ -83,7 +84,7 @@ class TourWithPrice(models.Model):
     nights = models.PositiveSmallIntegerField(verbose_name='Ночей', null=True, blank=True)
     season = models.CharField(verbose_name='Сезон', max_length=50, null=True, blank=True)
     stars = models.CharField(verbose_name='Звездность', default='0', max_length=100, null=True, blank=True)
-    route = models.URLField(verbose_name='Ссылка маршрута тура', blank=True, null=True)
+    route = models.TextField(verbose_name='Ссылка маршрута тура', blank=True, null=True)
     is_popular = models.BooleanField(default=False, verbose_name='Сделать популярным ?')
     is_recommended = models.BooleanField(default=False, verbose_name='Сделать рекомендуемым ?')
     slug = models.SlugField(blank=True)
@@ -91,6 +92,16 @@ class TourWithPrice(models.Model):
 
     def __str__(self):
         return self.title
+
+    def save(self, *args, **kwargs):
+        try:
+            pattern = r'src=["\']([^"\']+)["\']'
+            src = re.search(pattern, self.route).group(1)
+            self.route = src
+        except AttributeError:
+            print('error')
+        finally:
+            super().save(*args, **kwargs)
 
     class Meta:
         verbose_name = 'Тур с ценой'

@@ -7,9 +7,6 @@ class HomePageStaticTranslationOptions(TranslationOptions):
     fields = [
         'hero_title',
         'hero_subtitle',
-        'hero_years',
-        'hero_hotel_total',
-        'hero_guides_total',
         'section_title_1',
         'section_title_2',
         'special_offer_text',
