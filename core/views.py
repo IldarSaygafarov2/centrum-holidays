@@ -1,10 +1,13 @@
+import json
 import os
-
+from django.http import HttpResponse
 import requests
 from django.conf import settings
 from django.core import mail
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
+
+
 
 from site_pages.models import (
     HomePageStatic,
@@ -37,7 +40,7 @@ def book_tour_with_price(request):
         channel_id=settings.CHANNEL_ID,
         text=msg
     ))
-    return redirect('home')
+    return HttpResponse(json.dumps({'form_success': True}), content_type='application/json')
 
 
 def book_hotel(request):
@@ -58,7 +61,7 @@ def book_hotel(request):
         channel_id=settings.CHANNEL_ID,
         text=msg
     ))
-    return redirect('home')
+    return HttpResponse(json.dumps({'form_success': True}), content_type='application/json')
 
 
 def send_mail(request):
@@ -78,7 +81,8 @@ def send_mail(request):
         text=msg
     ))
 
-    return redirect('home')
+    # return redirect('home')
+    return HttpResponse(json.dumps({'form_success': True}), content_type='application/json')
 
 
 def send_username_and_phone(request):
@@ -101,7 +105,7 @@ def send_username_and_phone(request):
     print(resp)
     with open(os.path.join(settings.BASE_DIR, 'resp.txt'), mode='w', encoding='utf-8') as f:
         f.write(resp.text)
-    return redirect('home')
+    return HttpResponse(json.dumps({'form_success': True}), content_type='application/json')
 
 
 def book_tour(request):
@@ -131,10 +135,10 @@ def book_tour(request):
         ))
 
         resp.raise_for_status()
-        return redirect('home')
+        return HttpResponse(json.dumps({'form_success': True}), content_type='application/json')
     except Exception as e:
         print(e)
-        return redirect('home')
+        return HttpResponse(json.dumps({'form_success': True}), content_type='application/json')
 
 
 def home_view(request):

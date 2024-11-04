@@ -32,6 +32,7 @@
                     action="{% url 'book_tour_with_price' %}"
                     class="toursDetailPage__main-content-form"
                     method="post"
+                    id="tourWithPriceDetail"
             >
                 {% csrf_token %}
                 <h3>{% trans 'ЗАБРОНИРОВАТЬ' %}</h3>
@@ -39,20 +40,20 @@
                 <input
                         type="text"
                         name="username"
-                        id=""
+                        id="username"
                         placeholder="{% trans 'Ваше Имя' %}*"
                         required
                 />
                 <input
                         type="text"
                         name="email"
-                        id=""
+                        id="email"
                         placeholder="{% trans 'Ваш email' %}*"
                         required
                 />
                 <textarea
                         name="text"
-                        id=""
+                        id="text"
                         cols="30"
                         rows="5"
                         placeholder="{% trans 'Ваше сообщение' %}"
@@ -157,7 +158,7 @@
             </div>
         </section>
 
-        <div class="modal">
+        <div class="modal-form">
             <form class="form">
                 <div class="paymentother">
                     <button name="apple-pay" type="button">Uzcard</button>
@@ -211,4 +212,41 @@
             </form>
         </div>
     </main>
+{% endblock %}
+
+
+{% block extra_script %}
+    <script>
+        $(document).ready(function () {
+            $("#tourWithPriceDetail").submit(function (event) {
+                var formData = {
+                    username: $("#username").val(),
+                    email: $("#email").val(),
+                    text: $("#text").val(),
+                    csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val()
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "https://canaan.travel/ru/book_tour_with_price/",
+                    data: formData,
+                    dataType: "json",
+                    encode: true,
+                }).done(function (data) {
+                    console.log(data);
+                    $('#myModal').addClass('show')
+                    $('#myModal').css({display: "block"});
+                    $('body').css({overflow: 'hidden'});
+                    $('body').css({paddingRight: '15px'});
+                    $('.modal-backdrop').addClass('show').css({display: "block"});
+                    $("#username").val('')
+                    $("#email").val('')
+                    $("#text").val('')
+                });
+
+                event.preventDefault();
+
+            });
+        });
+    </script>
 {% endblock %}

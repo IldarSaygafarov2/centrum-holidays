@@ -123,7 +123,7 @@
                 <h2 class="newsletter__title">{{ home_page_content.email_resend_title }}</h2>
                 <form action="{% url 'send_mail' %}" class="newsletter__form" method="post" id="newsForm">
                     {% csrf_token %}
-                    <input type="text" placeholder="{% trans 'Ваш адрес E-mail' %}" name="email">
+                    <input type="text" placeholder="{% trans 'Ваш адрес E-mail' %}" name="email" id="email">
                     <button id="newsButton">{% trans 'Подписаться' %}</button>
                 </form>
             </div>
@@ -146,10 +146,11 @@
             <div class="container reservation__content">
                 <h2 class="reservation__title">{{ home_page_content.booking_block_title }}</h2>
                 <span>{{ home_page_content.booking_block_text }}</span>
-                <form action="{% url 'send_username_and_phone' %}" class="reservation__form" method="post">
+                <form action="{% url 'send_username_and_phone' %}" class="reservation__form" method="post"
+                id="reservationForm">
                     {% csrf_token %}
-                    <input type="text" placeholder="{% trans 'Ваше имя' %}" name="username">
-                    <input type="text" placeholder="{% trans 'Ваш номер телефона' %}" name="phone">
+                    <input type="text" placeholder="{% trans 'Ваше имя' %}" name="username" id="reservationFormUsername">
+                    <input type="text" placeholder="{% trans 'Ваш номер телефона' %}" name="phone" id="reservationFormPhone">
                     <button>{% trans 'Отправить' %}</button>
                 </form>
             </div>
@@ -167,11 +168,64 @@
             </div>
         </section>
     </main>
+
 {% endblock %}
 
 {% block extra_script %}
     <script>
-    let isFormSend = '{{ isSend }}';
-    console.log(isFormSend)
+        $(document).ready(function () {
+            $("#newsForm").submit(function (event) {
+                var formData = {
+                    email: $("#email").val(),
+                    csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val()
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "https://canaan.travel/ru/send_mail/",
+                    data: formData,
+                    dataType: "json",
+                    encode: true,
+                }).done(function (data) {
+                    console.log(data);
+                    $('#myModal').addClass('show')
+                    $('#myModal').css({ display: "block" });
+                    $('body').css({ overflow: 'hidden'});
+                    $('body').css({  paddingRight: '15px' });
+                    $('.modal-backdrop').addClass('show').css({ display: "block" });
+                    $("#email").val('')
+                });
+
+                event.preventDefault();
+
+            });
+            $("#reservationForm").submit(function (event) {
+                var formData = {
+                    username: $("#reservationFormUsername").val(),
+                    phone: $("#reservationFormPhone").val(),
+                    csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val()
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "https://canaan.travel/ru/send_username_and_phone/",
+                    data: formData,
+                    dataType: "json",
+                    encode: true,
+                }).done(function (data) {
+                    console.log(data);
+                    $('#myModal').addClass('show')
+                    $('#myModal').css({ display: "block" });
+                    $('body').css({ overflow: 'hidden'});
+                    $('body').css({  paddingRight: '15px' });
+                    $('.modal-backdrop').addClass('show').css({ display: "block" });
+                    $("#reservationFormUsername").val('')
+                    $("#reservationFormPhone").val('')
+                });
+
+                event.preventDefault();
+
+            });
+        });
     </script>
 {% endblock %}

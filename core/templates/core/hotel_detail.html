@@ -2,7 +2,7 @@
 {% load i18n static %}
 
 {% block title %}
-{{ hotel.title }}
+{{ hotel.name }}
 {% endblock %}
 
 {% block header %}
@@ -42,19 +42,21 @@
             </div>
         </div><!--  -->
         {{ hotel.description|safe }}
-        <form action="{% url 'book_hotel' %}" class="toursDetailPage__main-content-form" style="width: 100%; max-width: 100%;" method="post">
+        <form action="{% url 'book_hotel' %}" class="toursDetailPage__main-content-form"
+              style="width: 100%; max-width: 100%;" method="post"
+              id="hotelForm">
             {% csrf_token %}
             <h3>{% trans 'ЗАБРОНИРОВАТЬ' %}</h3>
             <p style="text-align: center;">{% trans 'Цена от' %}
                 <span>${{ hotel.price }}</span>
             </p>
-            <input type="text" name="username"  placeholder="{% trans 'Ваше Имя' %}*" required>
-            <input type="text" name="email"  placeholder="{% trans 'Ваш email' %}*" required>
-            <textarea name="text"  cols="30" rows="5" placeholder="{% trans 'Ваше сообщение' %}"></textarea>
+            <input type="text" id="username" name="username" placeholder="{% trans 'Ваше Имя' %}*" required>
+            <input type="text" id="email" name="email" placeholder="{% trans 'Ваш email' %}*" required>
+            <textarea name="text" id="text" cols="30" rows="5" placeholder="{% trans 'Ваше сообщение' %}"></textarea>
             <button>{% trans 'Отправить' %}</button>
         </form>
 
-    <div class="modal" style="max-width: 100%;">
+        <div class="modal-form" style="max-width: 100%;">
             <form class="form" >
                 <div class="paymentother">
                     <button name="apple-pay" type="button">
@@ -195,6 +197,37 @@
         }
 
 
+$(document).ready(function () {
+    $("#hotelForm").submit(function (event) {
+        var formData = {
+            username: $("#username").val(),
+            email: $("#email").val(),
+            text: $("#text").val(),
+            csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val()
+        };
 
+        $.ajax({
+            type: "POST",
+            url: "https://canaan.travel/ru/book_hotel/",
+            data: formData,
+            dataType: "json",
+            encode: true,
+        }).done(function (data) {
+            console.log(data);
+            $('#myModal').addClass('show')
+            $('#myModal').css({display: "block"});
+            $('body').css({overflow: 'hidden'});
+            $('body').css({paddingRight: '15px'});
+            $('.modal-backdrop').addClass('show').css({display: "block"});
+            $("#username").val('')
+            $("#email").val('')
+            $("#text").val('')
+        });
+
+        event.preventDefault();
+
+    });
+});
 </script>
 {% endblock extra_script %}
+
