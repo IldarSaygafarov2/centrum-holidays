@@ -1,13 +1,12 @@
 import json
 import os
-from django.http import HttpResponse
+
 import requests
 from django.conf import settings
 from django.core import mail
 from django.core.paginator import Paginator
-from django.shortcuts import render, redirect
-
-
+from django.http import HttpResponse
+from django.shortcuts import render
 
 from site_pages.models import (
     HomePageStatic,
@@ -321,7 +320,7 @@ def hotel_detail(request, hotel_slug):
 
 def search(request):
     query = request.GET.get('q')
-    
+
     tours = models.TourWithPrice.objects.filter(title__iregex=query)
     tours2 = models.Tour.objects.filter(title__iregex=query)
     context = {
