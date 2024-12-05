@@ -36,7 +36,7 @@ ALLOWED_HOSTS = [
     "80.87.197.184"
 ]
 CSRF_TRUSTED_ORIGINS = ["https://canaan.travel",
-                        "http://canaan.travel", "https://canaan.travel:81"]
+                        "http://canaan.travel", "https://canaan.travel:81", 'http://127.0.0.1:8000']
 # Application definition
 
 INSTALLED_APPS = [
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "unfold.contrib.simple_history",
 
     "modeltranslation",
+    # 'django_recaptcha',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -191,3 +192,6 @@ CONSTANCE_CONFIG = {
     'PHONE_NUMBER_2': ('+99890 064 0740', 'Номер телефона 2'),
     'EMAIL_ADDRESS': ('info@canaan.travel', 'Почта'),
 }
+# RECAPTCHA_PRIVATE_KEY = os.getenv('CAPTCHA_KEY')
+# RECAPTCHA_PUBLIC_KEY = os.getenv('CAPTCHA_KEY')
+# SILENCED_SYSTEM_CHECKS = ['django_recaptcha.recaptcha_test_key_error']

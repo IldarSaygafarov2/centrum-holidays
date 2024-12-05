@@ -15,6 +15,7 @@ from site_pages.models import (
     TourDetailStatic,
     InfoPageStatic
 )
+
 from . import models
 
 

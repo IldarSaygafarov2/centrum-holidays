@@ -1,0 +1,149 @@
+{% load static i18n %}
+
+{#<nav class="nav" id="nav" style="padding: 20px 0">#}
+{#    <div class="container nav__content">#}
+{#        <div class="">#}
+{#            <a href="{% url 'home' %}" class="nav__logo">#}
+{#                <img src="{% static 'images/Canaan-logo-1.png' %}" alt="" width="120" height="120"#}
+{#                     style="object-fit: contain">#}
+{#            </a>#}
+{#            <div>#}
+{#                <a class="nav__list-link" href="https://wa.me/{{ site_config.PHONE_NUMBER_1.1 }}" style="margin-right: 10px; display: inline-flex; column-gap: 10px">#}
+{#                    <svg fill="#7329B0"#}
+{#                         xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">#}
+{#                        <path#}
+{#                                d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/>#}
+{#                    </svg>#}
+{#                    {{ site_config.PHONE_NUMBER_1.0 }}#}
+{#                </a>#}
+{#                <a class="nav__list-link" href="" style="display: inline-flex; column-gap: 10px">#}
+{#                    <svg fill="#7329B0"#}
+{#                         xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">#}
+{#                        <path#}
+{#                                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>#}
+{#                    </svg>#}
+{#                    {{ config.EMAIL_ADDRESS }}#}
+{#                </a>#}
+{#            </div>#}
+{#        </div>#}
+{#        <ul class="nav__list">#}
+{#            <li class="nav__list-item"><a href="{% url 'about' %}" class="nav__list-link">{% trans 'О нас' %}</a></li>#}
+{#            <li class="nav__list-item"><a href="{% url 'mission' %}"#}
+{#                                          class="nav__list-link">{% trans 'Наша миссия' %}</a></li>#}
+{#            <li class="nav__list-item"><a href="{% url 'tours' %}" class="nav__list-link">{% trans 'Туры' %}</a></li>#}
+{#            <li class="nav__list-item"><a href="{% url 'hotels' %}"#}
+{#                                          class="nav__list-link">{% trans 'Отели Узбекистана' %}</a></li>#}
+{#            <li class="nav__list-item"><a href="{% url 'reviews' %}" class="nav__list-link">{% trans 'Отзывы' %}</a>#}
+{#            </li>#}
+{#            <li class="nav__list-item"><a href="{% url 'booking' %}"#}
+{#                                          class="nav__list-link">{% trans 'Бронирование' %}</a></li>#}
+{#            <li class="nav__list-item">#}
+{#                <form action="{% url 'set_language' %}" method="post">{% csrf_token %}#}
+{#                    <input name="next" type="hidden" value="{{ redirect_to }}">#}
+{#                    <select name="language" class="languages" onchange="this.form.submit()">#}
+{#                        {% get_current_language as LANGUAGE_CODE %}#}
+{#                        {% get_available_languages as LANGUAGES %}#}
+{#                        {% get_language_info_list for LANGUAGES as languages %}#}
+{#                        {% for language in languages %}#}
+{#                            <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}#}
+{#                                    selected{% endif %}>#}
+{#                                {{ language.code|upper }}#}
+{#                            </option>#}
+{#                        {% endfor %}#}
+{#                    </select>#}
+{#                    <input type="submit" value="Go" hidden>#}
+{#                </form>#}
+{#            </li>#}
+{#        </ul>#}
+{#    </div>#}
+{#</nav>#}
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+
+        <div class="d-flex flex-column mb-0 mb-lg-3">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static 'images/Canaan-logo-1.png' %}" alt="" width="120" height="120"
+                     style="object-fit: contain">
+            </a>
+            <div class="d-none d-lg-flex gap-3 flex-column flex-xl-row">
+                <a class="nav__list-link" href="https://wa.me/{{ site_config.PHONE_NUMBER_1.1 }}"
+                   style="margin-right: 10px; display: inline-flex; column-gap: 10px">
+                    <svg fill="#7329B0"
+                         xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                                d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/>
+                    </svg>
+                    {{ site_config.PHONE_NUMBER_1.0 }}
+                </a>
+                <a class="nav__list-link" href="" style="display: inline-flex; column-gap: 10px">
+                    <svg fill="#7329B0"
+                         xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>
+                    </svg>
+                    {{ config.EMAIL_ADDRESS }}
+                </a>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                {#                <li class="nav-item">#}
+                {#                    <a class="nav-link active" aria-current="page" href="#">Home</a>#}
+                {#                </li>#}
+                <li class="nav__list-item"><a href="{% url 'about' %}" class="nav__list-link">{% trans 'О нас' %}</a>
+                </li>
+                <li class="nav__list-item"><a href="{% url 'mission' %}"
+                                              class="nav__list-link">{% trans 'Наша миссия' %}</a></li>
+                <li class="nav__list-item"><a href="{% url 'tours' %}" class="nav__list-link">{% trans 'Туры' %}</a>
+                </li>
+                <li class="nav__list-item"><a href="{% url 'hotels' %}"
+                                              class="nav__list-link">{% trans 'Отели Узбекистана' %}</a></li>
+                <li class="nav__list-item"><a href="{% url 'reviews' %}" class="nav__list-link">{% trans 'Отзывы' %}</a>
+                </li>
+                <li class="nav__list-item"><a href="{% url 'booking' %}"
+                                              class="nav__list-link">{% trans 'Бронирование' %}</a></li>
+                <li class="nav__list-item">
+                    <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}">
+                        <select name="language" class="languages" onchange="this.form.submit()">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}
+                                        selected{% endif %}>
+                                    {{ language.code|upper }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                        <input type="submit" value="Go" hidden>
+                    </form>
+                </li>
+            </ul>
+            <div class="d-flex d-lg-none gap-3 flex-column flex-sm-row  mb-3 mt-5">
+                <a class="nav__list-link" href="https://wa.me/{{ site_config.PHONE_NUMBER_1.1 }}"
+                   style="margin-right: 10px; display: inline-flex; column-gap: 10px">
+                    <svg fill="#7329B0"
+                         xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                                d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/>
+                    </svg>
+                    {{ site_config.PHONE_NUMBER_1.0 }}
+                </a>
+                <a class="nav__list-link" href="" style="display: inline-flex; column-gap: 10px">
+                    <svg fill="#7329B0"
+                         xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>
+                    </svg>
+                    {{ config.EMAIL_ADDRESS }}
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

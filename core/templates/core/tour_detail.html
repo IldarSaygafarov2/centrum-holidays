@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% load i18n %}
-{% block title %} {{ tour.title }}{% endblock %}
+
+{% block title %} {{ tour.title }} {% endblock %}
 
 {% block header %}
-
 {% endblock %}
 
 {% block content %}
@@ -86,6 +86,9 @@
             {% for foo in tour.daytourwithprice_set.all %}
                 <button class="accordion">
                     <b>{% trans 'День' %} {{ forloop.counter }}</b> {{ foo.name }}
+                    <svg data-name="1-Arrow Up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                        <path d="m26.71 10.29-10-10a1 1 0 0 0-1.41 0l-10 10 1.41 1.41L15 3.41V32h2V3.41l8.29 8.29z"/>
+                    </svg>
                 </button>
                 <div class="accordion-content">
                     <span>{{ foo.descr|safe }}</span>
@@ -110,15 +113,17 @@
             </div>
             {% if tour.addontourwithprice_set.all %}
                 <h2>{% trans 'Дополнительные экскурсии' %}</h2>
-            {% endif %}
-
-            {% for item in tour.addontourwithprice_set.all %}
-                <button class="accordion">{{ item.name }}</button>
-                <div class="accordion-content">
-                    <span>{{ item.descr|safe }}</span>
-                </div>
-            {% endfor %}
-            {{ detail_page_content.text|safe }}
+            {% endif %} {% for item in tour.addontourwithprice_set.all %}
+            <button class="accordion">
+                {{ item.name }}
+                <svg data-name="1-Arrow Up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="m26.71 10.29-10-10a1 1 0 0 0-1.41 0l-10 10 1.41 1.41L15 3.41V32h2V3.41l8.29 8.29z"/>
+                </svg>
+            </button>
+            <div class="accordion-content">
+                <span>{{ item.descr|safe }}</span>
+            </div>
+        {% endfor %} {{ detail_page_content.text|safe }}
 
             <div class="toursDetailPage__main-content-priceInfo">
                 <div class="toursDetailPage__main-content-priceInfo-left">
@@ -212,10 +217,7 @@
             </form>
         </div>
     </main>
-{% endblock %}
-
-
-{% block extra_script %}
+{% endblock %} {% block extra_script %}
     <script>
         $(document).ready(function () {
             $("#tourWithPriceDetail").submit(function (event) {
@@ -223,7 +225,7 @@
                     username: $("#username").val(),
                     email: $("#email").val(),
                     text: $("#text").val(),
-                    csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val()
+                    csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val(),
                 };
 
                 $.ajax({
@@ -234,18 +236,17 @@
                     encode: true,
                 }).done(function (data) {
                     console.log(data);
-                    $('#myModal').addClass('show')
-                    $('#myModal').css({display: "block"});
-                    $('body').css({overflow: 'hidden'});
-                    $('body').css({paddingRight: '15px'});
-                    $('.modal-backdrop').addClass('show').css({display: "block"});
-                    $("#username").val('')
-                    $("#email").val('')
-                    $("#text").val('')
+                    $("#myModal").addClass("show");
+                    $("#myModal").css({display: "block"});
+                    $("body").css({overflow: "hidden"});
+                    $("body").css({paddingRight: "15px"});
+                    $(".modal-backdrop").addClass("show").css({display: "block"});
+                    $("#username").val("");
+                    $("#email").val("");
+                    $("#text").val("");
                 });
 
                 event.preventDefault();
-
             });
         });
     </script>
