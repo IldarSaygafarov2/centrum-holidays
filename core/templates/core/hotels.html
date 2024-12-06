@@ -20,7 +20,13 @@
                     <img src="{{ hotel.preview.url }}" alt="{{ hotel.name }}">
                     <div class="hotels__main-item-content"><h3
                             class="hotels__main-item-content-title">{{ hotel.name }}</h3>
-                        <span>${{ hotel.price }} / {% trans 'ночь' %}</span> <a href="{% url 'hotel_detail' hotel.slug %}">{% trans 'Забронировать' %}</a>
+                        <span>${{ hotel.price }} / {% trans 'ночь' %}</span> <a href="{% url 'hotel_detail' hotel.slug %}">
+                            {% if 'en' in request.path %}
+                            {% trans 'Detail' %}
+                            {% else %}
+                            {% trans 'Подробно' %}
+                            {% endif %}
+                        </a>
                     </div>
                 </div>
             {% endfor %}
