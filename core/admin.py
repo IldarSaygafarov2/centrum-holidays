@@ -2,8 +2,10 @@ from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin, TranslationTabularInline
 from unfold.admin import ModelAdmin
 from unfold.admin import TabularInline as UnfoldTabularInline
+from unfold.contrib.forms.widgets import WysiwygWidget
 
 from . import models
+from django.db import models as django_models
 
 
 # Register your models here.
@@ -101,6 +103,11 @@ class HotelImageGalleryInline(admin.TabularInline):
 
 
 class HotelAdmin(TranslationAdmin, ModelAdmin):
+    formfield_overrides = {
+        django_models.TextField: {
+            "widget": WysiwygWidget,
+        }
+    }
     prepopulated_fields = {'slug': ('name',)}
     inlines = [
         HotelBunInline,
