@@ -34,7 +34,7 @@
                             <img src="{{ tour.preview.url }}" alt="{{ tour.title }}">
                             <div class="popular__destinations-cards-item-content tours__item-content">
                                 <h4 class="popular__destinations-cards-item-title">{{ tour.title }}
-                                </h4><span>{{ tour.price }}</span>
+                                </h4><span>{% trans ' от ' %}{{ tour.price }}</span>
                                 <p class="popular__destinations-cards-item-descr">
                                     {{ tour.days }} {% trans 'дней' %} / {{ tour.nights }} {% trans 'ночей' %}
                                 </p>
@@ -62,7 +62,7 @@
                             <img src="{{ tour.preview.url }}" alt="{{ tour.title }}">
                             <div class="popular__destinations-cards-item-content tours__item-content">
                                 <h4 class="popular__destinations-cards-item-title">{{ tour.title }}
-                                </h4><span>{{ tour.price }}</span>
+                                </h4><span>{% trans ' от ' %}{{ tour.price }}</span>
                                 <p class="popular__destinations-cards-item-descr">
                                     {{ tour.days }} {% trans 'дней' %} / {{ tour.nights }} {% trans 'ночей' %}
                                 </p>

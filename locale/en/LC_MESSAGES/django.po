@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-11 09:51+0500\n"
+"POT-Creation-Date: 2024-12-23 19:44+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: canaan/settings.py:118
+#: canaan/settings.py:137
 msgid "Russia"
 msgstr ""
 
-#: canaan/settings.py:119
+#: canaan/settings.py:138
 msgid "English"
 msgstr ""
 
-#: core/templates/core/about.html:10 templates/base.html:1872
+#: core/templates/core/about.html:10
 msgid "О нас"
 msgstr "About us"
 
@@ -242,11 +242,11 @@ msgstr ""
 " <li>Air cargo</li>\n"
 " "
 
-#: core/templates/core/about.html:99
+#: core/templates/core/about.html:100
 msgid "Среди наших почётных клиентов"
 msgstr "Among our honorable clients"
 
-#: core/templates/core/about.html:111 core/templates/core/mission.html:54
+#: core/templates/core/about.html:115 core/templates/core/mission.html:55
 msgid "Заказать тур"
 msgstr "Book a tour"
 
@@ -254,7 +254,7 @@ msgstr "Book a tour"
 msgid "БЛОГ"
 msgstr "BLOG"
 
-#: core/templates/core/booking.html:13 templates/base.html:1878
+#: core/templates/core/booking.html:13 templates/components/_nav.html:109
 msgid "Бронирование"
 msgstr "Booking"
 
@@ -263,7 +263,7 @@ msgid "Заполните поля для резерва тура"
 msgstr "Fill in the fields to reserve a tour"
 
 #: core/templates/core/booking.html:19 core/templates/core/booking.html:20
-#: core/templates/core/index.html:160
+#: core/templates/core/index.html:152
 msgid "Ваше имя"
 msgstr "Your name"
 
@@ -271,7 +271,7 @@ msgstr "Your name"
 msgid "Ваш E-mail"
 msgstr "Your E-mail"
 
-#: core/templates/core/booking.html:22 core/templates/core/index.html:161
+#: core/templates/core/booking.html:22 core/templates/core/index.html:153
 msgid "Ваш номер телефона"
 msgstr "Your phone number"
 
@@ -279,1223 +279,127 @@ msgstr "Your phone number"
 msgid "Комментарий и пожелание"
 msgstr "Comment and wish"
 
-#: core/templates/core/booking.html:24 core/templates/core/hotel_detail.html:54
-#: core/templates/core/index.html:162 core/templates/core/tour_detail.html:32
+#: core/templates/core/booking.html:24 core/templates/core/hotel_detail.html:56
+#: core/templates/core/index.html:154 core/templates/core/tour_detail.html:61
 msgid "Отправить"
 msgstr "Send"
 
-#: core/templates/core/hotel_detail.html:47
-#: core/templates/core/tour_detail.html:27
+#: core/templates/core/hotel_detail.html:49
+#: core/templates/core/tour_detail.html:38
 msgid "ЗАБРОНИРОВАТЬ"
 msgstr "BOOK NOW"
 
-#: core/templates/core/hotel_detail.html:48
-#: core/templates/core/tour_detail.html:28
+#: core/templates/core/hotel_detail.html:50
+#: core/templates/core/tour_detail.html:39
 msgid "Цена от"
 msgstr "Price from"
 
-#: core/templates/core/hotel_detail.html:51
-#: core/templates/core/tour_detail.html:29
+#: core/templates/core/hotel_detail.html:53
+#: core/templates/core/tour_detail.html:44
 msgid "Ваше Имя"
 msgstr "Your name"
 
-#: core/templates/core/hotel_detail.html:52
-#: core/templates/core/tour_detail.html:30
+#: core/templates/core/hotel_detail.html:54
+#: core/templates/core/tour_detail.html:51
 msgid "Ваш email"
 msgstr "Your E-mail"
 
-#: core/templates/core/hotel_detail.html:53
-#: core/templates/core/tour_detail.html:31
+#: core/templates/core/hotel_detail.html:55
+#: core/templates/core/tour_detail.html:59
 msgid "Ваше сообщение"
 msgstr "your message"
 
-#: core/templates/core/hotel_detail.html:69
-#: core/templates/core/tour_detail.html:120
+#: core/templates/core/hotel_detail.html:71
+#: core/templates/core/tour_detail.html:174
 msgid "Или"
 msgstr "or"
 
-#: core/templates/core/hotel_detail.html:74
-#: core/templates/core/tour_detail.html:125
+#: core/templates/core/hotel_detail.html:76
+#: core/templates/core/tour_detail.html:179
 msgid "Имя владельца карты"
 msgstr "Card holder name"
 
-#: core/templates/core/hotel_detail.html:75
-#: core/templates/core/tour_detail.html:126
+#: core/templates/core/hotel_detail.html:77
+#: core/templates/core/tour_detail.html:183
 msgid "Введите свое полное имя"
 msgstr "Write your full name"
 
-#: core/templates/core/hotel_detail.html:78
-#: core/templates/core/tour_detail.html:129
+#: core/templates/core/hotel_detail.html:80
+#: core/templates/core/tour_detail.html:187
 msgid "Номер карты"
 msgstr "Card number"
 
-#: core/templates/core/hotel_detail.html:82
-#: core/templates/core/tour_detail.html:133
+#: core/templates/core/hotel_detail.html:84
+#: core/templates/core/tour_detail.html:196
 msgid "Дата истечения срока"
 msgstr "Expiration date"
 
-#: core/templates/core/hotel_detail.html:90
-#: core/templates/core/tour_detail.html:141
+#: core/templates/core/hotel_detail.html:92
+#: core/templates/core/tour_detail.html:215
 msgid "Оформить"
 msgstr "Checkout"
 
-#: core/templates/core/hotel_detail.html:94
+#: core/templates/core/hotel_detail.html:96
 msgid "Рекомендации"
 msgstr "Recommendation"
 
-#: core/templates/core/hotel_detail.html:104 core/templates/core/hotels.html:23
+#: core/templates/core/hotel_detail.html:106 core/templates/core/hotels.html:23
 msgid "ночь"
 msgstr "night"
 
-#: core/templates/core/hotel_detail.html:105 core/templates/core/hotels.html:23
+#: core/templates/core/hotel_detail.html:107
 msgid "Забронировать"
 msgstr "Book"
 
-#: core/templates/core/hotels.html:5 core/templates/core/hotels.html:15
+#: core/templates/core/hotels.html:5
 msgid "ОТЕЛИ УЗБЕКИСТАНА"
 msgstr "HOTELS IN UZBEKISTAN"
 
-#: core/templates/core/hotels.html:29
-msgid ""
-"Ведомый страстью к приключениям путник в своих\n"
-"            странствиях далеко от\n"
-"            дома. Но он так же нуждается в крове и уюте, чтобы отдохнуть и "
-"отправиться в путь с новыми силами. И где еще\n"
-"            найти приют в далеком крае, как не в отеле. Располагайся, "
-"странник, здесь ты узнаешь о лучших отелях\n"
-"            Узбекистана\n"
-"            и сможешь забронировать самый удобный номер по хорошей цене."
+#: core/templates/core/hotels.html:25
+msgid "Detail"
 msgstr ""
-"Driven by a passion for adventure, a traveler in his own\n"
-"wandering far from\n"
-"at home. But he also needs shelter and comfort to rest andset out on the "
-"road with renewed vigor. And where else\n"
-"find shelter in a distant land, if not in a hotel. Make yourself comfortable,"
-"wanderer, here you will learn about the best hotels\n"
-"Uzbekistan\n"
-"and you can book the most comfortable room at a good price."
 
-#: core/templates/core/hotels.html:35
-msgid "Гостиницы Узбекистана"
-msgstr "Hotels in Uzbekistan"
-
-#: core/templates/core/hotels.html:36
-msgid ""
-"Узбекистан — страна с большой и разнообразной историей, интерес к которой "
-"проявляют\n"
-"                туристы со всего мира.\n"
-"                Поэтому нет ничего удивительного в том, что найти отель в "
-"Узбекистане не составляет никакого труда —\n"
-"                здесь\n"
-"                так много предложений, что можно удовлетворить даже самую "
-"изысканную потребность. Узбекское\n"
-"                гостеприимство\n"
-"                известно во всем мире, так что каждый хозяин будет вам рад. "
-"Кухня в местных отелях разнообразная — от\n"
-"                восточной до европейской. Конечно, мало кто отказывается от "
-"возможности насладиться такими узбекскими\n"
-"                блюдами, как плов, самса, нарын, но все-таки приятно иметь "
-"возможность позавтракать чем-то привычным.\n"
-"                Но,\n"
-"                как шутят иногда местные, «зачем есть не плов, если можно "
-"поесть плов?». Особенно удобно то, что многие\n"
-"                отели расположены достаточно близко к самым популярным "
-"достопримечательностям, иногда памятники видны\n"
-"                прямо\n"
-"                из окна номера. Есть отели и для тех, кто приехал в страну с "
-"деловыми целями. Например, ташкентский\n"
-"                отель\n"
-"                Wyndham располагает комфортабельными и хорошо оборудованными "
-"конференц-залами для проведения\n"
-"                бизнес-встреч и\n"
-"                презентаций."
+#: core/templates/core/hotels.html:27
+msgid "Подробно"
 msgstr ""
-"Uzbekistan is a country with a large and varied history, the interest in "
-"which show\n"
-"tourists from all over the world.\n"
-"Therefore, it is not surprising to find a hotel inIn Uzbekistan there is no "
-"difficulty -\n"
-"here\n"
-"so many offers that you can satisfy even the mostrefined need. Uzbek\n"
-"hospitality\n"
-"is known all over the world, so every owner will be happy to see you.The "
-"cuisine in local hotels is varied - from\n"
-"Eastern to European. Of course, few people refuseopportunities to enjoy such "
-"Uzbek cuisine\n"
-"dishes like pilaf, samsa, naryn, but still nice to havean opportunity to "
-"have something familiar for breakfast.\n"
-"But,\n"
-"as the locals sometimes joke, why don’t eat pilaf if you canEat pilaf?” "
-"What’s especially convenient is that many\n"
-"the hotels are located fairly close to the most popular onessights, "
-"sometimes monuments are visible\n"
-"straight\n"
-"from the window of the room. There are also hotels for those who came to the "
-"country with for business purposes. For example, Tashkent\n"
-"hotel\n"
-"Wyndham features comfortable and well-appointed roomsconference rooms for "
-"holding\n"
-"business meetings and\n"
-"presentations."
 
-#: core/templates/core/hotels.html:54
-msgid "Цены и удобства"
-msgstr "Prices and amenities"
-
-#: core/templates/core/hotels.html:55
-msgid ""
-"Поскольку Узбекистан смело можно назвать туристическим краем, отели "
-"открываются всех\n"
-"                возможных классов — от\n"
-"                простых и бюджетных типа «постель и завтрак» до люксовых "
-"как, например, Hilton в Ташкенте. Как принято\n"
-"                на\n"
-"                международном уровне, количество звезд отеля указывает на "
-"гарантируемый набор условий и\n"
-"                комфортабельность. В\n"
-"                остальном — обязательно проверьте описание отеля на нашем "
-"сайте, где отмечены все удобства от химчистки\n"
-"                до\n"
-"                сувенирного магазина. Настоятельно рекомендуется проверить "
-"наличие кондиционера в номере, если вы\n"
-"                посещаете\n"
-"                солнечный Узбекистан летом, ведь дневная температура здесь "
-"может превышать 50 градусов, что очень\n"
-"                непривычно\n"
-"                для многих гостей Средней Азии."
-msgstr ""
-"Since Uzbekistan can safely be called a tourist region, hotels everyone "
-"opens\n"
-"possible classes - from\n"
-"from simple and budget bed and breakfasts to luxurylike, for example, Hilton "
-"in Tashkent. As is customary\n"
-"on\n"
-" international level, the number of stars of the hotel indicates guaranteed "
-"set of conditions and\n"
-"comfort. В\n"
-" for the rest - be sure to check the hotel description on our a site where "
-"all the conveniences of dry cleaning are noted\n"
-"before\n"
-" gift shop. Highly recommended to check Air conditioning in the room if you\n"
-"visit\n"
-"sunny Uzbekistan in summer, because the daytime temperature is herecan "
-"exceed 50 degrees, which is very\n"
-"unusual\n"
-"for many guests of Central Asia."
-
-#: core/templates/core/hotels.html:68
-msgid "Узнать подробнее"
-msgstr "Find out more"
-
-#: core/templates/core/hotels.html:69
-msgid ""
-"В каждом городе — от Ташкента до Нураты — дюжины вариантов на любой вкус и "
-"кошелек, мы же\n"
-"                предлагаем только\n"
-"                лучшие и проверенные отели, с которыми лично имели дело. "
-"Описание гостиницы обычно отвечает на все\n"
-"                вопросы,\n"
-"                но иногда намного информативнее узнать ее рейтинг или "
-"прочесть отзыв другого туриста, ведь не все\n"
-"                условия\n"
-"                можно узнать по фотографиям. Вы можете получить подробную "
-"информацию онлайн или связаться с нашими\n"
-"                операторами. Мы поможем вам подобрать подходящий отель "
-"Узбекистана и оформить бронирование. Узбекистан,\n"
-"                увидеть который желают странники со всего мира, ждет вас. И "
-"вам не нужно переживать о своем комфорте в\n"
-"                поездке, ведь Canaan-travel позаботится о том, чтобы у вас "
-"не возникло никаких сложностей и неудобств.\n"
-"                Наши\n"
-"                специалисты будут с вами на связи на протяжении всего вашего "
-"путешествия."
-msgstr ""
-"In every city - from Tashkent to Nurata - there are dozens of options for "
-"every taste andwallet, we\n"
-"We offer only\n"
-"the best and most trusted hotels that we personally dealt with.The hotel "
-"description usually answers everything\n"
-"questions\n"
-"but sometimes it is much more informative to find out its rating or read "
-"another tourist's review, because not everyone\n"
-"conditions\n"
-" can be recognized from the photographs. You can get detailed information "
-"online or contact our\n"
-" operators. We will help you find a suitable hotel Uzbekistan and make a "
-"reservation. Uzbekistan,\n"
-"What travelers from all over the world want to see is waiting for you. "
-"Andyou don't need to worry about your comfort in\n"
-" your trip, because Canaan-travel will make sure that you have there were no "
-"difficulties or inconveniences.\n"
-"Ours\n"
-"specialists will be in touch with you throughout your entire staytrips."
-
-#: core/templates/core/index.html:13
-msgid "Популярные направления"
-msgstr "Popular destinations"
-
-#: core/templates/core/index.html:29
-msgid "Популярные туры"
-msgstr "Popular tours"
+#: core/templates/core/index.html:37
+msgid " от "
+msgstr " from "
 
 #: core/templates/core/index.html:39 core/templates/core/index.html:67
-#: core/templates/core/search_page.html:51
-#: core/templates/core/tour_detail.html:21 core/templates/core/tours.html:35
+#: core/templates/core/search_page.html:54
+#: core/templates/core/tour_detail.html:22 core/templates/core/tours.html:37
 msgid "дней"
 msgstr "days"
 
 #: core/templates/core/index.html:39 core/templates/core/index.html:67
-#: core/templates/core/search_page.html:51
-#: core/templates/core/tour_detail.html:21 core/templates/core/tours.html:36
+#: core/templates/core/search_page.html:54
+#: core/templates/core/tour_detail.html:22 core/templates/core/tours.html:38
 msgid "ночей"
 msgstr "nights"
-
-#: core/templates/core/index.html:50
-msgid "Специальное предложение"
-msgstr "Special offer"
-
-#: core/templates/core/index.html:51
-msgid "Путешествуйте дешевле!"
-msgstr "Travel cheaper!"
 
 #: core/templates/core/index.html:52
 msgid "УЗНАТЬ БОЛЬШЕ"
 msgstr "TO LEARN MORE"
 
-#: core/templates/core/index.html:57
-msgid "Мы рекомендуем"
-msgstr "We recommend"
-
-#: core/templates/core/index.html:77
-msgid "Узнайте о Востоке больше"
-msgstr "Find out more about the East"
-
-#: core/templates/core/index.html:98
-msgid "Узнайте о Востоке больше вместе с нами"
-msgstr "Find out more about the East with us"
-
-#: core/templates/core/index.html:100
-msgid ""
-" Canaan-travel — туристическая компания полного цикла, ставящая перед собой\n"
-"            цель открыть красоту всего мира для каждого человека сегодня. Мы "
-"стремимся ближе познакомить Восток\n"
-"            и\n"
-"            Запад, предлагая путешествия по Центральной Азии туристам из "
-"СНГ, Европы и Америки и поездки по\n"
-"            всему\n"
-"            миру жителям Центральной Азии."
-msgstr ""
-" Canaan-travel is a full-service travel company, putting itself before "
-"itself\n"
-"the goal is to discover the beauty of the whole world for every persontoday. "
-"We strive to introduce the East closer\n"
-"and\n"
-"The West, offering travel in Central Asiatourists from the CIS, Europe and "
-"America and trips around\n"
-"to everything\n"
-"peace to the people of Central Asia.\n"
-" "
-
-#: core/templates/core/index.html:108
-msgid ""
-"Мы работаем как с отдельными туристами, так и с компаниями. Наличие\n"
-"            собственных авиакассы, автотранспорта и сотрудничество с лучшими "
-"гидами и отелями помогают нам\n"
-"            формировать уникальные предложения в индивидуальном порядке."
-msgstr ""
-"We work both with individual tourists and withcompanies. Availability\n"
-"own ticket offices, vehicles and cooperation withthe best guides and hotels "
-"help us\n"
-"to create unique offers in an individual wayOkay.\n"
-" "
-
-#: core/templates/core/index.html:114
-msgid "Преимущество нашего обслуживания"
-msgstr "The advantage of our service"
-
-#: core/templates/core/index.html:132
-msgid "Подпишитесь на рассылку интересных предложений"
-msgstr "Subscribe to the newsletter for interesting offers"
-
-#: core/templates/core/index.html:135
+#: core/templates/core/index.html:126
 msgid "Ваш адрес E-mail"
 msgstr "Yoru E-mail"
 
-#: core/templates/core/index.html:136
+#: core/templates/core/index.html:127
 msgid "Подписаться"
 msgstr "Subscribe"
 
-#: core/templates/core/index.html:141 templates/base.html:1967
+#: core/templates/core/index.html:132 templates/base.html:1974
 msgid "Блог"
 msgstr "Blog"
 
-#: core/templates/core/index.html:156
-msgid "Хотите забронировать тур?"
-msgstr "Want to book a tour?"
-
-#: core/templates/core/index.html:157
-msgid "Заполните небольшую форму, и мы подберем тур именно для вас"
-msgstr "Fill out a short form and we will select a tour just for you"
-
-#: core/templates/core/index.html:167
-msgid "Наши партнеры"
-msgstr "Our partners"
-
-#: core/templates/core/info.html:6 core/templates/core/info.html:11
+#: core/templates/core/info.html:6
 msgid "ВИЗА — ИНФОРМАЦИЯ ТУРИСТАМ"
 msgstr "VISA - INFORMATION FOR TOURISTS"
 
-#: core/templates/core/info.html:18
-msgid ""
-"Республика Узбекистан на сегодняшний день имеет различный статус\n"
-"                дипломатических отношений со странами мирового сообщества. "
-"Для иностранных граждан всего мира способ\n"
-"                въезда в\n"
-"                Узбекистан может отличаться."
-msgstr ""
-"The Republic of Uzbekistan today has differentstatus\n"
-"diplomatic relations with countries of the world community.For foreign "
-"citizens around the world a way\n"
-"entry\n"
-"Uzbekistan may differ.\n"
-" "
-
-#: core/templates/core/info.html:23
-msgid "Существует несколько режимов въезда в Республику Узбекистан:"
-msgstr "There are several modes of entry into the Republic of Uzbekistan:"
-
-#: core/templates/core/info.html:25
-msgid ""
-"<li>безвизовый режим</li>\n"
-"                <li>упрощенный режим</li>\n"
-"                <li>въезд по электронной визе</li>\n"
-"                <li>въезд с приглашением</li>\n"
-"                <li>въезд с оформлением в аэропорту</li>\n"
-"                <li>транзитная виза в Узбекистан</li>\n"
-"                <li>безвизовый въезд при транзите через Узбекистан</li>"
-msgstr ""
-" <li>visa-free regime</li>\n"
-" <li>simplified mode</li>\n"
-" <li>entry with an electronic visa</li>\n"
-" <li>entry with invitation</li>\n"
-" <li>entry with registration at the airport</li>\n"
-" <li>transit visa to Uzbekistan</li>\n"
-" <li>visa-free entry when transiting through Uzbekistan</li>\n"
-" "
-
-#: core/templates/core/info.html:33
-msgid "Безвизовый режим"
-msgstr "Visa-free regime"
-
-#: core/templates/core/info.html:35
-msgid ""
-"Для въезда в Узбекистан резидентам нижеприведенных стран получение визы не "
-"требуется. Въезд\n"
-"                на\n"
-"                определенные\n"
-"                законодательством сроки осуществляется по <span>заграничному "
-"паспорту</span>."
-msgstr ""
-"For residents of the following countries to enter UzbekistanNo visa "
-"required. Entry to\n"
-"certain\n"
-"legislation terms are carried out according to <span>foreignpassport</"
-"span>.\n"
-""
-
-#: core/templates/core/info.html:40
-msgid ""
-"<h3>Бессрочно</h3>\n"
-"            <p>Азербайджан<br>Грузия<br>Россия<br>Армения<br>Казахстан<br>Украина<br>Белорусия<br>Молдова</"
-"p>\n"
-"            <h3>Въезд сроком на 60 дней</h3>\n"
-"            <p>Кыргызстан</p>\n"
-"            <h3>Въезд сроком на 30 дней</h3>\n"
-"            <p>Австралия<br>Исландия<br>Россия<br>Сан-Марино<br>Австралия</p>"
-msgstr ""
-" <h3>Indefinite</h3>\n"
-" <p>Azerbaijan<br>Georgia<br>Russia<br>Armenia<br>Kazakhstan<br>Ukraine<br>Belarus<br>Moldova</"
-"p>\n"
-" <h3>Entry for 60 days</h3>\n"
-" <p>Kyrgyzstan</p>\n"
-" <h3>Entry for 30 days</h3>\n"
-" <p>Australia<br>Iceland<br>Russia<br>San Marino<br>Australia</p>"
-
-#: core/templates/core/info.html:47
-msgid ""
-"Если граждане <span>вышеперечисленных государств</span> имеют необходимость "
-"оставаться на\n"
-"                территории\n"
-"                Республики\n"
-"                Узбекистан больше установленных сроков, они должны получить "
-"въездную визу в соответствии с установленным\n"
-"                МИД\n"
-"                порядком."
-msgstr ""
-" If citizens of <span>the above states</span> have a need to stay on the "
-"territory\n"
-"Republic\n"
-"Uzbekistan exceeds the deadlines, they must receiveentry visa in accordance "
-"with the established\n"
-"MFA\n"
-"Okay."
-
-#: core/templates/core/info.html:54
-msgid "Упрощенный порядок получения визы"
-msgstr "Simplified procedure for obtaining a visa"
-
-#: core/templates/core/info.html:56
-msgid ""
-"Для резидентов следующих государств введен упрощенный порядок получения виз "
-"в течение\n"
-"                <span>3 рабочих дней</span>,\n"
-"                не требующий предоставления в МИД приглашения со стороны "
-"юридического/физического лица из Республики\n"
-"                Узбекистан:"
-msgstr ""
-"A simplified procedure has been introduced for residents of the following "
-"countriesprocedure for obtaining visas during\n"
-" <span>3 working days</span>,\n"
-"does not require an invitation from the Ministry of Foreign Affairslegal/"
-"individual from the Republic\n"
-"Uzbekistan:"
-
-#: core/templates/core/info.html:61
-msgid ""
-"<p>Албания<br>Кабо-"
-"Верде<br>Парагвай<br>Алжир<br>Камбоджа<br>Перу<br>Ангола<br>Камерун</p>\n"
-"            <p>Самоа<br>Антигуа и Барбуда<br>Катар<br>Алжир<br>Саудовская "
-"Аравия<br>Багамские Острова<br>Кирибати<br>Сейшельские\n"
-"                Острова</p>\n"
-"            <p>Бангладеш<br>Кабо-"
-"Верде<br>Китай<br>Сенегал<br>Барбадос<br>Колумбия<br>Сент-Винсент и "
-"Гренадины<br>Бахрейн\n"
-"            </p>\n"
-"            <p>КНДР<br>Кабо-Верде<br>Сент-Китс и Невис<br>Белиз<br>Коста-"
-"Рикa<br>Колумбия<br>Сент-Люсия<br>Боливия</p>\n"
-"            <p>Кот-д’Ивуар<br>Содружество "
-"Доминикие<br>Бутан<br>Куба<br>Соединенные "
-"Штаты<br>Америки<br>Вануату<br>Кувейт\n"
-"            </p>\n"
-"            <p>Соломоновы "
-"Острова<br>Венесуэла<br>Лаос<br>Суринам<br>Вьетнам<br>Ливан<br>Таиланд<br>Габон</"
-"p>\n"
-"            <p>Маврикий<br>Тонга<br>Гайана<br>Македония<br>Тринидад и "
-"Тобаго<br>Гана<br>Мальдивы<br>Тунис\n"
-"            </p>"
-msgstr ""
-" <p>Albania<br>Cape-"
-"Verde<br>Paraguay<br>Algeria<br>Cambodia<br>Peru<br>Angola<br>Cameroon</p>\n"
-" <p>Samoa<br>Antigua and Barbuda<br>Qatar<br>Algeria<br>Saudi "
-"Arabia<br>Bahamas<br>Kiribati<br>Seychelles\n"
-" Islands</p>\n"
-" <p>Bangladesh<br>Cape-"
-"Verde<br>China<br>Senegal<br>Barbados<br>Colombia<br>Saint Vincent and "
-"Grenadines<br>Bahrain\n"
-"</p>\n"
-" <p>DPRK<br>Cape Verde<br>Saint Kitts and Nevis<br>Belize<br>Costa-"
-"Rica<br>Colombia<br>Saint Lucia<br>Bolivia</p>\n"
-" <p>Ivory Coast<br>Commonwealth Dominique<br>Bhutan<br>Cuba<br>United "
-"States<br>America<br>Vanuatu<br>Kuwait\n"
-"</p>\n"
-" <p>Solomonov "
-"Islands<br>Venezuela<br>Laos<br>Suriname<br>Vietnam<br>Lebanon<br>Thailand<br>Gabon</"
-"p>\n"
-" <p>Mauritius<br>Tonga<br>Guyana<br>Macedonia<br>Trinidad and "
-"Tobago<br>Ghana<br>Maldives<br>Tunisia</p>"
-
-#: core/templates/core/info.html:73
-msgid ""
-"Гватемала<br>Марокко<br>Уругвай<br>Гондурас<br>Тринидад и "
-"Тобаго<br>Маршалловы Острова<br>\n"
-"                Федеративные\n"
-"                Штаты<br>Микронезиигонконг"
-msgstr ""
-"Guatemala<br>Morocco<br>Uruguay<br>Honduras<br>Trinidad and "
-"Tobago<br>Marshall Islands<br>Federated States<br>MicronesiaHong Kong"
-
-#: core/templates/core/info.html:78 core/templates/core/info.html:258
-msgid ""
-"Мексика<br>Фиджи<br>Уругвай<br>Гренада<br>Науру<br>Филиппины<br>Доминиканская "
-"Республика<br>Непал"
-msgstr "Mexico<br>Fiji<br>Uruguay<br>Grenada<br>Nauru<br>Philippines<br>DominicanRepublic<br>Nepal"
-
-#: core/templates/core/info.html:81 core/templates/core/info.html:261
-msgid ""
-"Шри-Ланка<br>Египет<br>Никарагуа<br>Индия<br>Науру<br>Объединенные Арабские "
-"Эмираты<br>Эль-Сальвадор<br>Иордания"
-msgstr ""
-"Sri Lanka<br>Egypt<br>Nicaragua<br>India<br>Nauru<br>United Arab "
-"Emirates<br>El Salvador<br>Jordan"
-
-#: core/templates/core/info.html:83 core/templates/core/info.html:263
-msgid "Оман<br>Южно-Африканская Республика<br>Палау<br>Ямайка<br>Панама"
-msgstr "Oman<br>South Africa<br>Palau<br>Jamaica<br>Panama"
-
-#: core/templates/core/info.html:85
-msgid ""
-"Оформление визы происходит по личному обращению иностранных граждан в "
-"соответствующее\n"
-"                <span>дипломатическое представительство или консульство "
-"Республики Узбекистан</span>\n"
-"                в стране их пребывания со следующим списком документов:"
-msgstr ""
-"A visa is issued upon personal application from foreignerscitizens in the "
-"appropriate\n"
-"<span>diplomatic mission or consulateRepublic of Uzbekistan</span>\n"
-"in their country of residence with the following list of documents:"
-
-#: core/templates/core/info.html:90
-msgid ""
-"<li><span>электронная визовая анкета</span> (в распечатанном и заполненном "
-"виде);</li>\n"
-"                <li><span>оригинал паспорта</span> (срок действия которого "
-"должен превышать срок действия визы не менее\n"
-"                    чем на 3\n"
-"                    месяца);\n"
-"                </li>\n"
-"                <li><span>1 цветная фотография</span> (паспортного размера);"
-"</li>\n"
-"                <li><span>консульский сбор</span> (согласно тарифам "
-"приведенным в разделе <span>Пошлина</span>)\n"
-"                </li>"
-msgstr ""
-" <li><span>electronic visa application form</span> (printed and completed "
-"form);</li>\n"
-" <li><span>original passport</span> (validity period of which must exceed "
-"the validity period of the visa at least\n"
-"than by 3\n"
-" month);\n"
-" </li>\n"
-" <li><span>1 color photo</span> (passport size);</li>\n"
-" <li><span>consular fee</span> (according to tariffs given in the section "
-"<span>Duty</span>)</li>"
-
-#: core/templates/core/info.html:99
-msgid "Электронная туристическая виза"
-msgstr "Electronic tourist visa"
-
-#: core/templates/core/info.html:101
-msgid ""
-"Резиденты <span>вышеперечисленных государств</span> также имеют возможность "
-"получить\n"
-"                электронную\n"
-"                <span>туристическую</span>\n"
-"                визу, заполнив анкету на портале <span>E-VISA</span> и "
-"оплатив пошлину в размере 2 <span>0 USD</span>.\n"
-"                Электронная виза предоставляется в формате <span>PDF</span> "
-"на e-mail заявителя и не вклеивается в\n"
-"                паспорт."
-msgstr ""
-" Residents of <span>the above states</span> also have the opportunity to "
-"receive electronic\n"
-" <span>tourist</span>\n"
-" visa by filling out a form on the portal <span>E-VISA</span> and by paying "
-"a fee of 2 <span>0 USD</span>.\n"
-" Electronic visa is provided in <span>PDF</span> format to the applicant's e-"
-"mail and is not pasted into\n"
-"passport."
-
-#: core/templates/core/info.html:109
-msgid ""
-"<li>Длительность рассмотрения поданных документов или электронной заявки "
-"составляет\n"
-"                    <span>3 рабочих дня</span>.\n"
-"                </li>\n"
-"                <li>Действие электронной визы составляет <span>90 дней</"
-"span> со дня выдачи.</li>\n"
-"                <li>Срок пребывания на территории Узбекистана по электронной "
-"визе составляет <span>30 дней</span>.\n"
-"                </li>"
-msgstr ""
-" <li>Duration of consideration of submitted documents or The electronic "
-"application is\n"
-" <span>3 business days</span>.\n"
-" </li>\n"
-" <li>The e-visa is valid for <span>90 days</span> from the date of issue.</"
-"li>\n"
-" <li>Duration of stay on the territory of Uzbekistan by electronic The visa "
-"is <span>30 days</span>.</li>"
-
-#: core/templates/core/info.html:117
-msgid ""
-"В случае если заявитель имеет двойное гражданство, электронная визовая "
-"анкета должна\n"
-"                быть заполнена\n"
-"                данными того паспорта, на основании которого планируется "
-"въезд в Республику Узбекистан. В случае замены\n"
-"                паспорта в период действия электронной визы, электронную "
-"визу необходимо получить\n"
-"                повторно."
-msgstr ""
-"In case the applicant has dual citizenship, The electronic visa application "
-"must be completed\n"
-"data from the passport on the basis of which it is plannedentry into the "
-"Republic of Uzbekistan. In case of replacement\n"
-"passports during the validity period of the electronic visa, electronicYou "
-"need to get a visa again."
-
-#: core/templates/core/info.html:124
-msgid "Въезд с приглашением"
-msgstr "Entry with invitation"
-
-#: core/templates/core/info.html:126
-msgid ""
-"Для граждан всех остальных стран въездная виза оформляется на основании\n"
-"                <span>визовой поддержки</span>.\n"
-"                Для\n"
-"                оформления визовой поддержки, Вам необходимо предоставить "
-"нашей компании следующий список\n"
-"                документов:"
-msgstr ""
-"For citizens of all other countries, an entry visa is issuedbased on "
-"<span>visa support</span>.\n"
-"For\n"
-"for visa support, you need to provideour company has the following list of "
-"documents:"
-
-#: core/templates/core/info.html:133
-msgid ""
-"<li><span>Заполненную анкету для визовой поддержки <a href=\"\">(скачать)</"
-"a></span></li>\n"
-"                <li><span>Сканированную копию Вашего паспорта</span></li>\n"
-"                <li><span>Сканированную копию справки с места работы</span></"
-"li>"
-msgstr ""
-" <li><span>Filled out application form for visa support <a "
-"href=\"\">(download)</a></span></li>\n"
-" <li><span>A scanned copy of your passport</span></li>\n"
-" <li><span>A scanned copy of your employment certificate</span></li>"
-
-#: core/templates/core/info.html:138 core/templates/core/info.html:186
-msgid ""
-"После получения нами всей необходимой информации, мы оформим визовую "
-"поддержку в МИД\n"
-"                Республики\n"
-"                Узбекистан в\n"
-"                Ташкенте которое рассмотрит Ваши документы в течение <span>7 "
-"рабочих дней</span>."
-msgstr ""
-"After we receive all the necessary information, we will issuevisa support at "
-"the Ministry of Foreign Affairs of the Republic\n"
-"Uzbekistan in\n"
-" Tashkent which will review your documents within <span>7 working days</"
-"span>."
-
-#: core/templates/core/info.html:144
-msgid ""
-"                <span>МИД Республики Узбекистан оставляет имеет право "
-"отказать в выдаче разрешения, не предоставляя причин отказа. В случае отказа "
-"уплаченная пошлина не возвращается.</span>\n"
-"                Получив разрешение МИД, мы вышлем Вам на почту <span>номер "
-"телекса</span> после чего Вы сможете\n"
-"                обратиться в\n"
-"                <span>дипломатическое представительство или консульство "
-"Республики Узбекистан</span> в стране вашего\n"
-"                пребывания\n"
-"                с перечнем следующих документов:"
-msgstr ""
-"<span>The Ministry of Foreign Affairs of the Republic of Uzbekistan reserves "
-"the rightrefuse to issue a permit without providing reasons for the refusal. "
-"In case of refusal duty paid is not refundable.</span>\n"
-"After receiving permission from the Ministry of Foreign Affairs, we will "
-"send you a <span>number by emailtelex</span> after which you can\n"
-"contact\n"
-"<span>diplomatic mission or consulateThe Republic of Uzbekistan</span> in "
-"your country\n"
-"stay\n"
-"with a list of the following documents:"
-
-#: core/templates/core/info.html:153
-msgid ""
-"<li><span>Оригинал паспорта</span> (срок действия которого должен превышать "
-"срок действия визы не менее\n"
-"                    чем на 3\n"
-"                    месяца);\n"
-"                </li>\n"
-"                <li><span>Заполненная визовая анкета в 2 экземплярах;</"
-"span></li>\n"
-"                <li><span>2 цветные фотографии</span> (паспортного размера);"
-"</li>\n"
-"                <li><span>Номер телекса</span> (высланный Вам на почту);</"
-"li>\n"
-"                <li><span>Консульский сбор</span> (согласно тарифам "
-"приведенным в разделе <span>Пошлина</span>)\n"
-"                </li>"
-msgstr ""
-" <li><span>Original passport</span> (validity period of which must exceed "
-"the validity period of the visa at least\n"
-"than by 3\n"
-" month);\n"
-" </li>\n"
-" <li><span>Filled out visa application form in 2 copies;</span></li>\n"
-" <li><span>2 color photographs</span> (passport size);</li>\n"
-" <li><span>Telex number</span> (sent to your email);</li>\n"
-" <li><span>Consular fee</span> (according to tariffs given in the section "
-"<span>Duty</span>)</li>"
-
-#: core/templates/core/info.html:163
-msgid ""
-"Длительность рассмотрения поданных документов составляет <span>3 рабочих "
-"дня</span>."
-msgstr ""
-"The duration of consideration of submitted documents is <span>3 working "
-"daysday</span>."
-
-#: core/templates/core/info.html:165
-msgid ""
-"<span>Оформление визовой поддержки прекращается если клиент отказывается от "
-"ранее забронированного пакета туристических услуг.</span>"
-msgstr ""
-" <span>Visa support is terminated if the client refuses a previously booked "
-"travel package.</span>"
-
-#: core/templates/core/info.html:167
-msgid "Виза с оформлением в аэропорту"
-msgstr "Visa with registration at the airport"
-
-#: core/templates/core/info.html:169
-msgid ""
-"Если в стране Вашего пребывания\n"
-"                <span>нет дипломатического представительства или консульства "
-"Республики Узбекистан</span>,\n"
-"                то Вы сможете оформить въездную визу по прибытию в "
-"международный аэропорт имени Ислама Каримова в\n"
-"                <span>секторе визового обеспечения</span>."
-msgstr ""
-"If in your country of residence\n"
-"<span>no diplomatic mission or consulateRepublic of Uzbekistan</span>,\n"
-"then you will be able to obtain an entry visa upon arrival inIslam Karimov "
-"International Airport in\n"
-" <span>visa sector</span>."
-
-#: core/templates/core/info.html:175
-msgid ""
-"Для этого Вам необходимо оформить визовую поддержку в нашей компании прислав "
-"нам следующий\n"
-"                перечень\n"
-"                документов:"
-msgstr ""
-"To do this, you need to apply for visa support at ourthe company sent us the "
-"following list\n"
-"documents:"
-
-#: core/templates/core/info.html:180
-msgid ""
-"<li><span>Заполненную анкету для визовой поддержки</span></li>\n"
-"                <li><span>Сканированную копию Вашего паспорта</span></li>\n"
-"                <li><span>Сканированную копию справки с места работы</span></"
-"li>\n"
-"                <li><span>Сканированные копии авиабилетов или брони</span></"
-"li>"
-msgstr ""
-" <li><span>Completed application form for visa support</span></li>\n"
-" <li><span>A scanned copy of your passport</span></li>\n"
-" <li><span>A scanned copy of your employment certificate</span></li>\n"
-" <li><span>Scanned copies of airline tickets or reservations</span></li>"
-
-#: core/templates/core/info.html:192
-msgid ""
-"Получив разрешение МИД, мы вышлем Вам на почту официальный разрешающий "
-"документ с\n"
-"                <span>номером телекса</span>.Данный\n"
-"                документ должен быть предъявлен Вами при прохождении "
-"паспортного контроля в стране Вашего пребывания и\n"
-"                на его\n"
-"                основании Вам оформляется виза по прибытию в международный "
-"аэропорт имени «Ислама Каримова» в секторе\n"
-"                визового\n"
-"                обеспечения МИД Республики Узбекистан."
-msgstr ""
-"After receiving permission from the Ministry of Foreign Affairs, we will "
-"send you an officialpermit document with\n"
-" <span>telex number</span>.Data\n"
-"The document must be presented by you upon entrypassport control in the "
-"country of your stay and\n"
-"on him\n"
-"Based on you will be issued a visa upon arrival at the internationalIslam "
-"Karimov Airport in the sector\n"
-"visa\n"
-"provision of the Ministry of Foreign Affairs of the Republic of Uzbekistan."
-
-#: core/templates/core/info.html:200
-msgid "Транзитная виза в Узбекистан"
-msgstr "Transit visa to Uzbekistan"
-
-#: core/templates/core/info.html:202
-msgid ""
-"Иностранные граждане следующие транзитом через Республику Узбекистан,\n"
-"                <span>для получения транзитной визы сроком на 72 часа </"
-"span>,\n"
-"                должны предоставить в\n"
-"                <span>дипломатическое представительство или консульство "
-"Республики Узбекистан</span> в\n"
-"                стране своего пребывания <span>весь перечень документов</"
-"span> необходимый для оформления туристической\n"
-"                визы, а\n"
-"                также приложить к нему:"
-msgstr ""
-"Foreign citizens transiting through the RepublicUzbekistan,\n"
-" <span>to obtain a transit visa valid for 72 hours </span>,\n"
-"must be provided in\n"
-"<span>diplomatic mission or consulateRepublic of Uzbekistan</span> in\n"
-"your country of residence <span>full list of documents</span> necessary for "
-"tourist registration\n"
-"visas, a\n"
-" also attach to it:"
-
-#: core/templates/core/info.html:211
-msgid "Визу государства следования"
-msgstr "Visa of the destination country"
-
-#: core/templates/core/info.html:213
-msgid ""
-"Проездные документы с подтвержденной датой отправления из Узбекистана в "
-"страну следования"
-msgstr ""
-"Travel documents with confirmed departure date from Uzbekistan tocountry of "
-"destination"
-
-#: core/templates/core/info.html:216
-msgid ""
-"Длительность рассмотрения поданных документов составляет <span>3 рабочих "
-"дня</span>"
-msgstr ""
-"The duration of consideration of submitted documents is <span>3 working "
-"daysday</span>"
-
-#: core/templates/core/info.html:217
-msgid "Безвизовый въезд при транзите через Узбекистан"
-msgstr "Visa-free entry when transiting through Uzbekistan"
-
-#: core/templates/core/info.html:219
-msgid ""
-"Для граждан ряда государств (<span>список стран приводится ниже</span>) "
-"въезжающих в\n"
-"                Республику\n"
-"                Узбекистан на\n"
-"                срок <span>до 5 суток</span> с последующим выездом в третью "
-"страну, (\n"
-"                <span>при условии наличия у них авиабилетов, оформленных "
-"через национальную авиакомпанию Uzbekistan Airways как в Узбекистан, так и в "
-"третью страну</span>\n"
-"                ),\n"
-"                установлен <span>краткосрочный безвизовый режим.</span>"
-msgstr ""
-"For citizens of a number of countries (<span>a list of countries is "
-"providedbelow</span>) entering the Republic\n"
-"Uzbekistan on\n"
-" period <span>up to 5 days</span> followed by departure on the thirdcountry, "
-"(\n"
-"<span>subject to the availability of air tickets issued by themthrough the "
-"national airline Uzbekistan Airways both to Uzbekistan and tothird country</"
-"span>\n"
-" ),\n"
-" <span>short-term visa-free regime has been established.</span>"
-
-#: core/templates/core/info.html:228
-msgid ""
-"<span>Государство следования не может являться отправным государством "
-"транзитного переезда.</span> Для\n"
-"                граждан\n"
-"                нижеперечисленных стран введен <span>безвизовый въезд при "
-"транзите</span> через Узбекистан сроком не\n"
-"                более чем\n"
-"                на <span>5 суток</span>"
-msgstr ""
-" <span>The state of destination cannot be the sending statestate of transit."
-"</span> For\n"
-"citizens\n"
-" the countries listed below have introduced <span>visa-free entry for "
-"transit</span>through Uzbekistan for a period not\n"
-"more than\n"
-"for <span>5 days</span>"
-
-#: core/templates/core/info.html:235
-msgid ""
-"Албания<br>Кабо-"
-"Верде<br>Парагвай<br>Алжир<br>Камбоджа<br>Перу<br>Ангола<br>Камерун"
-msgstr ""
-"Albania<br>Cape-"
-"Verde<br>Paraguay<br>Algeria<br>Cambodia<br>Peru<br>Angola<br>Cameroon"
-
-#: core/templates/core/info.html:238
-msgid ""
-"Самоа<br>Антигуа и Барбуда<br>Катар<br>Алжир<br>Саудовская "
-"Аравия<br>Багамские Острова<br>Кирибати<br>Сейшельские Острова"
-msgstr ""
-"Samoa<br>Antigua and Barbuda<br>Qatar<br>Algeria<br>Saudi "
-"Arabia<br>Bahamas<br>Kiribati<br>Seychelles"
-
-#: core/templates/core/info.html:241
-msgid ""
-"Бангладеш<br>Кабо-Верде<br>Китай<br>Сенегал<br>Барбадос<br>Колумбия<br>Сент-"
-"Винсент и Гренадины<br>Бахрейн"
-msgstr ""
-"Bangladesh<br>Cape Verde<br>China<br>Senegal<br>Barbados<br>Colombia<br>St."
-"Vincent and the Grenadines<br>Bahrain"
-
-#: core/templates/core/info.html:244
-msgid ""
-"КНДР<br>Кабо-Верде<br>Сент-Китс и Невис<br>Белиз<br>Коста-"
-"Рикa<br>Колумбия<br>Сент-Люсия<br>Боливия"
-msgstr ""
-"DPRK<br>Cape Verde<br>Saint Kitts and Nevis<br>Belize<br>Costa-"
-"Rica<br>Colombia<br>Saint Lucia<br>Bolivia"
-
-#: core/templates/core/info.html:247
-msgid ""
-"Кот-д’Ивуар<br>Содружество Доминикие<br>Бутан<br>Куба<br>Соединенные "
-"Штаты<br>Америки<br>Вануату<br>Кувейт"
-msgstr ""
-"Ivory Coast<br>Commonwealth of "
-"Dominica<br>Bhutan<br>Cuba<br>UnitedStates<br>America<br>Vanuatu<br>Kuwait"
-
-#: core/templates/core/info.html:250
-msgid ""
-"Соломоновы "
-"Острова<br>Венесуэла<br>Лаос<br>Суринам<br>Вьетнам<br>Ливан<br>Таиланд<br>Габон"
-msgstr "Solomon'sIslands<br>Venezuela<br>Laos<br>Suriname<br>Vietnam<br>Lebanon<br>Thailand<br>Gabon"
-
-#: core/templates/core/info.html:254
-msgid ""
-"Гватемала<br>Марокко<br>Уругвай<br>Гондурас<br>Тринидад и "
-"Тобаго<br>Маршалловы Острова<br>Федеративные Штаты<br>Микронезиигонконг"
-msgstr ""
-"Guatemala<br>Morocco<br>Uruguay<br>Honduras<br>Trinidad and "
-"Tobago<br>Marshall Islands<br>Federated States<br>MicronesiaHong Kong"
-
-#: core/templates/core/info.html:256
-msgid ""
-"Маврикий<br>Тонга<br>Гайана<br>Македония<br>Тринидад и "
-"Тобаго<br>Гана<br>Мальдивы<br>Тунис"
-msgstr ""
-
-#: core/templates/core/info.html:264
-msgid "Пошлина"
-msgstr "Duty"
-
-#: core/templates/core/info.html:265
-msgid ""
-"За оформление и выдачу виз предусмотрены следующие тарифы консульских сборов:"
-msgstr ""
-"The following consular fees are provided for the registration and issuance "
-"of visas:"
-
-#: core/templates/core/info.html:266
-msgid "1. Однократные визы:"
-msgstr "1. Single entry visas:"
-
-#: core/templates/core/info.html:268
-msgid ""
-"<li>до 7 дней — 40 USD;</li>\n"
-"                <li>до 15 дней — 50 USD;</li>\n"
-"                <li>до 30 дней — 60 USD;</li>\n"
-"                <li>до 3 месяцев — 80 USD;</li>\n"
-"                <li>до 6 месяцев — 120 USD;</li>\n"
-"                <li>до 1 года — 160 USD.</li>"
-msgstr ""
-" <li>up to 7 days - 40 USD;</li>\n"
-" <li>up to 15 days - 50 USD;</li>\n"
-" <li>up to 30 days - 60 USD;</li>\n"
-" <li>up to 3 months - 80 USD;</li>\n"
-" <li>up to 6 months - 120 USD;</li>\n"
-" <li>up to 1 year - 160 USD.</li>"
-
-#: core/templates/core/info.html:275
-msgid ""
-"За каждую дополнительную кратность визы ставка тарифа увеличивается на 10 USD"
-msgstr "For each additional visa number, the tariff rate increases by 10 USD"
-
-#: core/templates/core/info.html:276
-msgid "2. Многократные визы:"
-msgstr "2. Multiple entry visas:"
-
-#: core/templates/core/info.html:278
-msgid ""
-"<li>до 6 месяцев — 150 USD;</li>\n"
-"                <li>до 1 года — 250 USD.</li>"
-msgstr ""
-" <li>up to 6 months - 150 USD;</li>\n"
-" <li>up to 1 year - 250 USD.</li>"
-
-#: core/templates/core/info.html:281
-msgid "3. Транзитные визы:"
-msgstr "3. Transit visas:"
-
-#: core/templates/core/info.html:283
-msgid ""
-"<li>до 72 часов — 40 USD;</li>\n"
-"                <li>за двукратную транзитную визу — 50 USD.</li>"
-msgstr ""
-" <li>up to 72 hours - 40 USD;</li>\n"
-" <li>for a double-entry transit visa - 50 USD.</li>"
-
-#: core/templates/core/info.html:286
-msgid "4. Групповые визы</span>(не менее 5 человек, исключая детей до 16 лет):"
-msgstr ""
-"4. Group visas</span>(at least 5 people, excluding children under 16 years "
-"of age):"
-
-#: core/templates/core/info.html:288
-msgid ""
-"<li>до 15 дней — 15 USD с каждого человека;</li>\n"
-"                <li>до 30 дней — 25 USD с каждого человека.</li>"
-msgstr ""
-" <li>up to 15 days - 15 USD per person;</li>\n"
-" <li>up to 30 days - 25 USD per person.</li>\n"
-" "
-
-#: core/templates/core/info.html:293
-msgid ""
-"При оформлении визы требуется также уплатить фактический расход. Размеры "
-"таких расходов зависят от места оформления визы и не зависят от гражданства "
-"заявителя."
-msgstr ""
-"When applying for a visa, you are also required to pay the actual cost. "
-"Dimensions such expenses depend on the place where the visa is issued and do "
-"not depend on citizenshipthe applicant."
-
-#: core/templates/core/info.html:296
-msgid "ВАЖНО ЗНАТЬ"
-msgstr "IT IS IMPORTANT TO KNOW"
-
-#: core/templates/core/info.html:298
-msgid ""
-"Для иностранных граждан, не достигших <span>16-летнего возраста</span>, "
-"въезд в Республику\n"
-"                Узбекистан не\n"
-"                требует\n"
-"                получения визы и осуществляется по собственному заграничному "
-"паспорту на срок действия визы\n"
-"                сопровождающего\n"
-"                лица, но <span>не более 90 суток</span> со дня въезда в "
-"страну. Если ребенок путешествует с одним из\n"
-"                родителей,\n"
-"                с собой желательно иметь нотариально заверенное разрешение "
-"на выезд ребенка из родной страны от второго\n"
-"                родителя\n"
-"                для предупреждения возможных недоразумений в аэропорту "
-"отправления."
-msgstr ""
-"For foreign citizens under <span>16 years of ageage</span>, entry into the "
-"Republic of Uzbekistan is not\n"
-"requires\n"
-"obtaining a visa is carried out according to your own foreignpassport for "
-"the duration of the visa\n"
-"accompany\n"
-" persons, but <span>no more than 90 days</span> from the date of entry into "
-"country. If the child is traveling with one of the\n"
-"parents\n"
-"It is advisable to have a notarized permission with you for the departure of "
-"a child from his native country from his second\n"
-"parent\n"
-"to prevent possible misunderstandings at the airport departures."
-
-#: core/templates/core/mission.html:10 templates/base.html:1961
-msgid "Наша миссия"
-msgstr "Our mission"
-
-#: core/templates/core/mission.html:17
-msgid "Открыть мир, сохранив его"
-msgstr "Open the world by saving it"
-
-#: core/templates/core/mission.html:19
-msgid ""
-"Центральная Азия — древнейший оплот науки и культуры. Многие века назад "
-"здесь совершались гениальные\n"
-"                открытия, сооружались уникальные архитектурные шедевры, "
-"появлялись новые веяния и ремёсла, ставшие\n"
-"                столпами человеческой цивилизации."
-msgstr ""
-"Central Asia is the oldest stronghold of science and culture. Many Centuries "
-"ago, great things were done here\n"
-"discoveries, unique architectural masterpieces were built, new trends and "
-"crafts appeared that became\n"
-"pillars of human civilization.\n"
-" "
-
-#: core/templates/core/mission.html:23
-msgid ""
-"<span>Мы считаем, что наш регион</span> — достояние всего мира. Именно по "
-"этой причине мы хотим\n"
-"                познакомить с этими землями каждого жителя Земли. При этом "
-"мы не забываем ни на минуту о том, что под\n"
-"                «каждым жителем Земли» подразумеваются и будущие поколения. "
-"Вот почему мы уделяем так много внимания\n"
-"                устойчивому туризму — направлению деятельности, которое "
-"призвано сохранить природу, культуру и историю\n"
-"                нашей родной земли."
-msgstr ""
-" <span>We believe that our region</span> is the asset of everything peace. "
-"This is the reason we want\n"
-"to introduce every inhabitant of the Earth to these lands. At the same time, "
-"We don't forget for a minute what's underneath\n"
-"Every inhabitant of the Earth also means future generations.That's why we "
-"pay so much attention\n"
-"sustainable tourism is an activity that designed to preserve nature, culture "
-"and history\n"
-"our native land.\n"
-" "
-
-#: core/templates/core/mission.html:28
-msgid "Цели компании"
-msgstr "Company goals"
-
-#: core/templates/core/mission.html:31
-msgid ""
-"<li>Популяризация стран региона</li>\n"
-"                    <li>Сохранение природы</li>\n"
-"                    <li>Глобализация</li>"
-msgstr ""
-" <li>Popularization of countries in the region</li>\n"
-" <li>Nature conservation</li>\n"
-" <li>Globalization</li>\n"
-" "
-
-#: core/templates/core/mission.html:36
-msgid "Видение"
-msgstr "Vision"
-
-#: core/templates/core/mission.html:38
-msgid ""
-"Мир огромен и прекрасен, но возможности человека ограничены. Увидеть каждый "
-"уголок планеты человеку не\n"
-"                удастся, но мы ставим перед собой задачу сделать всё "
-"возможное для этого. Для достижения этой цели\n"
-"                компания использует следующие средства:"
-msgstr ""
-"The world is huge and beautiful, but human capabilities are limited.“It’s "
-"impossible for a person to see every corner of the planet\n"
-"”it will succeed, but we set ourselves the task of doing everythingpossible "
-"for this. To achieve this goal\n"
-"The company uses the following means:\n"
-" "
-
-#: core/templates/core/mission.html:44
-msgid ""
-"<li>Помощь в путешествиях иностранцам и местным жителям;</li>\n"
-"<li>Просветительская деятельность — публикация информационных материалов и "
-"поддержка проектов в\n"
-"    сферах истории, востоковедения, науки и техники;\n"
-"</li>\n"
-"<li>Благотворительные программы по защите экологии;</li>\n"
-"<li>Сотрудничество с Travelife и фондами защиты природы;</li>\n"
-"<li>Повышение профессионализма сотрудников и качества услуг;</li>\n"
-"<li>Повышение интереса к Узбекистану в мире.</li>"
-msgstr ""
-"<li>Travel assistance for foreigners and local residents;</li>\n"
-"<li>Educational activities - publication of information materials and "
-"project support\n"
-"the fields of history, oriental studies, science and technology;\n"
-"</li>\n"
-"<li>Charity programs for environmental protection;</li>\n"
-"<li>Collaboration with Travelife and nature protection funds;</li>\n"
-"<li>Improving the professionalism of employees and the quality of services;</"
-"li>\n"
-"<li>Increasing interest in Uzbekistan in the world.</li>"
-
-#: core/templates/core/reviews.html:15 templates/base.html:1875
+#: core/templates/core/reviews.html:15 templates/components/_nav.html:106
 msgid "Отзывы"
 msgstr "Reviews"
 
@@ -1503,19 +407,19 @@ msgstr "Reviews"
 msgid "Найденные туры"
 msgstr "Popular tours"
 
-#: core/templates/core/search_page.html:15 templates/base.html:1902
+#: core/templates/core/search_page.html:17
 msgid "Туры в Узбекистан с Canaan-travel"
 msgstr "Tours to Uzbekistan with Canaan-travel"
 
-#: core/templates/core/search_page.html:16 templates/base.html:1903
+#: core/templates/core/search_page.html:18
 msgid "Откройте для себя сказочный Восток!"
 msgstr "Discover the fabulous East!"
 
-#: core/templates/core/search_page.html:18 templates/base.html:1905
+#: core/templates/core/search_page.html:20 templates/base.html:1907
 msgid "Куда держим курс?"
 msgstr "Where are we headed?"
 
-#: core/templates/core/search_page.html:19 templates/base.html:1906
+#: core/templates/core/search_page.html:21 templates/base.html:1908
 msgid "Поиск"
 msgstr "Search"
 
@@ -1523,63 +427,47 @@ msgstr "Search"
 msgid "Места посещения"
 msgstr "Places to visit"
 
-#: core/templates/core/tour_detail.html:22
+#: core/templates/core/tour_detail.html:25
 msgid "Сезон"
 msgstr "Season"
 
-#: core/templates/core/tour_detail.html:23
+#: core/templates/core/tour_detail.html:28
 msgid "Звездность"
 msgstr "Stardom"
 
-#: core/templates/core/tour_detail.html:34
+#: core/templates/core/tour_detail.html:63
 msgid "Детали"
 msgstr "Details"
 
-#: core/templates/core/tour_detail.html:36
+#: core/templates/core/tour_detail.html:65
 msgid "Маршрут"
 msgstr "Route"
 
-#: core/templates/core/tour_detail.html:50
+#: core/templates/core/tour_detail.html:88
 msgid "День"
 msgstr "Day"
 
-#: core/templates/core/tour_detail.html:56
-msgid "Стоимость тура на весну 2024, с человека"
-msgstr "Tour cost for spring 2024, per person"
-
-#: core/templates/core/tour_detail.html:59
+#: core/templates/core/tour_detail.html:106
 msgid "чел"
 msgstr "people"
 
-#: core/templates/core/tour_detail.html:63
+#: core/templates/core/tour_detail.html:115
 msgid "Дополнительные экскурсии"
 msgstr "Optional excursions"
 
-#: core/templates/core/tour_detail.html:71
-msgid ""
-"Все дополнительные экскурсии обговариваются с гидом заранее и оплачиваются "
-"гиду на\n"
-"                месте. Минимальная\n"
-"                группа для любой доп. экскурсии – 5 человек."
-msgstr ""
-"All additional excursions are discussed with the guide in advance and paid "
-"forguide to\n"
-"location. Minimum\n"
-"group for any additional excursion - 5 people."
-
-#: core/templates/core/tour_detail.html:75
+#: core/templates/core/tour_detail.html:130
 msgid "Цена включает"
 msgstr "Price includes"
 
-#: core/templates/core/tour_detail.html:82
+#: core/templates/core/tour_detail.html:138
 msgid "Цена не включает"
 msgstr "Price does not include"
 
-#: core/templates/core/tour_detail.html:91
+#: core/templates/core/tour_detail.html:148
 msgid "Условия"
 msgstr "Conditions"
 
-#: core/templates/core/tour_detail.html:98
+#: core/templates/core/tour_detail.html:156
 msgid "Гостиницы по маршруту"
 msgstr "Hotels along the route"
 
@@ -1587,1323 +475,1096 @@ msgstr "Hotels along the route"
 msgid "ТУРЫ В УЗБЕКИСТАН"
 msgstr "TOURS TO UZBEKISTAN"
 
-#: core/templates/core/tours.html:31
+#: core/templates/core/tours.html:33
 msgid "Цена по запросу"
 msgstr "Price by request"
 
-#: templates/base.html:1873
-msgid "Туры"
-msgstr "Tours"
-
-#: templates/base.html:1874
-msgid "Отели Узбекистана"
-msgstr "Hotels of Uzbekistan"
-
-#: templates/base.html:1910
+#: templates/base.html:1912
 msgid "лет на рынке"
 msgstr "years on the market"
 
-#: templates/base.html:1913
+#: templates/base.html:1915
 msgid "отелей"
 msgstr "hotels"
 
-#: templates/base.html:1916
+#: templates/base.html:1918
 msgid "гидов"
 msgstr "guides"
 
-#: templates/base.html:1929
+#: templates/base.html:1931
 msgid "Контакты"
 msgstr "Contacts"
 
-#: templates/base.html:1959
-msgid "О компании"
-msgstr "About company"
+#: templates/base.html:1967 templates/components/_nav.html:101
+msgid "Наша миссия"
+msgstr "Our mission"
 
-#: templates/base.html:1962
+#: templates/base.html:1968
 msgid "Карта сайта"
 msgstr "Site map"
 
-#: templates/base.html:1968
+#: templates/base.html:1976
 msgid "Информация туристам"
 msgstr "Information for tourists"
 
-#: templates/base.html:1970
+#: templates/base.html:1979
 msgid "Туры в Узбекистан"
 msgstr "Tours to Uzbekistan"
 
-#: templates/base.html:1975
-msgid ""
-"Информация туристам Туры в Узбекистан Достопримечательности Наша компания "
-"имеет все необходимые лицензии и сертификаты качества."
-msgstr ""
-"Information for tourists Tours to Uzbekistan Sights Our companyhas all the "
-"necessary licenses and quality certificates."
-
-#: templates/base.html:1976
+#: templates/base.html:1985
 msgid "Независимые отзывы о нас читайте на"
 msgstr "Read independent reviews about us at"
 
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/forms.py:6
-msgid "Search files"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:5
-msgid "Select an image to embed"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:27
-msgid "Browse for the image you want, then click 'Embed Image' to continue..."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:29
-msgid ""
-"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
-"tab."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:50
-msgid "Images in: "
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:62
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:80
-msgid "Embed Image"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:146
-msgid "Play Slideshow"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:147
-msgid "Pause Slideshow"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:148
-msgid "&lsaquo; Previous Photo"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:149
-msgid "Next Photo &rsaquo;"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:150
-msgid "Next &rsaquo;"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:151
-msgid "&lsaquo; Prev"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/contrib/messages/apps.py:15
-msgid "Messages"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/contrib/sitemaps/apps.py:8
-msgid "Site Maps"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/contrib/staticfiles/apps.py:9
-msgid "Static Files"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/contrib/syndication/apps.py:7
-msgid "Syndication"
-msgstr ""
-
-#. Translators: String used to replace omitted page numbers in elided page
-#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
-#: venv/lib/python3.12/site-packages/django/core/paginator.py:30
-msgid "…"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/paginator.py:50
-msgid "That page number is not an integer"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/paginator.py:52
-msgid "That page number is less than 1"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/paginator.py:54
-msgid "That page contains no results"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:22
-msgid "Enter a valid value."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:104
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:749
-msgid "Enter a valid URL."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:164
-msgid "Enter a valid integer."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:175
-msgid "Enter a valid email address."
-msgstr ""
-
-#. Translators: "letters" means latin letters: a-z and A-Z.
-#: venv/lib/python3.12/site-packages/django/core/validators.py:256
-msgid ""
-"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:264
-msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:276
-#: venv/lib/python3.12/site-packages/django/core/validators.py:284
-#: venv/lib/python3.12/site-packages/django/core/validators.py:313
-msgid "Enter a valid IPv4 address."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:293
-#: venv/lib/python3.12/site-packages/django/core/validators.py:314
-msgid "Enter a valid IPv6 address."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:305
-#: venv/lib/python3.12/site-packages/django/core/validators.py:312
-msgid "Enter a valid IPv4 or IPv6 address."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:348
-msgid "Enter only digits separated by commas."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:354
-#, python-format
-msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:389
-#, python-format
-msgid "Ensure this value is less than or equal to %(limit_value)s."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:398
-#, python-format
-msgid "Ensure this value is greater than or equal to %(limit_value)s."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:407
-#, python-format
-msgid "Ensure this value is a multiple of step size %(limit_value)s."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:417
-#, python-format
-msgid ""
-"Ensure this value has at least %(limit_value)d character (it has "
-"%(show_value)d)."
-msgid_plural ""
-"Ensure this value has at least %(limit_value)d characters (it has "
-"%(show_value)d)."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:435
-#, python-format
-msgid ""
-"Ensure this value has at most %(limit_value)d character (it has "
-"%(show_value)d)."
-msgid_plural ""
-"Ensure this value has at most %(limit_value)d characters (it has "
-"%(show_value)d)."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:458
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:347
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:386
-msgid "Enter a number."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:460
-#, python-format
-msgid "Ensure that there are no more than %(max)s digit in total."
-msgid_plural "Ensure that there are no more than %(max)s digits in total."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:465
-#, python-format
-msgid "Ensure that there are no more than %(max)s decimal place."
-msgid_plural "Ensure that there are no more than %(max)s decimal places."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:470
-#, python-format
-msgid ""
-"Ensure that there are no more than %(max)s digit before the decimal point."
-msgid_plural ""
-"Ensure that there are no more than %(max)s digits before the decimal point."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:541
-#, python-format
-msgid ""
-"File extension “%(extension)s” is not allowed. Allowed extensions are: "
-"%(allowed_extensions)s."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/core/validators.py:602
-msgid "Null characters are not allowed."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/base.py:1423
-#: venv/lib/python3.12/site-packages/django/forms/models.py:893
-msgid "and"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/base.py:1425
-#, python-format
-msgid "%(model_name)s with this %(field_labels)s already exists."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/constraints.py:17
-#, python-format
-msgid "Constraint “%(name)s” is violated."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:128
-#, python-format
-msgid "Value %(value)r is not a valid choice."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:129
-msgid "This field cannot be null."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:130
-msgid "This field cannot be blank."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:131
-#, python-format
-msgid "%(model_name)s with this %(field_label)s already exists."
-msgstr ""
-
-#. Translators: The 'lookup_type' is one of 'date', 'year' or
-#. 'month'. Eg: "Title must be unique for pub_date year"
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:135
-#, python-format
-msgid ""
-"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:173
-#, python-format
-msgid "Field of type: %(field_type)s"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1094
-#, python-format
-msgid "“%(value)s” value must be either True or False."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1095
-#, python-format
-msgid "“%(value)s” value must be either True, False, or None."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1097
-msgid "Boolean (Either True or False)"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1147
-#, python-format
-msgid "String (up to %(max_length)s)"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1149
-msgid "String (unlimited)"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1253
-msgid "Comma-separated integers"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1354
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
-"format."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1358
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1493
-#, python-format
-msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
-"date."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1362
-msgid "Date (without time)"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1489
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1497
-#, python-format
-msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1502
-msgid "Date (with time)"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1626
-#, python-format
-msgid "“%(value)s” value must be a decimal number."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1628
-msgid "Decimal number"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1791
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1795
-msgid "Duration"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1847
-msgid "Email address"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1872
-msgid "File path"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1950
-#, python-format
-msgid "“%(value)s” value must be a float."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1952
-msgid "Floating point number"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1992
-#, python-format
-msgid "“%(value)s” value must be an integer."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1994
-msgid "Integer"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2090
-msgid "Big (8 byte) integer"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2107
-msgid "Small integer"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2115
-msgid "IPv4 address"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2146
-msgid "IP address"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2239
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2240
-#, python-format
-msgid "“%(value)s” value must be either None, True or False."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2242
-msgid "Boolean (Either True, False or None)"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2293
-msgid "Positive big integer"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2308
-msgid "Positive integer"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2323
-msgid "Positive small integer"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2339
-#, python-format
-msgid "Slug (up to %(max_length)s)"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2375
-msgid "Text"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2450
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
-"format."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2454
-#, python-format
-msgid ""
-"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
-"invalid time."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2458
-msgid "Time"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2566
-msgid "URL"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2590
-msgid "Raw binary data"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2655
-#, python-format
-msgid "“%(value)s” is not a valid UUID."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2657
-msgid "Universally unique identifier"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/files.py:232
-msgid "File"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/files.py:393
-msgid "Image"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/json.py:26
-msgid "A JSON object"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/json.py:28
-msgid "Value must be valid JSON."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:919
-#, python-format
-msgid "%(model)s instance with %(field)s %(value)r does not exist."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:921
-msgid "Foreign Key (type determined by related field)"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1212
-msgid "One-to-one relationship"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1269
-#, python-format
-msgid "%(from)s-%(to)s relationship"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1271
-#, python-format
-msgid "%(from)s-%(to)s relationships"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1319
-msgid "Many-to-many relationship"
-msgstr ""
-
-#. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
-#: venv/lib/python3.12/site-packages/django/forms/boundfield.py:184
-msgid ":?.!"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:91
-msgid "This field is required."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:298
-msgid "Enter a whole number."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:467
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:1238
-msgid "Enter a valid date."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:490
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:1239
-msgid "Enter a valid time."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:517
-msgid "Enter a valid date/time."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:551
-msgid "Enter a valid duration."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:552
-#, python-brace-format
-msgid "The number of days must be between {min_days} and {max_days}."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:618
-msgid "No file was submitted. Check the encoding type on the form."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:619
-msgid "No file was submitted."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:620
-msgid "The submitted file is empty."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:622
-#, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
-msgid_plural ""
-"Ensure this filename has at most %(max)d characters (it has %(length)d)."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:627
-msgid "Please either submit a file or check the clear checkbox, not both."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:691
-msgid ""
-"Upload a valid image. The file you uploaded was either not an image or a "
-"corrupted image."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:854
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:946
-#: venv/lib/python3.12/site-packages/django/forms/models.py:1566
-#, python-format
-msgid "Select a valid choice. %(value)s is not one of the available choices."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:948
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:1067
-#: venv/lib/python3.12/site-packages/django/forms/models.py:1564
-msgid "Enter a list of values."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:1068
-msgid "Enter a complete value."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:1307
-msgid "Enter a valid UUID."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/fields.py:1337
-msgid "Enter a valid JSON."
-msgstr ""
-
-#. Translators: This is the default suffix added to form field labels
-#: venv/lib/python3.12/site-packages/django/forms/forms.py:98
-msgid ":"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/forms.py:244
-#: venv/lib/python3.12/site-packages/django/forms/forms.py:328
-#, python-format
-msgid "(Hidden field %(name)s) %(error)s"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/formsets.py:63
-#, python-format
-msgid ""
-"ManagementForm data is missing or has been tampered with. Missing fields: "
-"%(field_names)s. You may need to file a bug report if the issue persists."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/formsets.py:67
-#, python-format
-msgid "Please submit at most %(num)d form."
-msgid_plural "Please submit at most %(num)d forms."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/forms/formsets.py:72
-#, python-format
-msgid "Please submit at least %(num)d form."
-msgid_plural "Please submit at least %(num)d forms."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/forms/formsets.py:484
-#: venv/lib/python3.12/site-packages/django/forms/formsets.py:491
-msgid "Order"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/formsets.py:499
-msgid "Delete"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/models.py:886
-#, python-format
-msgid "Please correct the duplicate data for %(field)s."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/models.py:891
-#, python-format
-msgid "Please correct the duplicate data for %(field)s, which must be unique."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/models.py:898
-#, python-format
-msgid ""
-"Please correct the duplicate data for %(field_name)s which must be unique "
-"for the %(lookup)s in %(date_field)s."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/models.py:907
-msgid "Please correct the duplicate values below."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/models.py:1338
-msgid "The inline value did not match the parent instance."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/models.py:1429
-msgid "Select a valid choice. That choice is not one of the available choices."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/models.py:1568
-#, python-format
-msgid "“%(pk)s” is not a valid value."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/utils.py:226
-#, python-format
-msgid ""
-"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
-"may be ambiguous or it may not exist."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/widgets.py:439
-msgid "Clear"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/widgets.py:440
-msgid "Currently"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/widgets.py:441
-msgid "Change"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/widgets.py:770
-msgid "Unknown"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/widgets.py:771
-msgid "Yes"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/forms/widgets.py:772
-msgid "No"
-msgstr ""
-
-#. Translators: Please do not add spaces around commas.
-#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:861
-msgid "yes,no,maybe"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:891
-#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:908
-#, python-format
-msgid "%(size)d byte"
-msgid_plural "%(size)d bytes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:910
-#, python-format
-msgid "%s KB"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:912
-#, python-format
-msgid "%s MB"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:914
-#, python-format
-msgid "%s GB"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:916
-#, python-format
-msgid "%s TB"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:918
-#, python-format
-msgid "%s PB"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:73
-msgid "p.m."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:74
-msgid "a.m."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:79
-msgid "PM"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:80
-msgid "AM"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:152
-msgid "midnight"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:154
-msgid "noon"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:7
-msgid "Monday"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:8
-msgid "Tuesday"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:9
-msgid "Wednesday"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:10
-msgid "Thursday"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:11
-msgid "Friday"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:12
-msgid "Saturday"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:13
-msgid "Sunday"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:16
-msgid "Mon"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:17
-msgid "Tue"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:18
-msgid "Wed"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:19
-msgid "Thu"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:20
-msgid "Fri"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:21
-msgid "Sat"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:22
-msgid "Sun"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:25
-msgid "January"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:26
-msgid "February"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:27
-msgid "March"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:28
-msgid "April"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:29
-msgid "May"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:30
-msgid "June"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:31
-msgid "July"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:32
-msgid "August"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:33
-msgid "September"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:34
-msgid "October"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:35
-msgid "November"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:36
-msgid "December"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:39
-msgid "jan"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:40
-msgid "feb"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:41
-msgid "mar"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:42
-msgid "apr"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:43
-msgid "may"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:44
-msgid "jun"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:45
-msgid "jul"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:46
-msgid "aug"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:47
-msgid "sep"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:48
-msgid "oct"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:49
-msgid "nov"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:50
-msgid "dec"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:53
-msgctxt "abbrev. month"
-msgid "Jan."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:54
-msgctxt "abbrev. month"
-msgid "Feb."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:55
-msgctxt "abbrev. month"
-msgid "March"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:56
-msgctxt "abbrev. month"
-msgid "April"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:57
-msgctxt "abbrev. month"
-msgid "May"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:58
-msgctxt "abbrev. month"
-msgid "June"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:59
-msgctxt "abbrev. month"
-msgid "July"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:60
-msgctxt "abbrev. month"
-msgid "Aug."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:61
-msgctxt "abbrev. month"
-msgid "Sept."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:62
-msgctxt "abbrev. month"
-msgid "Oct."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:63
-msgctxt "abbrev. month"
-msgid "Nov."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:64
-msgctxt "abbrev. month"
-msgid "Dec."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:67
-msgctxt "alt. month"
-msgid "January"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:68
-msgctxt "alt. month"
-msgid "February"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:69
-msgctxt "alt. month"
-msgid "March"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:70
-msgctxt "alt. month"
-msgid "April"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:71
-msgctxt "alt. month"
-msgid "May"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:72
-msgctxt "alt. month"
-msgid "June"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:73
-msgctxt "alt. month"
-msgid "July"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:74
-msgctxt "alt. month"
-msgid "August"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:75
-msgctxt "alt. month"
-msgid "September"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:76
-msgctxt "alt. month"
-msgid "October"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:77
-msgctxt "alt. month"
-msgid "November"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/dates.py:78
-msgctxt "alt. month"
-msgid "December"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/ipv6.py:8
-msgid "This is not a valid IPv6 address."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/text.py:78
-#, python-format
-msgctxt "String to return when truncating text"
-msgid "%(truncated_text)s…"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/text.py:254
-msgid "or"
-msgstr ""
-
-#. Translators: This string is used as a separator between list elements
-#: venv/lib/python3.12/site-packages/django/utils/text.py:273
-#: venv/lib/python3.12/site-packages/django/utils/timesince.py:131
-msgid ", "
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/utils/timesince.py:8
-#, python-format
-msgid "%(num)d year"
-msgid_plural "%(num)d years"
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/utils/timesince.py:9
-#, python-format
-msgid "%(num)d month"
-msgid_plural "%(num)d months"
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/utils/timesince.py:10
-#, python-format
-msgid "%(num)d week"
-msgid_plural "%(num)d weeks"
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/utils/timesince.py:11
-#, python-format
-msgid "%(num)d day"
-msgid_plural "%(num)d days"
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/utils/timesince.py:12
-#, python-format
-msgid "%(num)d hour"
-msgid_plural "%(num)d hours"
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/utils/timesince.py:13
-#, python-format
-msgid "%(num)d minute"
-msgid_plural "%(num)d minutes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.12/site-packages/django/views/csrf.py:111
-msgid "Forbidden"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/csrf.py:112
-msgid "CSRF verification failed. Request aborted."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/csrf.py:116
-msgid ""
-"You are seeing this message because this HTTPS site requires a “Referer "
-"header” to be sent by your web browser, but none was sent. This header is "
-"required for security reasons, to ensure that your browser is not being "
-"hijacked by third parties."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/csrf.py:122
-msgid ""
-"If you have configured your browser to disable “Referer” headers, please re-"
-"enable them, at least for this site, or for HTTPS connections, or for “same-"
-"origin” requests."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/csrf.py:127
-msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a "
-"rel=\"noreferrer\" …> for links to third-party sites."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/csrf.py:136
-msgid ""
-"You are seeing this message because this site requires a CSRF cookie when "
-"submitting forms. This cookie is required for security reasons, to ensure "
-"that your browser is not being hijacked by third parties."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/csrf.py:142
-msgid ""
-"If you have configured your browser to disable cookies, please re-enable "
-"them, at least for this site, or for “same-origin” requests."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/csrf.py:148
-msgid "More information is available with DEBUG=True."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:44
-msgid "No year specified"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:64
-#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:115
-#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:214
-msgid "Date out of range"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:94
-msgid "No month specified"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:147
-msgid "No day specified"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:194
-msgid "No week specified"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:349
-#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:380
-#, python-format
-msgid "No %(verbose_name_plural)s available"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:652
-#, python-format
-msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:692
-#, python-format
-msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/generic/detail.py:56
-#, python-format
-msgid "No %(verbose_name)s found matching the query"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/generic/list.py:70
-msgid "Page is not “last”, nor can it be converted to an int."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/generic/list.py:77
-#, python-format
-msgid "Invalid page (%(page_number)s): %(message)s"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/generic/list.py:169
-#, python-format
-msgid "Empty list and “%(class_name)s.allow_empty” is False."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/static.py:38
-msgid "Directory indexes are not allowed here."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/static.py:40
-#, python-format
-msgid "“%(path)s” does not exist"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/static.py:79
-#, python-format
-msgid "Index of %(directory)s"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:7
-#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:221
-msgid "The install worked successfully! Congratulations!"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:207
-#, python-format
-msgid ""
-"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
-"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:222
-#, python-format
-msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" "
-"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
-"configured any URLs."
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:230
-msgid "Django Documentation"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:231
-msgid "Topics, references, &amp; how-to’s"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:239
-msgid "Tutorial: A Polling App"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:240
-msgid "Get started with Django"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:248
-msgid "Django Community"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:249
-msgid "Connect, get help, or contribute"
-msgstr ""
-
-#: venv/lib/python3.12/site-packages/modeltranslation/widgets.py:24
-msgid "None"
-msgstr ""
+#: templates/components/_nav.html:102
+msgid "Туры"
+msgstr "Tours"
+
+#: templates/components/_nav.html:105
+msgid "Отели Узбекистана"
+msgstr "Hotels of Uzbekistan"
+
+#~ msgid ""
+#~ "Ведомый страстью к приключениям путник в своих\n"
+#~ "            странствиях далеко от\n"
+#~ "            дома. Но он так же нуждается в крове и уюте, чтобы отдохнуть "
+#~ "и отправиться в путь с новыми силами. И где еще\n"
+#~ "            найти приют в далеком крае, как не в отеле. Располагайся, "
+#~ "странник, здесь ты узнаешь о лучших отелях\n"
+#~ "            Узбекистана\n"
+#~ "            и сможешь забронировать самый удобный номер по хорошей цене."
+#~ msgstr ""
+#~ "Driven by a passion for adventure, a traveler in his own\n"
+#~ "wandering far from\n"
+#~ "at home. But he also needs shelter and comfort to rest andset out on the "
+#~ "road with renewed vigor. And where else\n"
+#~ "find shelter in a distant land, if not in a hotel. Make yourself "
+#~ "comfortable,wanderer, here you will learn about the best hotels\n"
+#~ "Uzbekistan\n"
+#~ "and you can book the most comfortable room at a good price."
+
+#~ msgid "Гостиницы Узбекистана"
+#~ msgstr "Hotels in Uzbekistan"
+
+#~ msgid ""
+#~ "Узбекистан — страна с большой и разнообразной историей, интерес к которой "
+#~ "проявляют\n"
+#~ "                туристы со всего мира.\n"
+#~ "                Поэтому нет ничего удивительного в том, что найти отель в "
+#~ "Узбекистане не составляет никакого труда —\n"
+#~ "                здесь\n"
+#~ "                так много предложений, что можно удовлетворить даже самую "
+#~ "изысканную потребность. Узбекское\n"
+#~ "                гостеприимство\n"
+#~ "                известно во всем мире, так что каждый хозяин будет вам "
+#~ "рад. Кухня в местных отелях разнообразная — от\n"
+#~ "                восточной до европейской. Конечно, мало кто отказывается "
+#~ "от возможности насладиться такими узбекскими\n"
+#~ "                блюдами, как плов, самса, нарын, но все-таки приятно "
+#~ "иметь возможность позавтракать чем-то привычным.\n"
+#~ "                Но,\n"
+#~ "                как шутят иногда местные, «зачем есть не плов, если можно "
+#~ "поесть плов?». Особенно удобно то, что многие\n"
+#~ "                отели расположены достаточно близко к самым популярным "
+#~ "достопримечательностям, иногда памятники видны\n"
+#~ "                прямо\n"
+#~ "                из окна номера. Есть отели и для тех, кто приехал в "
+#~ "страну с деловыми целями. Например, ташкентский\n"
+#~ "                отель\n"
+#~ "                Wyndham располагает комфортабельными и хорошо "
+#~ "оборудованными конференц-залами для проведения\n"
+#~ "                бизнес-встреч и\n"
+#~ "                презентаций."
+#~ msgstr ""
+#~ "Uzbekistan is a country with a large and varied history, the interest in "
+#~ "which show\n"
+#~ "tourists from all over the world.\n"
+#~ "Therefore, it is not surprising to find a hotel inIn Uzbekistan there is "
+#~ "no difficulty -\n"
+#~ "here\n"
+#~ "so many offers that you can satisfy even the mostrefined need. Uzbek\n"
+#~ "hospitality\n"
+#~ "is known all over the world, so every owner will be happy to see you.The "
+#~ "cuisine in local hotels is varied - from\n"
+#~ "Eastern to European. Of course, few people refuseopportunities to enjoy "
+#~ "such Uzbek cuisine\n"
+#~ "dishes like pilaf, samsa, naryn, but still nice to havean opportunity to "
+#~ "have something familiar for breakfast.\n"
+#~ "But,\n"
+#~ "as the locals sometimes joke, why don’t eat pilaf if you canEat pilaf?” "
+#~ "What’s especially convenient is that many\n"
+#~ "the hotels are located fairly close to the most popular onessights, "
+#~ "sometimes monuments are visible\n"
+#~ "straight\n"
+#~ "from the window of the room. There are also hotels for those who came to "
+#~ "the country with for business purposes. For example, Tashkent\n"
+#~ "hotel\n"
+#~ "Wyndham features comfortable and well-appointed roomsconference rooms for "
+#~ "holding\n"
+#~ "business meetings and\n"
+#~ "presentations."
+
+#~ msgid "Цены и удобства"
+#~ msgstr "Prices and amenities"
+
+#~ msgid ""
+#~ "Поскольку Узбекистан смело можно назвать туристическим краем, отели "
+#~ "открываются всех\n"
+#~ "                возможных классов — от\n"
+#~ "                простых и бюджетных типа «постель и завтрак» до люксовых "
+#~ "как, например, Hilton в Ташкенте. Как принято\n"
+#~ "                на\n"
+#~ "                международном уровне, количество звезд отеля указывает на "
+#~ "гарантируемый набор условий и\n"
+#~ "                комфортабельность. В\n"
+#~ "                остальном — обязательно проверьте описание отеля на нашем "
+#~ "сайте, где отмечены все удобства от химчистки\n"
+#~ "                до\n"
+#~ "                сувенирного магазина. Настоятельно рекомендуется "
+#~ "проверить наличие кондиционера в номере, если вы\n"
+#~ "                посещаете\n"
+#~ "                солнечный Узбекистан летом, ведь дневная температура "
+#~ "здесь может превышать 50 градусов, что очень\n"
+#~ "                непривычно\n"
+#~ "                для многих гостей Средней Азии."
+#~ msgstr ""
+#~ "Since Uzbekistan can safely be called a tourist region, hotels everyone "
+#~ "opens\n"
+#~ "possible classes - from\n"
+#~ "from simple and budget bed and breakfasts to luxurylike, for example, "
+#~ "Hilton in Tashkent. As is customary\n"
+#~ "on\n"
+#~ " international level, the number of stars of the hotel indicates "
+#~ "guaranteed set of conditions and\n"
+#~ "comfort. В\n"
+#~ " for the rest - be sure to check the hotel description on our a site "
+#~ "where all the conveniences of dry cleaning are noted\n"
+#~ "before\n"
+#~ " gift shop. Highly recommended to check Air conditioning in the room if "
+#~ "you\n"
+#~ "visit\n"
+#~ "sunny Uzbekistan in summer, because the daytime temperature is herecan "
+#~ "exceed 50 degrees, which is very\n"
+#~ "unusual\n"
+#~ "for many guests of Central Asia."
+
+#~ msgid "Узнать подробнее"
+#~ msgstr "Find out more"
+
+#~ msgid ""
+#~ "В каждом городе — от Ташкента до Нураты — дюжины вариантов на любой вкус "
+#~ "и кошелек, мы же\n"
+#~ "                предлагаем только\n"
+#~ "                лучшие и проверенные отели, с которыми лично имели дело. "
+#~ "Описание гостиницы обычно отвечает на все\n"
+#~ "                вопросы,\n"
+#~ "                но иногда намного информативнее узнать ее рейтинг или "
+#~ "прочесть отзыв другого туриста, ведь не все\n"
+#~ "                условия\n"
+#~ "                можно узнать по фотографиям. Вы можете получить подробную "
+#~ "информацию онлайн или связаться с нашими\n"
+#~ "                операторами. Мы поможем вам подобрать подходящий отель "
+#~ "Узбекистана и оформить бронирование. Узбекистан,\n"
+#~ "                увидеть который желают странники со всего мира, ждет вас. "
+#~ "И вам не нужно переживать о своем комфорте в\n"
+#~ "                поездке, ведь Canaan-travel позаботится о том, чтобы у "
+#~ "вас не возникло никаких сложностей и неудобств.\n"
+#~ "                Наши\n"
+#~ "                специалисты будут с вами на связи на протяжении всего "
+#~ "вашего путешествия."
+#~ msgstr ""
+#~ "In every city - from Tashkent to Nurata - there are dozens of options for "
+#~ "every taste andwallet, we\n"
+#~ "We offer only\n"
+#~ "the best and most trusted hotels that we personally dealt with.The hotel "
+#~ "description usually answers everything\n"
+#~ "questions\n"
+#~ "but sometimes it is much more informative to find out its rating or read "
+#~ "another tourist's review, because not everyone\n"
+#~ "conditions\n"
+#~ " can be recognized from the photographs. You can get detailed information "
+#~ "online or contact our\n"
+#~ " operators. We will help you find a suitable hotel Uzbekistan and make a "
+#~ "reservation. Uzbekistan,\n"
+#~ "What travelers from all over the world want to see is waiting for you. "
+#~ "Andyou don't need to worry about your comfort in\n"
+#~ " your trip, because Canaan-travel will make sure that you have there were "
+#~ "no difficulties or inconveniences.\n"
+#~ "Ours\n"
+#~ "specialists will be in touch with you throughout your entire staytrips."
+
+#~ msgid "Популярные направления"
+#~ msgstr "Popular destinations"
+
+#~ msgid "Популярные туры"
+#~ msgstr "Popular tours"
+
+#~ msgid "Специальное предложение"
+#~ msgstr "Special offer"
+
+#~ msgid "Путешествуйте дешевле!"
+#~ msgstr "Travel cheaper!"
+
+#~ msgid "Мы рекомендуем"
+#~ msgstr "We recommend"
+
+#~ msgid "Узнайте о Востоке больше"
+#~ msgstr "Find out more about the East"
+
+#~ msgid "Узнайте о Востоке больше вместе с нами"
+#~ msgstr "Find out more about the East with us"
+
+#~ msgid ""
+#~ " Canaan-travel — туристическая компания полного цикла, ставящая перед "
+#~ "собой\n"
+#~ "            цель открыть красоту всего мира для каждого человека сегодня. "
+#~ "Мы стремимся ближе познакомить Восток\n"
+#~ "            и\n"
+#~ "            Запад, предлагая путешествия по Центральной Азии туристам из "
+#~ "СНГ, Европы и Америки и поездки по\n"
+#~ "            всему\n"
+#~ "            миру жителям Центральной Азии."
+#~ msgstr ""
+#~ " Canaan-travel is a full-service travel company, putting itself before "
+#~ "itself\n"
+#~ "the goal is to discover the beauty of the whole world for every "
+#~ "persontoday. We strive to introduce the East closer\n"
+#~ "and\n"
+#~ "The West, offering travel in Central Asiatourists from the CIS, Europe "
+#~ "and America and trips around\n"
+#~ "to everything\n"
+#~ "peace to the people of Central Asia.\n"
+#~ " "
+
+#~ msgid ""
+#~ "Мы работаем как с отдельными туристами, так и с компаниями. Наличие\n"
+#~ "            собственных авиакассы, автотранспорта и сотрудничество с "
+#~ "лучшими гидами и отелями помогают нам\n"
+#~ "            формировать уникальные предложения в индивидуальном порядке."
+#~ msgstr ""
+#~ "We work both with individual tourists and withcompanies. Availability\n"
+#~ "own ticket offices, vehicles and cooperation withthe best guides and "
+#~ "hotels help us\n"
+#~ "to create unique offers in an individual wayOkay.\n"
+#~ " "
+
+#~ msgid "Преимущество нашего обслуживания"
+#~ msgstr "The advantage of our service"
+
+#~ msgid "Подпишитесь на рассылку интересных предложений"
+#~ msgstr "Subscribe to the newsletter for interesting offers"
+
+#~ msgid "Хотите забронировать тур?"
+#~ msgstr "Want to book a tour?"
+
+#~ msgid "Заполните небольшую форму, и мы подберем тур именно для вас"
+#~ msgstr "Fill out a short form and we will select a tour just for you"
+
+#~ msgid "Наши партнеры"
+#~ msgstr "Our partners"
+
+#~ msgid ""
+#~ "Республика Узбекистан на сегодняшний день имеет различный статус\n"
+#~ "                дипломатических отношений со странами мирового "
+#~ "сообщества. Для иностранных граждан всего мира способ\n"
+#~ "                въезда в\n"
+#~ "                Узбекистан может отличаться."
+#~ msgstr ""
+#~ "The Republic of Uzbekistan today has differentstatus\n"
+#~ "diplomatic relations with countries of the world community.For foreign "
+#~ "citizens around the world a way\n"
+#~ "entry\n"
+#~ "Uzbekistan may differ.\n"
+#~ " "
+
+#~ msgid "Существует несколько режимов въезда в Республику Узбекистан:"
+#~ msgstr "There are several modes of entry into the Republic of Uzbekistan:"
+
+#~ msgid ""
+#~ "<li>безвизовый режим</li>\n"
+#~ "                <li>упрощенный режим</li>\n"
+#~ "                <li>въезд по электронной визе</li>\n"
+#~ "                <li>въезд с приглашением</li>\n"
+#~ "                <li>въезд с оформлением в аэропорту</li>\n"
+#~ "                <li>транзитная виза в Узбекистан</li>\n"
+#~ "                <li>безвизовый въезд при транзите через Узбекистан</li>"
+#~ msgstr ""
+#~ " <li>visa-free regime</li>\n"
+#~ " <li>simplified mode</li>\n"
+#~ " <li>entry with an electronic visa</li>\n"
+#~ " <li>entry with invitation</li>\n"
+#~ " <li>entry with registration at the airport</li>\n"
+#~ " <li>transit visa to Uzbekistan</li>\n"
+#~ " <li>visa-free entry when transiting through Uzbekistan</li>\n"
+#~ " "
+
+#~ msgid "Безвизовый режим"
+#~ msgstr "Visa-free regime"
+
+#~ msgid ""
+#~ "Для въезда в Узбекистан резидентам нижеприведенных стран получение визы "
+#~ "не требуется. Въезд\n"
+#~ "                на\n"
+#~ "                определенные\n"
+#~ "                законодательством сроки осуществляется по "
+#~ "<span>заграничному паспорту</span>."
+#~ msgstr ""
+#~ "For residents of the following countries to enter UzbekistanNo visa "
+#~ "required. Entry to\n"
+#~ "certain\n"
+#~ "legislation terms are carried out according to <span>foreignpassport</"
+#~ "span>.\n"
+
+#~ msgid ""
+#~ "<h3>Бессрочно</h3>\n"
+#~ "            <p>Азербайджан<br>Грузия<br>Россия<br>Армения<br>Казахстан<br>Украина<br>Белорусия<br>Молдова</"
+#~ "p>\n"
+#~ "            <h3>Въезд сроком на 60 дней</h3>\n"
+#~ "            <p>Кыргызстан</p>\n"
+#~ "            <h3>Въезд сроком на 30 дней</h3>\n"
+#~ "            <p>Австралия<br>Исландия<br>Россия<br>Сан-"
+#~ "Марино<br>Австралия</p>"
+#~ msgstr ""
+#~ " <h3>Indefinite</h3>\n"
+#~ " <p>Azerbaijan<br>Georgia<br>Russia<br>Armenia<br>Kazakhstan<br>Ukraine<br>Belarus<br>Moldova</"
+#~ "p>\n"
+#~ " <h3>Entry for 60 days</h3>\n"
+#~ " <p>Kyrgyzstan</p>\n"
+#~ " <h3>Entry for 30 days</h3>\n"
+#~ " <p>Australia<br>Iceland<br>Russia<br>San Marino<br>Australia</p>"
+
+#~ msgid ""
+#~ "Если граждане <span>вышеперечисленных государств</span> имеют "
+#~ "необходимость оставаться на\n"
+#~ "                территории\n"
+#~ "                Республики\n"
+#~ "                Узбекистан больше установленных сроков, они должны "
+#~ "получить въездную визу в соответствии с установленным\n"
+#~ "                МИД\n"
+#~ "                порядком."
+#~ msgstr ""
+#~ " If citizens of <span>the above states</span> have a need to stay on the "
+#~ "territory\n"
+#~ "Republic\n"
+#~ "Uzbekistan exceeds the deadlines, they must receiveentry visa in "
+#~ "accordance with the established\n"
+#~ "MFA\n"
+#~ "Okay."
+
+#~ msgid "Упрощенный порядок получения визы"
+#~ msgstr "Simplified procedure for obtaining a visa"
+
+#~ msgid ""
+#~ "Для резидентов следующих государств введен упрощенный порядок получения "
+#~ "виз в течение\n"
+#~ "                <span>3 рабочих дней</span>,\n"
+#~ "                не требующий предоставления в МИД приглашения со стороны "
+#~ "юридического/физического лица из Республики\n"
+#~ "                Узбекистан:"
+#~ msgstr ""
+#~ "A simplified procedure has been introduced for residents of the following "
+#~ "countriesprocedure for obtaining visas during\n"
+#~ " <span>3 working days</span>,\n"
+#~ "does not require an invitation from the Ministry of Foreign Affairslegal/"
+#~ "individual from the Republic\n"
+#~ "Uzbekistan:"
+
+#~ msgid ""
+#~ "<p>Албания<br>Кабо-"
+#~ "Верде<br>Парагвай<br>Алжир<br>Камбоджа<br>Перу<br>Ангола<br>Камерун</p>\n"
+#~ "            <p>Самоа<br>Антигуа и Барбуда<br>Катар<br>Алжир<br>Саудовская "
+#~ "Аравия<br>Багамские Острова<br>Кирибати<br>Сейшельские\n"
+#~ "                Острова</p>\n"
+#~ "            <p>Бангладеш<br>Кабо-"
+#~ "Верде<br>Китай<br>Сенегал<br>Барбадос<br>Колумбия<br>Сент-Винсент и "
+#~ "Гренадины<br>Бахрейн\n"
+#~ "            </p>\n"
+#~ "            <p>КНДР<br>Кабо-Верде<br>Сент-Китс и Невис<br>Белиз<br>Коста-"
+#~ "Рикa<br>Колумбия<br>Сент-Люсия<br>Боливия</p>\n"
+#~ "            <p>Кот-д’Ивуар<br>Содружество "
+#~ "Доминикие<br>Бутан<br>Куба<br>Соединенные "
+#~ "Штаты<br>Америки<br>Вануату<br>Кувейт\n"
+#~ "            </p>\n"
+#~ "            <p>Соломоновы "
+#~ "Острова<br>Венесуэла<br>Лаос<br>Суринам<br>Вьетнам<br>Ливан<br>Таиланд<br>Габон</"
+#~ "p>\n"
+#~ "            <p>Маврикий<br>Тонга<br>Гайана<br>Македония<br>Тринидад и "
+#~ "Тобаго<br>Гана<br>Мальдивы<br>Тунис\n"
+#~ "            </p>"
+#~ msgstr ""
+#~ " <p>Albania<br>Cape-"
+#~ "Verde<br>Paraguay<br>Algeria<br>Cambodia<br>Peru<br>Angola<br>Cameroon</"
+#~ "p>\n"
+#~ " <p>Samoa<br>Antigua and Barbuda<br>Qatar<br>Algeria<br>Saudi "
+#~ "Arabia<br>Bahamas<br>Kiribati<br>Seychelles\n"
+#~ " Islands</p>\n"
+#~ " <p>Bangladesh<br>Cape-"
+#~ "Verde<br>China<br>Senegal<br>Barbados<br>Colombia<br>Saint Vincent and "
+#~ "Grenadines<br>Bahrain\n"
+#~ "</p>\n"
+#~ " <p>DPRK<br>Cape Verde<br>Saint Kitts and Nevis<br>Belize<br>Costa-"
+#~ "Rica<br>Colombia<br>Saint Lucia<br>Bolivia</p>\n"
+#~ " <p>Ivory Coast<br>Commonwealth Dominique<br>Bhutan<br>Cuba<br>United "
+#~ "States<br>America<br>Vanuatu<br>Kuwait\n"
+#~ "</p>\n"
+#~ " <p>Solomonov "
+#~ "Islands<br>Venezuela<br>Laos<br>Suriname<br>Vietnam<br>Lebanon<br>Thailand<br>Gabon</"
+#~ "p>\n"
+#~ " <p>Mauritius<br>Tonga<br>Guyana<br>Macedonia<br>Trinidad and "
+#~ "Tobago<br>Ghana<br>Maldives<br>Tunisia</p>"
+
+#~ msgid ""
+#~ "Гватемала<br>Марокко<br>Уругвай<br>Гондурас<br>Тринидад и "
+#~ "Тобаго<br>Маршалловы Острова<br>\n"
+#~ "                Федеративные\n"
+#~ "                Штаты<br>Микронезиигонконг"
+#~ msgstr ""
+#~ "Guatemala<br>Morocco<br>Uruguay<br>Honduras<br>Trinidad and "
+#~ "Tobago<br>Marshall Islands<br>Federated States<br>MicronesiaHong Kong"
+
+#~ msgid ""
+#~ "Мексика<br>Фиджи<br>Уругвай<br>Гренада<br>Науру<br>Филиппины<br>Доминиканская "
+#~ "Республика<br>Непал"
+#~ msgstr "Mexico<br>Fiji<br>Uruguay<br>Grenada<br>Nauru<br>Philippines<br>DominicanRepublic<br>Nepal"
+
+#~ msgid ""
+#~ "Шри-Ланка<br>Египет<br>Никарагуа<br>Индия<br>Науру<br>Объединенные "
+#~ "Арабские Эмираты<br>Эль-Сальвадор<br>Иордания"
+#~ msgstr ""
+#~ "Sri Lanka<br>Egypt<br>Nicaragua<br>India<br>Nauru<br>United Arab "
+#~ "Emirates<br>El Salvador<br>Jordan"
+
+#~ msgid "Оман<br>Южно-Африканская Республика<br>Палау<br>Ямайка<br>Панама"
+#~ msgstr "Oman<br>South Africa<br>Palau<br>Jamaica<br>Panama"
+
+#~ msgid ""
+#~ "Оформление визы происходит по личному обращению иностранных граждан в "
+#~ "соответствующее\n"
+#~ "                <span>дипломатическое представительство или консульство "
+#~ "Республики Узбекистан</span>\n"
+#~ "                в стране их пребывания со следующим списком документов:"
+#~ msgstr ""
+#~ "A visa is issued upon personal application from foreignerscitizens in the "
+#~ "appropriate\n"
+#~ "<span>diplomatic mission or consulateRepublic of Uzbekistan</span>\n"
+#~ "in their country of residence with the following list of documents:"
+
+#~ msgid ""
+#~ "<li><span>электронная визовая анкета</span> (в распечатанном и "
+#~ "заполненном виде);</li>\n"
+#~ "                <li><span>оригинал паспорта</span> (срок действия "
+#~ "которого должен превышать срок действия визы не менее\n"
+#~ "                    чем на 3\n"
+#~ "                    месяца);\n"
+#~ "                </li>\n"
+#~ "                <li><span>1 цветная фотография</span> (паспортного "
+#~ "размера);</li>\n"
+#~ "                <li><span>консульский сбор</span> (согласно тарифам "
+#~ "приведенным в разделе <span>Пошлина</span>)\n"
+#~ "                </li>"
+#~ msgstr ""
+#~ " <li><span>electronic visa application form</span> (printed and completed "
+#~ "form);</li>\n"
+#~ " <li><span>original passport</span> (validity period of which must exceed "
+#~ "the validity period of the visa at least\n"
+#~ "than by 3\n"
+#~ " month);\n"
+#~ " </li>\n"
+#~ " <li><span>1 color photo</span> (passport size);</li>\n"
+#~ " <li><span>consular fee</span> (according to tariffs given in the section "
+#~ "<span>Duty</span>)</li>"
+
+#~ msgid "Электронная туристическая виза"
+#~ msgstr "Electronic tourist visa"
+
+#~ msgid ""
+#~ "Резиденты <span>вышеперечисленных государств</span> также имеют "
+#~ "возможность получить\n"
+#~ "                электронную\n"
+#~ "                <span>туристическую</span>\n"
+#~ "                визу, заполнив анкету на портале <span>E-VISA</span> и "
+#~ "оплатив пошлину в размере 2 <span>0 USD</span>.\n"
+#~ "                Электронная виза предоставляется в формате <span>PDF</"
+#~ "span> на e-mail заявителя и не вклеивается в\n"
+#~ "                паспорт."
+#~ msgstr ""
+#~ " Residents of <span>the above states</span> also have the opportunity to "
+#~ "receive electronic\n"
+#~ " <span>tourist</span>\n"
+#~ " visa by filling out a form on the portal <span>E-VISA</span> and by "
+#~ "paying a fee of 2 <span>0 USD</span>.\n"
+#~ " Electronic visa is provided in <span>PDF</span> format to the "
+#~ "applicant's e-mail and is not pasted into\n"
+#~ "passport."
+
+#~ msgid ""
+#~ "<li>Длительность рассмотрения поданных документов или электронной заявки "
+#~ "составляет\n"
+#~ "                    <span>3 рабочих дня</span>.\n"
+#~ "                </li>\n"
+#~ "                <li>Действие электронной визы составляет <span>90 дней</"
+#~ "span> со дня выдачи.</li>\n"
+#~ "                <li>Срок пребывания на территории Узбекистана по "
+#~ "электронной визе составляет <span>30 дней</span>.\n"
+#~ "                </li>"
+#~ msgstr ""
+#~ " <li>Duration of consideration of submitted documents or The electronic "
+#~ "application is\n"
+#~ " <span>3 business days</span>.\n"
+#~ " </li>\n"
+#~ " <li>The e-visa is valid for <span>90 days</span> from the date of issue."
+#~ "</li>\n"
+#~ " <li>Duration of stay on the territory of Uzbekistan by electronic The "
+#~ "visa is <span>30 days</span>.</li>"
+
+#~ msgid ""
+#~ "В случае если заявитель имеет двойное гражданство, электронная визовая "
+#~ "анкета должна\n"
+#~ "                быть заполнена\n"
+#~ "                данными того паспорта, на основании которого планируется "
+#~ "въезд в Республику Узбекистан. В случае замены\n"
+#~ "                паспорта в период действия электронной визы, электронную "
+#~ "визу необходимо получить\n"
+#~ "                повторно."
+#~ msgstr ""
+#~ "In case the applicant has dual citizenship, The electronic visa "
+#~ "application must be completed\n"
+#~ "data from the passport on the basis of which it is plannedentry into the "
+#~ "Republic of Uzbekistan. In case of replacement\n"
+#~ "passports during the validity period of the electronic visa, "
+#~ "electronicYou need to get a visa again."
+
+#~ msgid "Въезд с приглашением"
+#~ msgstr "Entry with invitation"
+
+#~ msgid ""
+#~ "Для граждан всех остальных стран въездная виза оформляется на основании\n"
+#~ "                <span>визовой поддержки</span>.\n"
+#~ "                Для\n"
+#~ "                оформления визовой поддержки, Вам необходимо предоставить "
+#~ "нашей компании следующий список\n"
+#~ "                документов:"
+#~ msgstr ""
+#~ "For citizens of all other countries, an entry visa is issuedbased on "
+#~ "<span>visa support</span>.\n"
+#~ "For\n"
+#~ "for visa support, you need to provideour company has the following list "
+#~ "of documents:"
+
+#~ msgid ""
+#~ "<li><span>Заполненную анкету для визовой поддержки <a "
+#~ "href=\"\">(скачать)</a></span></li>\n"
+#~ "                <li><span>Сканированную копию Вашего паспорта</span></"
+#~ "li>\n"
+#~ "                <li><span>Сканированную копию справки с места работы</"
+#~ "span></li>"
+#~ msgstr ""
+#~ " <li><span>Filled out application form for visa support <a "
+#~ "href=\"\">(download)</a></span></li>\n"
+#~ " <li><span>A scanned copy of your passport</span></li>\n"
+#~ " <li><span>A scanned copy of your employment certificate</span></li>"
+
+#~ msgid ""
+#~ "После получения нами всей необходимой информации, мы оформим визовую "
+#~ "поддержку в МИД\n"
+#~ "                Республики\n"
+#~ "                Узбекистан в\n"
+#~ "                Ташкенте которое рассмотрит Ваши документы в течение "
+#~ "<span>7 рабочих дней</span>."
+#~ msgstr ""
+#~ "After we receive all the necessary information, we will issuevisa support "
+#~ "at the Ministry of Foreign Affairs of the Republic\n"
+#~ "Uzbekistan in\n"
+#~ " Tashkent which will review your documents within <span>7 working days</"
+#~ "span>."
+
+#~ msgid ""
+#~ "                <span>МИД Республики Узбекистан оставляет имеет право "
+#~ "отказать в выдаче разрешения, не предоставляя причин отказа. В случае "
+#~ "отказа уплаченная пошлина не возвращается.</span>\n"
+#~ "                Получив разрешение МИД, мы вышлем Вам на почту "
+#~ "<span>номер телекса</span> после чего Вы сможете\n"
+#~ "                обратиться в\n"
+#~ "                <span>дипломатическое представительство или консульство "
+#~ "Республики Узбекистан</span> в стране вашего\n"
+#~ "                пребывания\n"
+#~ "                с перечнем следующих документов:"
+#~ msgstr ""
+#~ "<span>The Ministry of Foreign Affairs of the Republic of Uzbekistan "
+#~ "reserves the rightrefuse to issue a permit without providing reasons for "
+#~ "the refusal. In case of refusal duty paid is not refundable.</span>\n"
+#~ "After receiving permission from the Ministry of Foreign Affairs, we will "
+#~ "send you a <span>number by emailtelex</span> after which you can\n"
+#~ "contact\n"
+#~ "<span>diplomatic mission or consulateThe Republic of Uzbekistan</span> in "
+#~ "your country\n"
+#~ "stay\n"
+#~ "with a list of the following documents:"
+
+#~ msgid ""
+#~ "<li><span>Оригинал паспорта</span> (срок действия которого должен "
+#~ "превышать срок действия визы не менее\n"
+#~ "                    чем на 3\n"
+#~ "                    месяца);\n"
+#~ "                </li>\n"
+#~ "                <li><span>Заполненная визовая анкета в 2 экземплярах;</"
+#~ "span></li>\n"
+#~ "                <li><span>2 цветные фотографии</span> (паспортного "
+#~ "размера);</li>\n"
+#~ "                <li><span>Номер телекса</span> (высланный Вам на почту);</"
+#~ "li>\n"
+#~ "                <li><span>Консульский сбор</span> (согласно тарифам "
+#~ "приведенным в разделе <span>Пошлина</span>)\n"
+#~ "                </li>"
+#~ msgstr ""
+#~ " <li><span>Original passport</span> (validity period of which must exceed "
+#~ "the validity period of the visa at least\n"
+#~ "than by 3\n"
+#~ " month);\n"
+#~ " </li>\n"
+#~ " <li><span>Filled out visa application form in 2 copies;</span></li>\n"
+#~ " <li><span>2 color photographs</span> (passport size);</li>\n"
+#~ " <li><span>Telex number</span> (sent to your email);</li>\n"
+#~ " <li><span>Consular fee</span> (according to tariffs given in the section "
+#~ "<span>Duty</span>)</li>"
+
+#~ msgid ""
+#~ "Длительность рассмотрения поданных документов составляет <span>3 рабочих "
+#~ "дня</span>."
+#~ msgstr ""
+#~ "The duration of consideration of submitted documents is <span>3 working "
+#~ "daysday</span>."
+
+#~ msgid ""
+#~ "<span>Оформление визовой поддержки прекращается если клиент отказывается "
+#~ "от ранее забронированного пакета туристических услуг.</span>"
+#~ msgstr ""
+#~ " <span>Visa support is terminated if the client refuses a previously "
+#~ "booked travel package.</span>"
+
+#~ msgid "Виза с оформлением в аэропорту"
+#~ msgstr "Visa with registration at the airport"
+
+#~ msgid ""
+#~ "Если в стране Вашего пребывания\n"
+#~ "                <span>нет дипломатического представительства или "
+#~ "консульства Республики Узбекистан</span>,\n"
+#~ "                то Вы сможете оформить въездную визу по прибытию в "
+#~ "международный аэропорт имени Ислама Каримова в\n"
+#~ "                <span>секторе визового обеспечения</span>."
+#~ msgstr ""
+#~ "If in your country of residence\n"
+#~ "<span>no diplomatic mission or consulateRepublic of Uzbekistan</span>,\n"
+#~ "then you will be able to obtain an entry visa upon arrival inIslam "
+#~ "Karimov International Airport in\n"
+#~ " <span>visa sector</span>."
+
+#~ msgid ""
+#~ "Для этого Вам необходимо оформить визовую поддержку в нашей компании "
+#~ "прислав нам следующий\n"
+#~ "                перечень\n"
+#~ "                документов:"
+#~ msgstr ""
+#~ "To do this, you need to apply for visa support at ourthe company sent us "
+#~ "the following list\n"
+#~ "documents:"
+
+#~ msgid ""
+#~ "<li><span>Заполненную анкету для визовой поддержки</span></li>\n"
+#~ "                <li><span>Сканированную копию Вашего паспорта</span></"
+#~ "li>\n"
+#~ "                <li><span>Сканированную копию справки с места работы</"
+#~ "span></li>\n"
+#~ "                <li><span>Сканированные копии авиабилетов или брони</"
+#~ "span></li>"
+#~ msgstr ""
+#~ " <li><span>Completed application form for visa support</span></li>\n"
+#~ " <li><span>A scanned copy of your passport</span></li>\n"
+#~ " <li><span>A scanned copy of your employment certificate</span></li>\n"
+#~ " <li><span>Scanned copies of airline tickets or reservations</span></li>"
+
+#~ msgid ""
+#~ "Получив разрешение МИД, мы вышлем Вам на почту официальный разрешающий "
+#~ "документ с\n"
+#~ "                <span>номером телекса</span>.Данный\n"
+#~ "                документ должен быть предъявлен Вами при прохождении "
+#~ "паспортного контроля в стране Вашего пребывания и\n"
+#~ "                на его\n"
+#~ "                основании Вам оформляется виза по прибытию в "
+#~ "международный аэропорт имени «Ислама Каримова» в секторе\n"
+#~ "                визового\n"
+#~ "                обеспечения МИД Республики Узбекистан."
+#~ msgstr ""
+#~ "After receiving permission from the Ministry of Foreign Affairs, we will "
+#~ "send you an officialpermit document with\n"
+#~ " <span>telex number</span>.Data\n"
+#~ "The document must be presented by you upon entrypassport control in the "
+#~ "country of your stay and\n"
+#~ "on him\n"
+#~ "Based on you will be issued a visa upon arrival at the internationalIslam "
+#~ "Karimov Airport in the sector\n"
+#~ "visa\n"
+#~ "provision of the Ministry of Foreign Affairs of the Republic of "
+#~ "Uzbekistan."
+
+#~ msgid "Транзитная виза в Узбекистан"
+#~ msgstr "Transit visa to Uzbekistan"
+
+#~ msgid ""
+#~ "Иностранные граждане следующие транзитом через Республику Узбекистан,\n"
+#~ "                <span>для получения транзитной визы сроком на 72 часа </"
+#~ "span>,\n"
+#~ "                должны предоставить в\n"
+#~ "                <span>дипломатическое представительство или консульство "
+#~ "Республики Узбекистан</span> в\n"
+#~ "                стране своего пребывания <span>весь перечень документов</"
+#~ "span> необходимый для оформления туристической\n"
+#~ "                визы, а\n"
+#~ "                также приложить к нему:"
+#~ msgstr ""
+#~ "Foreign citizens transiting through the RepublicUzbekistan,\n"
+#~ " <span>to obtain a transit visa valid for 72 hours </span>,\n"
+#~ "must be provided in\n"
+#~ "<span>diplomatic mission or consulateRepublic of Uzbekistan</span> in\n"
+#~ "your country of residence <span>full list of documents</span> necessary "
+#~ "for tourist registration\n"
+#~ "visas, a\n"
+#~ " also attach to it:"
+
+#~ msgid "Визу государства следования"
+#~ msgstr "Visa of the destination country"
+
+#~ msgid ""
+#~ "Проездные документы с подтвержденной датой отправления из Узбекистана в "
+#~ "страну следования"
+#~ msgstr ""
+#~ "Travel documents with confirmed departure date from Uzbekistan tocountry "
+#~ "of destination"
+
+#~ msgid ""
+#~ "Длительность рассмотрения поданных документов составляет <span>3 рабочих "
+#~ "дня</span>"
+#~ msgstr ""
+#~ "The duration of consideration of submitted documents is <span>3 working "
+#~ "daysday</span>"
+
+#~ msgid "Безвизовый въезд при транзите через Узбекистан"
+#~ msgstr "Visa-free entry when transiting through Uzbekistan"
+
+#~ msgid ""
+#~ "Для граждан ряда государств (<span>список стран приводится ниже</span>) "
+#~ "въезжающих в\n"
+#~ "                Республику\n"
+#~ "                Узбекистан на\n"
+#~ "                срок <span>до 5 суток</span> с последующим выездом в "
+#~ "третью страну, (\n"
+#~ "                <span>при условии наличия у них авиабилетов, оформленных "
+#~ "через национальную авиакомпанию Uzbekistan Airways как в Узбекистан, так "
+#~ "и в третью страну</span>\n"
+#~ "                ),\n"
+#~ "                установлен <span>краткосрочный безвизовый режим.</span>"
+#~ msgstr ""
+#~ "For citizens of a number of countries (<span>a list of countries is "
+#~ "providedbelow</span>) entering the Republic\n"
+#~ "Uzbekistan on\n"
+#~ " period <span>up to 5 days</span> followed by departure on the "
+#~ "thirdcountry, (\n"
+#~ "<span>subject to the availability of air tickets issued by themthrough "
+#~ "the national airline Uzbekistan Airways both to Uzbekistan and tothird "
+#~ "country</span>\n"
+#~ " ),\n"
+#~ " <span>short-term visa-free regime has been established.</span>"
+
+#~ msgid ""
+#~ "<span>Государство следования не может являться отправным государством "
+#~ "транзитного переезда.</span> Для\n"
+#~ "                граждан\n"
+#~ "                нижеперечисленных стран введен <span>безвизовый въезд при "
+#~ "транзите</span> через Узбекистан сроком не\n"
+#~ "                более чем\n"
+#~ "                на <span>5 суток</span>"
+#~ msgstr ""
+#~ " <span>The state of destination cannot be the sending statestate of "
+#~ "transit.</span> For\n"
+#~ "citizens\n"
+#~ " the countries listed below have introduced <span>visa-free entry for "
+#~ "transit</span>through Uzbekistan for a period not\n"
+#~ "more than\n"
+#~ "for <span>5 days</span>"
+
+#~ msgid ""
+#~ "Албания<br>Кабо-"
+#~ "Верде<br>Парагвай<br>Алжир<br>Камбоджа<br>Перу<br>Ангола<br>Камерун"
+#~ msgstr ""
+#~ "Albania<br>Cape-"
+#~ "Verde<br>Paraguay<br>Algeria<br>Cambodia<br>Peru<br>Angola<br>Cameroon"
+
+#~ msgid ""
+#~ "Самоа<br>Антигуа и Барбуда<br>Катар<br>Алжир<br>Саудовская "
+#~ "Аравия<br>Багамские Острова<br>Кирибати<br>Сейшельские Острова"
+#~ msgstr ""
+#~ "Samoa<br>Antigua and Barbuda<br>Qatar<br>Algeria<br>Saudi "
+#~ "Arabia<br>Bahamas<br>Kiribati<br>Seychelles"
+
+#~ msgid ""
+#~ "Бангладеш<br>Кабо-"
+#~ "Верде<br>Китай<br>Сенегал<br>Барбадос<br>Колумбия<br>Сент-Винсент и "
+#~ "Гренадины<br>Бахрейн"
+#~ msgstr ""
+#~ "Bangladesh<br>Cape "
+#~ "Verde<br>China<br>Senegal<br>Barbados<br>Colombia<br>St.Vincent and the "
+#~ "Grenadines<br>Bahrain"
+
+#~ msgid ""
+#~ "КНДР<br>Кабо-Верде<br>Сент-Китс и Невис<br>Белиз<br>Коста-"
+#~ "Рикa<br>Колумбия<br>Сент-Люсия<br>Боливия"
+#~ msgstr ""
+#~ "DPRK<br>Cape Verde<br>Saint Kitts and Nevis<br>Belize<br>Costa-"
+#~ "Rica<br>Colombia<br>Saint Lucia<br>Bolivia"
+
+#~ msgid ""
+#~ "Кот-д’Ивуар<br>Содружество Доминикие<br>Бутан<br>Куба<br>Соединенные "
+#~ "Штаты<br>Америки<br>Вануату<br>Кувейт"
+#~ msgstr ""
+#~ "Ivory Coast<br>Commonwealth of "
+#~ "Dominica<br>Bhutan<br>Cuba<br>UnitedStates<br>America<br>Vanuatu<br>Kuwait"
+
+#~ msgid ""
+#~ "Соломоновы "
+#~ "Острова<br>Венесуэла<br>Лаос<br>Суринам<br>Вьетнам<br>Ливан<br>Таиланд<br>Габон"
+#~ msgstr "Solomon'sIslands<br>Venezuela<br>Laos<br>Suriname<br>Vietnam<br>Lebanon<br>Thailand<br>Gabon"
+
+#~ msgid ""
+#~ "Гватемала<br>Марокко<br>Уругвай<br>Гондурас<br>Тринидад и "
+#~ "Тобаго<br>Маршалловы Острова<br>Федеративные Штаты<br>Микронезиигонконг"
+#~ msgstr ""
+#~ "Guatemala<br>Morocco<br>Uruguay<br>Honduras<br>Trinidad and "
+#~ "Tobago<br>Marshall Islands<br>Federated States<br>MicronesiaHong Kong"
+
+#~ msgid "Пошлина"
+#~ msgstr "Duty"
+
+#~ msgid ""
+#~ "За оформление и выдачу виз предусмотрены следующие тарифы консульских "
+#~ "сборов:"
+#~ msgstr ""
+#~ "The following consular fees are provided for the registration and "
+#~ "issuance of visas:"
+
+#~ msgid "1. Однократные визы:"
+#~ msgstr "1. Single entry visas:"
+
+#~ msgid ""
+#~ "<li>до 7 дней — 40 USD;</li>\n"
+#~ "                <li>до 15 дней — 50 USD;</li>\n"
+#~ "                <li>до 30 дней — 60 USD;</li>\n"
+#~ "                <li>до 3 месяцев — 80 USD;</li>\n"
+#~ "                <li>до 6 месяцев — 120 USD;</li>\n"
+#~ "                <li>до 1 года — 160 USD.</li>"
+#~ msgstr ""
+#~ " <li>up to 7 days - 40 USD;</li>\n"
+#~ " <li>up to 15 days - 50 USD;</li>\n"
+#~ " <li>up to 30 days - 60 USD;</li>\n"
+#~ " <li>up to 3 months - 80 USD;</li>\n"
+#~ " <li>up to 6 months - 120 USD;</li>\n"
+#~ " <li>up to 1 year - 160 USD.</li>"
+
+#~ msgid ""
+#~ "За каждую дополнительную кратность визы ставка тарифа увеличивается на 10 "
+#~ "USD"
+#~ msgstr ""
+#~ "For each additional visa number, the tariff rate increases by 10 USD"
+
+#~ msgid "2. Многократные визы:"
+#~ msgstr "2. Multiple entry visas:"
+
+#~ msgid ""
+#~ "<li>до 6 месяцев — 150 USD;</li>\n"
+#~ "                <li>до 1 года — 250 USD.</li>"
+#~ msgstr ""
+#~ " <li>up to 6 months - 150 USD;</li>\n"
+#~ " <li>up to 1 year - 250 USD.</li>"
+
+#~ msgid "3. Транзитные визы:"
+#~ msgstr "3. Transit visas:"
+
+#~ msgid ""
+#~ "<li>до 72 часов — 40 USD;</li>\n"
+#~ "                <li>за двукратную транзитную визу — 50 USD.</li>"
+#~ msgstr ""
+#~ " <li>up to 72 hours - 40 USD;</li>\n"
+#~ " <li>for a double-entry transit visa - 50 USD.</li>"
+
+#~ msgid ""
+#~ "4. Групповые визы</span>(не менее 5 человек, исключая детей до 16 лет):"
+#~ msgstr ""
+#~ "4. Group visas</span>(at least 5 people, excluding children under 16 "
+#~ "years of age):"
+
+#~ msgid ""
+#~ "<li>до 15 дней — 15 USD с каждого человека;</li>\n"
+#~ "                <li>до 30 дней — 25 USD с каждого человека.</li>"
+#~ msgstr ""
+#~ " <li>up to 15 days - 15 USD per person;</li>\n"
+#~ " <li>up to 30 days - 25 USD per person.</li>\n"
+#~ " "
+
+#~ msgid ""
+#~ "При оформлении визы требуется также уплатить фактический расход. Размеры "
+#~ "таких расходов зависят от места оформления визы и не зависят от "
+#~ "гражданства заявителя."
+#~ msgstr ""
+#~ "When applying for a visa, you are also required to pay the actual cost. "
+#~ "Dimensions such expenses depend on the place where the visa is issued and "
+#~ "do not depend on citizenshipthe applicant."
+
+#~ msgid "ВАЖНО ЗНАТЬ"
+#~ msgstr "IT IS IMPORTANT TO KNOW"
+
+#~ msgid ""
+#~ "Для иностранных граждан, не достигших <span>16-летнего возраста</span>, "
+#~ "въезд в Республику\n"
+#~ "                Узбекистан не\n"
+#~ "                требует\n"
+#~ "                получения визы и осуществляется по собственному "
+#~ "заграничному паспорту на срок действия визы\n"
+#~ "                сопровождающего\n"
+#~ "                лица, но <span>не более 90 суток</span> со дня въезда в "
+#~ "страну. Если ребенок путешествует с одним из\n"
+#~ "                родителей,\n"
+#~ "                с собой желательно иметь нотариально заверенное "
+#~ "разрешение на выезд ребенка из родной страны от второго\n"
+#~ "                родителя\n"
+#~ "                для предупреждения возможных недоразумений в аэропорту "
+#~ "отправления."
+#~ msgstr ""
+#~ "For foreign citizens under <span>16 years of ageage</span>, entry into "
+#~ "the Republic of Uzbekistan is not\n"
+#~ "requires\n"
+#~ "obtaining a visa is carried out according to your own foreignpassport for "
+#~ "the duration of the visa\n"
+#~ "accompany\n"
+#~ " persons, but <span>no more than 90 days</span> from the date of entry "
+#~ "into country. If the child is traveling with one of the\n"
+#~ "parents\n"
+#~ "It is advisable to have a notarized permission with you for the departure "
+#~ "of a child from his native country from his second\n"
+#~ "parent\n"
+#~ "to prevent possible misunderstandings at the airport departures."
+
+#~ msgid "Открыть мир, сохранив его"
+#~ msgstr "Open the world by saving it"
+
+#~ msgid ""
+#~ "Центральная Азия — древнейший оплот науки и культуры. Многие века назад "
+#~ "здесь совершались гениальные\n"
+#~ "                открытия, сооружались уникальные архитектурные шедевры, "
+#~ "появлялись новые веяния и ремёсла, ставшие\n"
+#~ "                столпами человеческой цивилизации."
+#~ msgstr ""
+#~ "Central Asia is the oldest stronghold of science and culture. Many "
+#~ "Centuries ago, great things were done here\n"
+#~ "discoveries, unique architectural masterpieces were built, new trends and "
+#~ "crafts appeared that became\n"
+#~ "pillars of human civilization.\n"
+#~ " "
+
+#~ msgid ""
+#~ "<span>Мы считаем, что наш регион</span> — достояние всего мира. Именно по "
+#~ "этой причине мы хотим\n"
+#~ "                познакомить с этими землями каждого жителя Земли. При "
+#~ "этом мы не забываем ни на минуту о том, что под\n"
+#~ "                «каждым жителем Земли» подразумеваются и будущие "
+#~ "поколения. Вот почему мы уделяем так много внимания\n"
+#~ "                устойчивому туризму — направлению деятельности, которое "
+#~ "призвано сохранить природу, культуру и историю\n"
+#~ "                нашей родной земли."
+#~ msgstr ""
+#~ " <span>We believe that our region</span> is the asset of everything "
+#~ "peace. This is the reason we want\n"
+#~ "to introduce every inhabitant of the Earth to these lands. At the same "
+#~ "time, We don't forget for a minute what's underneath\n"
+#~ "Every inhabitant of the Earth also means future generations.That's why we "
+#~ "pay so much attention\n"
+#~ "sustainable tourism is an activity that designed to preserve nature, "
+#~ "culture and history\n"
+#~ "our native land.\n"
+#~ " "
+
+#~ msgid "Цели компании"
+#~ msgstr "Company goals"
+
+#~ msgid ""
+#~ "<li>Популяризация стран региона</li>\n"
+#~ "                    <li>Сохранение природы</li>\n"
+#~ "                    <li>Глобализация</li>"
+#~ msgstr ""
+#~ " <li>Popularization of countries in the region</li>\n"
+#~ " <li>Nature conservation</li>\n"
+#~ " <li>Globalization</li>\n"
+#~ " "
+
+#~ msgid "Видение"
+#~ msgstr "Vision"
+
+#~ msgid ""
+#~ "Мир огромен и прекрасен, но возможности человека ограничены. Увидеть "
+#~ "каждый уголок планеты человеку не\n"
+#~ "                удастся, но мы ставим перед собой задачу сделать всё "
+#~ "возможное для этого. Для достижения этой цели\n"
+#~ "                компания использует следующие средства:"
+#~ msgstr ""
+#~ "The world is huge and beautiful, but human capabilities are limited.“It’s "
+#~ "impossible for a person to see every corner of the planet\n"
+#~ "”it will succeed, but we set ourselves the task of doing "
+#~ "everythingpossible for this. To achieve this goal\n"
+#~ "The company uses the following means:\n"
+#~ " "
+
+#~ msgid ""
+#~ "<li>Помощь в путешествиях иностранцам и местным жителям;</li>\n"
+#~ "<li>Просветительская деятельность — публикация информационных материалов "
+#~ "и поддержка проектов в\n"
+#~ "    сферах истории, востоковедения, науки и техники;\n"
+#~ "</li>\n"
+#~ "<li>Благотворительные программы по защите экологии;</li>\n"
+#~ "<li>Сотрудничество с Travelife и фондами защиты природы;</li>\n"
+#~ "<li>Повышение профессионализма сотрудников и качества услуг;</li>\n"
+#~ "<li>Повышение интереса к Узбекистану в мире.</li>"
+#~ msgstr ""
+#~ "<li>Travel assistance for foreigners and local residents;</li>\n"
+#~ "<li>Educational activities - publication of information materials and "
+#~ "project support\n"
+#~ "the fields of history, oriental studies, science and technology;\n"
+#~ "</li>\n"
+#~ "<li>Charity programs for environmental protection;</li>\n"
+#~ "<li>Collaboration with Travelife and nature protection funds;</li>\n"
+#~ "<li>Improving the professionalism of employees and the quality of "
+#~ "services;</li>\n"
+#~ "<li>Increasing interest in Uzbekistan in the world.</li>"
+
+#~ msgid "Стоимость тура на весну 2024, с человека"
+#~ msgstr "Tour cost for spring 2024, per person"
+
+#~ msgid ""
+#~ "Все дополнительные экскурсии обговариваются с гидом заранее и "
+#~ "оплачиваются гиду на\n"
+#~ "                месте. Минимальная\n"
+#~ "                группа для любой доп. экскурсии – 5 человек."
+#~ msgstr ""
+#~ "All additional excursions are discussed with the guide in advance and "
+#~ "paid forguide to\n"
+#~ "location. Minimum\n"
+#~ "group for any additional excursion - 5 people."
+
+#~ msgid "О компании"
+#~ msgstr "About company"
+
+#~ msgid ""
+#~ "Информация туристам Туры в Узбекистан Достопримечательности Наша компания "
+#~ "имеет все необходимые лицензии и сертификаты качества."
+#~ msgstr ""
+#~ "Information for tourists Tours to Uzbekistan Sights Our companyhas all "
+#~ "the necessary licenses and quality certificates."
 
 #, fuzzy
 #~| msgid "Туры в Узбекистан с Centrum-Holidays"
