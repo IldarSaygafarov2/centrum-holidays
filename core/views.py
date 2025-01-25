@@ -33,7 +33,7 @@ def book_tour_with_price(request):
         subject='Бронирование тура',
         message=msg,
         from_email=settings.EMAIL_HOST_USER,
-        recipient_list=[settings.EMAIL_HOST_PASSWORD],
+        recipient_list=[settings.EMAIL_HOST_USER],
     )
     requests.post(settings.CHANNEL_API_LINK.format(
         token=settings.BOT_TOKEN,
@@ -54,7 +54,7 @@ def book_hotel(request):
         subject='Бронирование отеля',
         message=msg,
         from_email=settings.EMAIL_HOST_USER,
-        recipient_list=[settings.EMAIL_HOST_PASSWORD],
+        recipient_list=[settings.EMAIL_HOST_USER],
     )
     requests.post(settings.CHANNEL_API_LINK.format(
         token=settings.BOT_TOKEN,
@@ -127,7 +127,7 @@ def book_tour(request):
             subject='Бронирование тура',
             message=msg,
             from_email=settings.EMAIL_HOST_USER,
-            recipient_list=[settings.EMAIL_HOST_PASSWORD],
+            recipient_list=[settings.EMAIL_HOST_USER],
             # auth_user=settings.EMAIL_HOST_USER,
             # auth_password=settings.EMAIL_HOST_PASSWORD
         )
